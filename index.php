@@ -90,7 +90,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <div class="chatBox">
             <div class="chat"></div>
             <div class="input">
-                <input id="say" />
+                <span><img src="#123" /></span><input id="say" /><button id="sayBT">发送</button>
             </div>
         </div>
 
