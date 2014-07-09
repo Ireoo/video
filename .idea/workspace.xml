@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="47" selection-start="3021" selection-end="3021" vertical-scroll-proportion="-13.571428" vertical-offset="1368" max-vertical-offset="3591">
+            <state line="98" column="0" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.27740493" vertical-offset="1614" max-vertical-offset="3648">
               <folding>
                 <element signature="n#style#0;n#script#1;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#script#2;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -78,16 +78,16 @@
       <file leaf-file-name="io.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4085">
+            <state line="138" column="43" selection-start="3872" selection-end="3872" vertical-scroll-proportion="-313.5" vertical-offset="1995" max-vertical-offset="4085">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="42" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.6084599" vertical-offset="218" max-vertical-offset="1216">
+            <state line="48" column="88" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1216">
               <folding />
             </state>
           </provider>
@@ -113,15 +113,15 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js.js" />
-        <option value="$PROJECT_DIR$/io.js" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/include/login.php" />
         <option value="$PROJECT_DIR$/app/oauth/oauth2.php" />
         <option value="$PROJECT_DIR$/include/config.php" />
         <option value="$PROJECT_DIR$/include/head.php" />
         <option value="$PROJECT_DIR$/css/head.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/io.js" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -307,7 +307,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -349,13 +349,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/io.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4085">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/oauth/oauth2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="1" selection-start="477" selection-end="477" vertical-scroll-proportion="0.23378076" vertical-offset="0" max-vertical-offset="894">
@@ -384,13 +377,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="180" selection-start="665" selection-end="665" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/head.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="26" selection-start="2713" selection-end="2713" vertical-scroll-proportion="0.0" vertical-offset="706" max-vertical-offset="1615">
@@ -398,9 +384,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="88" selection-start="2282" selection-end="2282" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="1216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="180" selection-start="665" selection-end="665" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="43" selection-start="3872" selection-end="3872" vertical-scroll-proportion="-313.5" vertical-offset="1995" max-vertical-offset="4085">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="47" selection-start="3021" selection-end="3021" vertical-scroll-proportion="-13.571428" vertical-offset="1368" max-vertical-offset="3591">
+        <state line="98" column="0" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.27740493" vertical-offset="1614" max-vertical-offset="3648">
           <folding>
             <element signature="n#style#0;n#script#1;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#script#2;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -409,13 +416,6 @@
             <element signature="n#style#0;n#video#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#li#2;n#ul#2;n#ol#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="42" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.6084599" vertical-offset="218" max-vertical-offset="1216">
-          <folding />
         </state>
       </provider>
     </entry>

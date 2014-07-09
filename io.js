@@ -6,7 +6,7 @@ $(function() {
     /**
      * 连接服务器
      */
-    var socket = io.connect("localhost");
+    var socket = io.connect("115.29.39.169:8000");
     var spantimer = [];
 
 
@@ -135,8 +135,8 @@ $(function() {
 
     var chatcom = function(name, avatar, msg, timer, ziji) {
         var image = $('<img />').attr('src', avatar).attr('title', name).width(20).height(20).css({borderRadius: '3px', verticalAlign: 'bottom'});
-        var a = $('<a />').attr('src', 'http://v.ireoo.com/').attr()
-        var com = $('<div />').css({background: '#EBEBEB', fontSize: '12px', borderRadius: '3px', padding: '5px', verticalAlign: 'bottom', display: 'inline-block', wordBreak: 'break-all', wordWrap: 'break-word'}).text(name + ': ' + msg);
+        var a = $('<a />').attr('src', 'http://v.ireoo.com/').text(name);
+        var com = $('<div />').css({background: '#EBEBEB', fontSize: '12px', borderRadius: '3px', padding: '5px', verticalAlign: 'bottom', display: 'inline-block', wordBreak: 'break-all', wordWrap: 'break-word'}).append(a).append(': ' + msg);
         if(!ziji) {
             var li = $('<li />').css({marginBottom: '10px'}).append(com).appendTo(chatroom); //.append(image)
             //alert('ziji');
@@ -186,7 +186,7 @@ $(function() {
      * 创建视频
      *
      */
-    rtc.connect('ws://localhost:8080');
+    rtc.connect('ws://115.29.39.169:8001', room);
 
     rtc.createStream({"video":
     {

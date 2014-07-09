@@ -50,8 +50,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script style="text/javascript" src="http://localhost/socket.io/socket.io.js"></script>
-    <script style="text/javascript" src="http://localhost/webrtc.io.js"></script>
+    <script style="text/javascript" src="http://115.29.39.169:8000/socket.io/socket.io.js"></script>
+    <script style="text/javascript" src="http://115.29.39.169:8000/webrtc.io.js"></script>
     <script style="text/javascript">
         <?php if(!is_array($o)) { ?>
         var name = '游客';
@@ -60,6 +60,9 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <?php } ?>
         var avatar = 'http://ireoo.com/<?php echo $person['avatar_large']; ?>';
         var myip = '<?php echo thisIP(); ?>';
+        var room = '<?php echo $person['id']; ?>';
+
+        //s(name, avatar, myip, '<?php echo $person['id']; ?>');
     </script>
     <script style="text/javascript" src="/io.js"></script>
 
