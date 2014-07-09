@@ -1,21 +1,16 @@
 *{font-family: "Apple Symbols"; padding: 0; margin: 0;}
-body{padding-top: 80px;}
+body{padding-top: 70px;}
 ul{list-style: none;}
 
 div.top{background: #4898F8; box-shadow: 0 0 5px #000; top: 0; padding: 5px 0; position: fixed; top: 0; width: 100%;}
-div.mian{max-width: 1200px; margin: auto;}
+div.avatar{width: 1200px; margin: auto; margin-bottom: 20px;}
 
-div.top img.avatar{width: 60px; height: 60px; border-radius: 30px; float: left; margin-left: 5px; box-shadow: 0 0 3px #000 inset;}
-div.top ul div{padding: 3px 0 0 70px; font-size: 12px; color: #a1c9f8;}
-div.top ul h1{padding: 5px 0 0 70px; color: #FFF;}
-div.top ul h1 span{font-size: 16px; padding-left: 10px; color: #90bff8;}
+div.avatar img.avatar{float: left;}
+div.avatar ul div{padding: 3px 0 0 180px; font-size: 12px; color: #CCC;}
+div.avatar ul h1{padding: 5px 0 0 180px; color: #000; font-family: 'microsoft yahei';}
+div.avatar ul div.desc{font-size: 16px; color: #90bff8;}
 
 img.QRcode{display: block; margin: auto; width: 100%;}
-
-ol{float: left; width: 190px; margin: auto;}
-ol ul{margin-bottom: 10px; padding: 10px; background: #EBEBEB; border-radius: 10px;}
-ol li{padding: 3px 0; font-size: 14px; display: block;}
-ol h1{padding: 10px 0 5px 0; margin: 0 0 5px 0; font-size: 16px; border-bottom: 1px solid #EBEBEB;}
 
 div.foot{background: #000; padding: 5px;}
 div.foot li{color: #CCC; font-size: 12px; padding: 3px;}
@@ -24,12 +19,33 @@ div.foot li a{color: #FFF; text-decoration: none;}
 
 .clear{clear: both; font-size: 0; height: 0; display: block;}
 
-div.right{padding-left: 200px; max-width: 1000px; background: #FFF;}
+div.videoBackground{background: #EBEBEB; padding: 30px 0; border-bottom: 1px #CCC solid; margin-bottom: 20px;}
+div.videoBox{width: 1200px; height: 600px; margin: auto; box-shadow: 0 0 10px #000;}
 
-div.video{margin-bottom: 10px; padding-right: 5px;}
-div.video video#boss{width: 100%; background: #000; box-shadow: 0 0 5px #000;}
+div.video{margin-bottom: 10px; padding-right: 400px;}
+div.video video#boss{width: 800px; height: 600px; background: #000;}
 /* div.video{position: relative;} */
 div.video video#me{position: absolute; right: 10px; bottom: 10px; width: 200px;}
 
-div.input{padding: 10px; background: #EBEBEB; margin-right: 5px;}
+div.video div.list{padding: 0 5px;}
+
+
+div.chatBox{width: 400px; float: right; height: 600px; background: #FFF;}
+
+div.input{padding: 0 10px; height: 49px; line-height: 49px; border-top: 1px #EBEBEB solid;}
 input#say{width: 100%; border: none; outline: none; background: none; font-size: 24px;}
+
+div.chat{margin: 10px; height: 530px; overflow-y: auto;}
+div.chat li{list-style: none;}
+
+div.list{background: #EBEBEB; margin: auto; width: 1190px; height: 210px; margin-bottom: 20px; padding: 5px; overflow: hidden;}
+
+div.mian{width: 1200px; margin: auto;}
+
+ol{float: left; width: 180px; margin: auto;}
+ol ul{margin-bottom: 20px; padding: 10px; background: #EBEBEB;}
+ol li{padding: 3px 0; font-size: 14px; display: block;}
+ol h1{padding: 10px 0 5px 0; margin: 0 0 5px 0; font-size: 16px; border-bottom: 1px solid #EBEBEB;}
+
+div.right{padding-left: 200px;}
+div.right ul h1{padding: 10px 0 5px 0; margin: 0 0 5px 0; font-size: 16px; border-bottom: 1px solid #EBEBEB;}

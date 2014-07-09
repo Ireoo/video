@@ -46,25 +46,48 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <meta name="description" content="<?php echo $person['desc']; ?>" />
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript">
-
-    </script>
+    <script src="http://localhost/socket.io/socket.io.js"></script>
+    <script src="http://localhost/webrtc.io.js"></script>
+    <script src="/io.js"></script>
 
 </head>
 <body>
 <div class="top">
-    <div class="mian">
+
+</div>
+
+<div class="videoBackground">
+
+    <div class="avatar">
         <img class="avatar" src="http://ireoo.com/<?php echo $person['avatar_large']; ?>" />
         <ul>
-            <h1><?php echo $person['realname']; ?><span><?php echo $person['synopsis']; ?></span></h1>
+            <h1><?php echo $person['realname']; ?></h1>
 
-            <?php
-            $bothday = mktime(0, 0, 0, $person['mouth'], $person['day'], $person['year']);
-            ?>
+            <div class="desc"><?php echo $person['synopsis']; ?></div>
             <div><?php echo 'http://v.ireoo.com/' . $id; ?></div>
         </ul>
+        <div class="clear"></div>
+    </div>
+
+    <div class="videoBox">
+
+        <div class="chatBox">
+            <div class="chat"></div>
+            <div class="input">
+                <input id="say" />
+            </div>
+        </div>
+
+        <div class="video">
+            <video id="boss" autoplay></video>
+            <video id="me" style="display: none;" autoplay muted></video>
+        </div>
+
+        <div class="clear"></div>
     </div>
 </div>
+
+<div class="list"></div>
 
 <div class="mian">
 
@@ -92,9 +115,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
             <li><?php echo $person['desc']; ?></li>
         </ul>
 
-        <ul class="gift">
-            <h1>礼物</h1>
-        </ul>
+
 
         <ul>
             <h1>二维码</h1>
@@ -104,25 +125,17 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
             <li><button id="follow" style="width: 100%; height: 50px; background: #4898F8; color: #FFF; font-size: 24px; border: none;">关注我</button></li>
         </ul>
 
-        <ul class="list">
-            <h1>用户列表</h1>
-        </ul>
     </ol>
 
     <div class="right">
-        <div class="video">
-            <video id="boss" autoplay></video>
-            <video id="me" style="display: none;" autoplay muted></video>
-        </div>
-        <div class="input">
-            <input id="say" />
-        </div>
 
-        <div class="chat">
-
-        </div>
+        <ul class="gift">
+            <h1>礼物</h1>
+        </ul>
 
     </div>
+
+
     <div class="clear"></div>
 
 </div>
