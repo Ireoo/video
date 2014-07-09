@@ -1,9 +1,12 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
 date_default_timezone_set("PRC");
-
+session_start();
 include_once('lib/mysql.class.php');
+include_once('lib/user.class.php');
+include_once('include/config.php');
 
+//print_r($o);
 
 $id = $_GET['id'];
 if(!isset($_GET['id'])) $id = 123456789;
@@ -16,10 +19,10 @@ $sql = array(
 
 $person = $mysql->row($sql);
 
-if(!is_array($person)) {
-    include('error.php');
-    exit();
-}
+//if(!is_array($person)) {
+//    include('error.php');
+//    exit();
+//}
 
 //QRcode
 include_once('app/phpqrcode/qrlib.php');
@@ -44,29 +47,42 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <title><?php echo $person['realname']; ?> 的直播间</title>
     <meta name="keywords" content="<?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
     <meta name="description" content="<?php echo $person['desc']; ?>" />
+    <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script src="http://localhost/socket.io/socket.io.js"></script>
-    <script src="http://localhost/webrtc.io.js"></script>
-    <script src="/io.js"></script>
+    <script style="text/javascript" src="http://localhost/socket.io/socket.io.js"></script>
+    <script style="text/javascript" src="http://localhost/webrtc.io.js"></script>
+    <script style="text/javascript">
+        <?php if(!is_array($o)) { ?>
+        var name = '游客';
+        <?php }else{ ?>
+        var name = '<?php echo $o['username']; ?>';
+        <?php } ?>
+        var avatar = 'http://ireoo.com/<?php echo $person['avatar_large']; ?>';
+        var myip = '<?php echo thisIP(); ?>';
+    </script>
+    <script style="text/javascript" src="/io.js"></script>
 
 </head>
 <body>
-<div class="top">
-
-</div>
+<?php include_once('include/head.php'); ?>
 
 <div class="videoBackground">
 
-    <div class="avatar">
-        <img class="avatar" src="http://ireoo.com/<?php echo $person['avatar_large']; ?>" />
-        <ul>
-            <h1><?php echo $person['realname']; ?></h1>
+<!--    <div class="avatar">-->
+<!--        <img class="avatar" src="http://ireoo.com/--><?php //echo $person['avatar_large']; ?><!--" />-->
+<!--        <ul>-->
+<!--            <h1>--><?php //echo $person['realname']; ?><!--</h1>-->
+<!---->
+<!--            <div class="desc">--><?php //echo $person['synopsis']; ?><!--</div>-->
+<!--            <div>--><?php //echo 'http://v.ireoo.com/' . $id; ?><!--</div>-->
+<!--        </ul>-->
+<!--        <div class="clear"></div>-->
+<!--    </div>-->
 
-            <div class="desc"><?php echo $person['synopsis']; ?></div>
-            <div><?php echo 'http://v.ireoo.com/' . $id; ?></div>
-        </ul>
-        <div class="clear"></div>
+    <div class="title">
+        <h1><?php echo $person['realname']; ?> 的直播间</h1>
+        <span>ID: <?php echo $id; ?></span>
     </div>
 
     <div class="videoBox">

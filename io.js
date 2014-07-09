@@ -2,10 +2,6 @@
  * Created by Ultra on 14-7-9.
  */
 $(function() {
-    var name = 'ireoo' + Math.floor(Math.random()*1000000+1);
-    var avatar = 'http://ireoo.com/uploads/u/a123456789.jpg';
-    var myip = 'www.ireoo.com';
-
 
     /**
      * 连接服务器

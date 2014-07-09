@@ -1,0 +1,41 @@
+/* body{background: url(/images/reg_bg.png); border-top: 5px #000 solid;} */
+
+div.logo{margin-bottom: 100px; border-bottom: 1px #CCC solid;}
+div.logo div{display: block; margin: auto; max-width: 800px; padding-top: 30px; padding-bottom: 30px;}
+div.logo div a{font-weight: bold; font-size: 31px; text-decoration: none; color: #4898F8;}
+div.logo div a:hover{color: #2588f8;}
+div.logo div a.right{float: right; display: inline-block; line-height: 30px; height: 30px; padding-left: 10px; padding-right: 10px; font-size: 20px; color: #666; border: 1px #666 dashed; font-weight: normal;}
+div.logo div a.right:hover{color: #666; background: #CCC;}
+
+div.mian{max-width: 800px; margin: auto; margin-bottom: 200px;}
+div.mian div{margin-bottom: 20px; border-bottom: 1px #CCC solid;}
+div.mian div h1{margin-bottom: 10px; color: #333;}
+div.mian div h2{margin-bottom: 20px; font-weight: normal; font-size: 12px; color: #999;}
+div.mian ul h3{font-size: 18px; line-height: 40px; height: 40px; color: #FFF; background: green; margin-bottom: 10px; padding-left: 10px; font-weight: normal;}
+
+div.mian ul{list-style: none; width: 490px; margin: auto;}
+
+li{margin-bottom: 5px;}
+li label{display: block; color: #333; font-size: 14px; line-height: 30px;}
+li div{float: right; width: 390px; position: relative;}
+input{width: 468px; font-size: 18px; padding: 10px;}
+div input.sl{width: 60px;}
+li div span{padding-left: 30px; display: inline-block; line-height: 16px; position: relative; width: 162px; position: absolute; top: 5px; right: 0px;}
+li span, a.get{text-decoration: none; color: #666; font-size: 12px;}
+a.get:hover{text-decoration: underline; color: #67d37b;}
+li.button{margin-top: 30px; padding-left: 100px;}
+button{background: #6394D0; border: none; font-size: 14px; color: #FFF; padding: 10px; font-weight: bold; cursor: pointer;}
+button:hover{background: #A2BFE3;}
+li.c{display: none;}
+span.ur{display: none; line-height: 30px; height: 30px; font-size: 14px;}
+
+div.right{width: 200px; float: right; border: 1px #CCC solid; padding: 20px;}
+
+div.result{border: 1px #F90 solid; background: #ffecd1; padding: 5px; display: none; font-size: 12px; font-weight: normal; color: #F90; width: 378px;}
+
+i{background: url(/include/images/ico_warn.png) no-repeat; width: 16px; height: 16px; display: inline-block; position: absolute; top: 0; left: 10px;}
+i.ok{background-position: 0px 0px;}
+i.error{background-position: 0px -50px;}
+i.notice{background-position: 0px -100px;}
+
+li.result{padding: 5px; border: 1px #f8e480 solid; background: #f8efcc; font-size: 12px; display: none;}

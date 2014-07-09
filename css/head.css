@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+/*
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    -webkit-transition: font-size 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    transition: font-size 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+*/
+}
+
+img, textarea, div, object{vertical-align: bottom; border: none;}
+input, textarea, select{outline: none; border: 1px #CCC solid; background: #FFF;}
+
+.clear{clear:both; height: 0; line-height: 0px; font-size: 0; float: none;}
+
+h1{font-family: Arial, Helvetica, sans-serif;}
+
+div.meun{height: 60px; width: 100%; background: #FFF; border-bottom: 1px #CCC solid;}
+
+/*   导航css   */
+ul.meun{list-style: none; max-width: 1200px; margin: auto; height: 60px;}
+/*  background-image: -webkit-linear-gradient(top, #333 0px, #000 100%); */
+ul.meun *{text-decoration: none; list-style: none;}
+ul.meun span{cursor: pointer;}
+ul.meun li{float: left; height: 60px; line-height: 60px;}
+
+/*  background-image: -webkit-linear-gradient(top, #4e8fd2 0px, #0CF 100%); */
+ul.meun li{margin-right: 20px;}
+ul.meun li a{color: RGB(102, 117, 127); display: inline-block; height: 60px; line-height: 60px; font-family: '黑体'; font-size: 30px; font-weight: bold;}
+ul.meun li a:hover{color: RGB(19, 133, 178);}
+
+ul.meun li input{background: #000; border: none; width: 300px; padding: 5px; padding-left: 30px; color: #CCC;}
+ul.meun li input:focus{background: #333;}
+
+ul.meun li ul{background:#333; top:30px; left:-1px; position:absolute; display:none; border: 1px #000 solid; border-top: none; width: 44px;}
+ul.meun li.on ul{display:block; *padding-bottom:3px;}
+ul.meun li ul li{clear:both;}
+ul.meun li ul li.on{background: #EBEBEB;}
+ul.meun li ul li.on a{color: #333;}
+
+ul.meun div{float:right;  height: 60px; overflow: hidden; font-size: 12px; line-height: 60px; color: RGB(102, 117, 127);}
+ul.meun div a{color: RGB(102, 117, 127); display: inline-block; height: 60px; line-height: 60px;}
+ul.meun div a span{padding-left: 10px; padding-right: 10px; height: auto; font-size: 12px;}
+ul.meun div a:hover{color: RGB(19, 133, 178); background: #FFF;}
+ul.meun div a.last span{border-right: none;}
+ul.meun div a.reg{color: #F00;}
+ul.meun div a img{width: 30px; height: 30px; margin-bottom: 15px; border-radius: 3px;}
+
+ul.meun div.login a span{}
+ul.meun div.login a.last span{width: 30px;}
+
+
+/*   全局css   */
+fieldset{color: #333;border: none; border-top: 1px #CCC solid; margin-bottom: 10px; position: relative;}
+fieldset legend{color: #333; font-size: 12px; font-weight: bold; margin-left: 10px; padding-left: 5px; padding-right: 5px;}
+fieldset a.edit{position: absolute; top: -3px; display: inline-block; line-height: 16px; padding-left: 10px; padding-right: 10px; text-decoration: none; right: 0px; color: #333; background: #F7F7F7; border: 1px #CCC solid; font-size: 12px; border-radius: 10px;}
+fieldset a.edit:hover{background: #4e8fd2; border: 1px #06F solid; color: #FFF; text-decoration: none;}
+fieldset a.more{position: absolute; top: -3px; display: inline-block; line-height: 16px; padding-left: 10px; padding-right: 10px; text-decoration: none; right: 10px; color: #333; background: #F7F7F7; border: 1px #CCC solid; font-size: 12px; border-radius: 10px;}
+fieldset a.more:hover{background: #4e8fd2; border: 1px #06F solid; color: #FFF; text-decoration: none;}
+
+/*     button     */
+.button{display: inline-block; border: 1px #999 solid; font-size: 12px; background: url(../include/images/button.png) -1px -147px no-repeat; border-bottom-color: rgb(136, 136, 136); border-left-color: rgb(153, 153, 153); border-right-color: rgb(153, 153, 153); border-top-color: rgb(153, 153, 153); box-shadow: rgba(0, 0, 0, 0.1980392) 0px 1px 0px 0px; cursor: pointer;}
+.button.click{box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px 0px inset; background: rgb(221, 221, 221);}
+.button span{display: inline-block; font-size: 12px; padding: 5px; padding-left: 10px; padding-right: 10px; color: RGB(51, 51, 51); font-weight: bold;}
+
+button{background: #6394D0; border: none; font-size: 14px; color: #FFF; font-weight: bold; cursor: pointer;}
+button:hover{background: #A2BFE3;}
+
+i.add{width: 16px; height: 16px; display: inline-block; background: url(../include/images/1e7BH6Rysyh.png) no-repeat -34px -525px;}
+
+span.renzheng{color: #FFF; background: green; display: inline-block; width: 30px; height: 30px; border-radius: 30px; content: '\f099'; font-family: "rosettaicons";}
