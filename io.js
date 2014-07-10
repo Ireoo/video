@@ -11,7 +11,9 @@ $(function() {
 
 
     socket.on('chatall', function(msg) {
-        chatcom(msg.id, msg.avatar, msg.msg, msg.timer, false);
+        if(msg.room == room) {
+            chatcom(msg.id, msg.avatar, msg.msg, msg.timer, false);
+        }
     });
 
     socket.on('change', function(socketid) {
@@ -23,27 +25,34 @@ $(function() {
     });
 
     socket.on('loginIn', function(user) {
-
-        addplayer(user.id, user.name, user.avatar);
-        systemmsg('用户 ' + user.name + ' 进入聊天室.');
+        if(user.room == room) {
+            addplayer(user.id, user.name, user.avatar);
+            systemmsg('用户 ' + user.name + ' 进入聊天室.');
+        }
 
     });
 
     socket.on('getplayers', function(users) {
 
         systemmsg('获取用户列表...');
-        for(var i = 0; i < users.length; i++) {
-            addplayer(users[i].id, users[i].name, users[i].avatar);
-        }
+
         addplayer('', name + '(自己)', avatar);
+        for(var i = 0; i < users.length; i++) {
+            if(users[i].room == room) {
+                addplayer(users[i].id, users[i].name, users[i].avatar);
+            }
+        }
+
         systemmsg('获取用户列表完成.');
 
     });
 
     socket.on('system', function(data) {
 
-        systemmsg(data.msg);
-        //alert(data);
+        if(data.room == room || data.room == 0) {
+            systemmsg(data.msg);
+            //alert(data);
+        }
 
     });
 
@@ -52,7 +61,8 @@ $(function() {
      */
     socket.emit('login', {
         name : name,
-        avatar : avatar
+        avatar : avatar,
+        room : room
     });
 
     /**
@@ -69,15 +79,18 @@ $(function() {
 
             if(chatinput.val() != '') {
 
+                var timer = (new Date()).getTime();
                 socket.emit('chatall', {
+                    room  : room,
                     id    : name,
                     msg   : chatinput.val(),
                     avatar: avatar,
                     ip    : myip,
                     timer : 0
                 });
-                chatcom(name, avatar, chatinput.val(), (new Date()).getTime(), true);
+                chatcom(name, avatar, chatinput.val(), timer, true);
                 chatinput.val('');
+
             }
 
             return false;
@@ -203,6 +216,5 @@ $(function() {
         // show the remote video
         rtc.attachStream(stream, 'boss');
     });
-
 
 });
