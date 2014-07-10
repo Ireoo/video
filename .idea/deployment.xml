@@ -2,13 +2,6 @@
 <project version="4">
   <component name="PublishConfigData" serverName="w.ireoo.com">
     <serverData>
-      <paths name="ireoo">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="w.ireoo.com">
         <serverdata>
           <mappings>
