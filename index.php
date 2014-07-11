@@ -55,10 +55,11 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <script style="text/javascript">
         <?php if(!is_array($o)) { ?>
         var name = '游客';
+        var avatar = 'http://ireoo.com/include/images/i_quanquan_on.png';
         <?php }else{ ?>
         var name = '<?php echo $o['username']; ?>';
-        <?php } ?>
         var avatar = 'http://ireoo.com/<?php echo $person['avatar_large']; ?>';
+        <?php } ?>
         var myip = '<?php echo thisIP(); ?>';
         var room = '<?php echo $person['id']; ?>';
     </script>
