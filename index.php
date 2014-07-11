@@ -61,8 +61,6 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         var avatar = 'http://ireoo.com/<?php echo $person['avatar_large']; ?>';
         var myip = '<?php echo thisIP(); ?>';
         var room = '<?php echo $person['id']; ?>';
-
-        //s(name, avatar, myip, '<?php echo $person['id']; ?>');
     </script>
     <script style="text/javascript" src="/io.js"></script>
 

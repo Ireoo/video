@@ -16,12 +16,12 @@ $(function() {
         }
     });
 
-    socket.on('change', function(socketid) {
-
-        $('div.list li#' + socketid.id).remove();
-        console.log('div.list li#' + socketid.id);
-        systemmsg('用户 ' + socketid.name + ' 离开聊天室.');
-
+    socket.on('change', function(user) {
+        if(user.room == room) {
+            $('div.list li#' + user.id).remove();
+            console.log('div.list li#' + user.id);
+            systemmsg('用户 ' + user.name + ' 离开聊天室.');
+        }
     });
 
     socket.on('loginIn', function(user) {
