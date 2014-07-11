@@ -122,18 +122,11 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
         <ul>
             <h1>资料</h1>
-            <li><?php echo '年龄：' . (DATE('Y', time() - $bothday) - 1970); ?></li>
+            <li><?php echo '年龄：' . (DATE('Y') - $person['year']); ?></li>
             <li><?php echo '生日：' . $person['year'] . '年' . $person['mouth'] . '月' . $person['day'] . '日'; ?></li>
             <li><?php echo '性别：' . $person['sex']; ?></li>
             <li><?php echo '情感：' . $person['love']; ?></li>
         </ul>
-
-        <ul>
-            <h1>简介</h1>
-            <li><?php echo $person['desc']; ?></li>
-        </ul>
-
-
 
         <ul>
             <h1>二维码</h1>
