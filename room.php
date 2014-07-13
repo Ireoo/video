@@ -24,6 +24,18 @@ $person = $mysql->row($sql);
 //    exit();
 //}
 
+$sql = array(
+    'table' => 'video',
+    'condition' => "uid = $id"
+);
+
+$video = $mysql->row($sql);
+
+//if(!is_array($person)) {
+//    include('error.php');
+//    exit();
+//}
+
 //QRcode
 include_once('app/phpqrcode/qrlib.php');
 
@@ -44,14 +56,13 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><?php echo $person['video']; ?> - 琦益直播</title>
-    <meta name="keywords" content="<?php echo $person['video']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
+    <title><?php echo $person['title']; ?> - 琦益直播</title>
+    <meta name="keywords" content="<?php echo $person['title']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
     <meta name="description" content="<?php echo $person['desc']; ?>" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script style="text/javascript" src="http://115.29.39.169:8000/socket.io/socket.io.js"></script>
-    <script style="text/javascript" src="http://115.29.39.169:8000/webrtc.io.js"></script>
     <script style="text/javascript">
         <?php if(!is_array($o)) { ?>
         var name = '游客';
@@ -61,6 +72,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         var avatar = 'http://ireoo.com/<?php echo $person['avatar_large']; ?>';
         <?php } ?>
         var room = '<?php echo $person['id']; ?>';
+        var thisURL = '<?php echo curPageURL(); ?>';
     </script>
     <script style="text/javascript" src="/io.js"></script>
 
@@ -82,7 +94,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <!--    </div>-->
 
     <div class="title">
-        <h1><?php echo $person['realname']; ?> 的直播间</h1>
+        <h1><?php echo $person['title']; ?></h1>
         <span>ID: <?php echo $id; ?></span>
     </div>
 
@@ -137,9 +149,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
             <h1>二维码</h1>
             <li><img class="QRcode" src="<?php echo $PNG_WEB_DIR.basename($filename); ?>" /></li>
-            <li>扫描二维码将信息保存到手机通讯录</li>
 
-            <li><button id="follow" style="width: 100%; height: 50px; background: #4898F8; color: #FFF; font-size: 24px; border: none;">关注我</button></li>
         </ul>
 
     </ol>
