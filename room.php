@@ -61,7 +61,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <meta name="description" content="<?php echo $person['desc']; ?>" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script style="text/javascript" src="http://115.29.39.169:8000/socket.io/socket.io.js"></script>
     <script style="text/javascript">
         <?php if(!is_array($o)) { ?>

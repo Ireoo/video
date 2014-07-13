@@ -79,7 +79,7 @@ $(function() {
         //alert(chatinput.val());
         if(e.keyCode == 13) {
 
-            if(name != '游客') {
+//            if(name != '游客') {
                 if(chatinput.val() != '') {
                     var timer = (new Date()).getTime();
                     socket.emit('say to everyone', {
@@ -88,9 +88,9 @@ $(function() {
                     chatcom(name, avatar, chatinput.val(), timer, true);
                     chatinput.val('');
                 }
-            }else{
-                chatcom(name, avatar, '对不起，亲爱的游客，您还没有登录哦，请先<a href="http://w.ireoo.com/login.php?url=' + thisURL + '">登录</a>', timer, true);
-            }
+//            }else{
+//                chatcom(name, avatar, '对不起，亲爱的游客，您还没有登录哦，请先<a href="http://w.ireoo.com/login.php?url=' + thisURL + '">登录</a>', timer, true);
+//            }
 
             return false;
         }
