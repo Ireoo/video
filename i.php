@@ -49,6 +49,7 @@ $player = $mysql->row($sql);
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/i.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
+
 </head>
 <body>
 <?php include_once('include/head.php'); ?>
@@ -62,6 +63,7 @@ $player = $mysql->row($sql);
             <ul class="caidan">
                 <img src="http://ireoo.com/<?php echo $o['avatar_large']; ?>" />
                 <li><a href="?i=basic">基本信息</a></li>
+                <li><a href="?i=avatar">头像设置</a></li>
                 <li><a href="?i=logo">海报设置</a></li>
                 <li><a href="?i=yy">YY直播频道绑定</a></li>
                 <li><a href="?i=gift">礼物</a></li>
@@ -69,29 +71,14 @@ $player = $mysql->row($sql);
 
             <ul class="mian">
 
-                <form action="?edit=yes" method="post">
-                    <li>
-                        <label>直播间名称</label>
-                        <input name="title" value="<?php echo $player['title']; ?>" />
-                    </li>
-
-                    <li>
-                        <label>直播间logo</label>
-                        <input name="logo" value="<?php echo $player['logo']; ?>" />
-                    </li>
-
-                    <li>
-                        <label>YY ID</label>
-                        <input name="yyVideo" value="<?php echo $player['yyVideo']; ?>" />
-                    </li>
-
-                    <li>
-                        <label>房间介绍</label>
-                        <textarea name="connect"><?php echo $player['connect']; ?></textarea>
-                    </li>
-
-                    <li><button>保存</button></li>
-                </form>
+                <?php
+                if(isset($_GET['i'])) {
+                    $page = $_GET['i'];
+                }else{
+                    $page = 'basic';
+                }
+                include_once('i/' . $page . '.php');
+                ?>
 
             </ul>
 

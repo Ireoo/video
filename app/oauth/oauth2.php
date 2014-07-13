@@ -12,7 +12,7 @@ if(!isset($url['host'])) {
     //print_r($url);
     die('未经授权，无法使用！');
 }
-if($url['host'] != 'open.web.meitu.com' and $url['host'] != 'www.ireoo.com' and $url['host'] != 'ireoo.com' and $url['host'] != 'w.ireoo.com') {
+if($url['host'] != 'open.web.meitu.com' and $url['host'] != 'www.ireoo.com' and $url['host'] != 'ireoo.com' and $url['host'] != 'v.ireoo.com') {
     //print_r($url);
     die('未经授权，无法使用！');
 }
