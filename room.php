@@ -69,7 +69,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         var avatar = 'http://ireoo.com/include/images/i_quanquan_on.png';
         <?php }else{ ?>
         var name = '<?php echo $o['username']; ?>';
-        var avatar = 'http://ireoo.com/<?php echo $person['avatar_large']; ?>';
+        var avatar = 'http://ireoo.com/<?php echo $o['avatar_large']; ?>';
         <?php } ?>
         var room = '<?php echo $person['id']; ?>';
         var thisURL = '<?php echo curPageURL(); ?>';

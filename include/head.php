@@ -9,7 +9,7 @@
             <?php
             }else{
                 ?>
-                <a href="<?php echo HOST_URL; ?>login.php?url=<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>"><span>登陆</span></a>|<a href="http://ireoo.com/reg"><span>免费注册</span></a>
+                <a href="<?php echo HOST_URL; ?>login?url=<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; ?>"><span>登陆</span></a>|<a href="<?php echo HOST_URL; ?>reg"><span>免费注册</span></a>
             <?php
             }
             ?>

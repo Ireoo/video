@@ -54,7 +54,7 @@ $player1 = 28446475; //【Ｈome娱乐】萌小美Ｍｏｎｋｅｙ❤直播间
 
         <?php foreach($players as $key => $value) { $v = $value['video']; ?>
         <li>
-            <a target="player" href="/<?php echo $v['uid']; ?>"><img src="<?php echo $v['logo']; ?>" /></a>
+            <a target="player" href="/<?php echo $v['uid']; ?>"><img src="uploads/logo/<?php echo $v['uid']; ?>.jpg" /></a>
             <h1><a target="player" href="/<?php echo $v['uid']; ?>"><?php echo $v['title']; ?></a></h1>
         </li>
         <?php } ?>

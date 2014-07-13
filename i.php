@@ -56,17 +56,17 @@ $player = $mysql->row($sql);
 
 <div class="mian">
 
+    <?php
+    if(isset($_GET['i'])) {
+        $page = $_GET['i'];
+    }else{
+        $page = 'basic';
+    }
+    ?>
+
     <?php if(is_array($player)) { ?>
 
         <div class="edit">
-
-            <?php
-            if(isset($_GET['i'])) {
-                $page = $_GET['i'];
-            }else{
-                $page = 'basic';
-            }
-            ?>
 
             <ul class="caidan">
                 <img src="http://ireoo.com/<?php echo $o['avatar_large']; ?>" />

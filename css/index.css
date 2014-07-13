@@ -8,7 +8,7 @@ div.background div.mian div.player{position: relative; width: 400px; height: 300
 div.background div.mian div.player embed{position: absolute; left: 0; top: -180px;}
 
 div.mian ul.list{list-style: none;}
-div.mian ul.list li{display: inline-block; width: 180px; padding: 0 10px 0 0;}
-div.mian ul.list li h1{font-size: 14px; padding: 5px 0 10px 0;}
-div.mian ul.list li a{display: inline-block; color: #333; text-decoration: none; font-size: 14px;}
+div.mian ul.list li{display: inline-block; width: 180px; padding: 0 10px 0 0; vertical-align: top;}
+div.mian ul.list li h1{font-size: 12px; padding: 5px 0 10px 0;}
+div.mian ul.list li a{display: inline-block; color: #333; text-decoration: none; font-size: 12px;}
 div.mian ul.list li a img{width: 180px;}
