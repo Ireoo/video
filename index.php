@@ -49,7 +49,7 @@ $player2 = 50326584;
 
 <div class="mian">
 
-    <ul>
+    <ul class="list">
 
         <?php foreach($players as $key => $value) { $v = $value['video']; ?>
         <li>

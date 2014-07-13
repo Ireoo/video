@@ -6,3 +6,8 @@ div.background div.mian{height: 300px;}
 div.background div.mian div.chat{height: 300px; width: 790px; float: left;}
 div.background div.mian div.player{position: relative; width: 400px; height: 300px; background: #000; overflow: hidden; float: right; box-shadow: 0 0 30px #4898F8;}
 div.background div.mian div.player embed{position: absolute; left: 0; top: -180px;}
+
+div.mian ul.list{list-style: none;}
+div.mian ul.list li{display: inline-block; width: 180px; padding: 0 10px 0 0;}
+div.mian ul.list li a{display: inline-block; color: #333; text-decoration: none; font-size: 14px;}
+div.mian ul.list li a img{width: 180px;}
