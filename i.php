@@ -75,6 +75,7 @@ $player = $mysql->row($sql);
                 <a<?php if($page == 'logo') {echo ' class="on"';} ?> href="?i=logo">海报设置</a>
                 <a<?php if($page == 'yy') {echo ' class="on"';} ?> href="?i=yy">YY直播频道绑定</a>
                 <a<?php if($page == 'gift') {echo ' class="on"';} ?> href="?i=gift">礼物统计</a>
+                <a href="http://ireoo.com/i">修改个人详细资料</a>
             </ul>
 
             <ul class="mian">

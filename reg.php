@@ -5,8 +5,7 @@ session_start();
 $get_start_time = time();
 require_once("lib/mysql.class.php");
 require_once("lib/user.class.php");
-require_once("lib/store.class.php");
-require_once("include/php/php.php");
+require_once("include/config.php");
 ?>
 <!DOCTYPE html>
 <html>
