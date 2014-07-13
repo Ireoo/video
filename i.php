@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Ultra
+ * Date: 14-7-13
+ * Time: 下午5:51
+ */
+
 header("Content-type: text/html; charset=utf-8");
 date_default_timezone_set("PRC");
 session_start();
@@ -7,18 +14,10 @@ include_once('lib/user.class.php');
 include_once('include/config.php');
 
 //print_r($o);
+if(!isset($o)) header("Location: http://{$_SERVER['HTTP_HOST']}/login?url={$_SERVER['HTTP_HOST']}/i");
 
 $mysql = new mysql;
 
-$sql = array(
-    'table' => 'video',
-    'condition' => "play = 1"
-);
-
-$players = $mysql->select($sql);
-
-$player1 = 72587511;
-$player2 = 50326584;
 
 ?>
 <!DOCTYPE html>
@@ -52,10 +51,10 @@ $player2 = 50326584;
     <ul>
 
         <?php foreach($players as $key => $value) { ?>
-        <li>
-            <a target="player" href="/<?php echo $value['uid']; ?>"><img src="<?php echo $value['logo']; ?>" /></a>
-            <h1><a target="player" href="/<?php echo $value['uid']; ?>"><?php echo $value['title']; ?></a></h1>
-        </li>
+            <li>
+                <a target="player" href="/<?php echo $value['uid']; ?>"><img src="<?php echo $value['logo']; ?>" /></a>
+                <h1><a target="player" href="/<?php echo $value['uid']; ?>"><?php echo $value['title']; ?></a></h1>
+            </li>
         <?php } ?>
 
     </ul>

@@ -13,7 +13,7 @@ $(function() {
     /**
      * 连接服务器
      */
-    var socket = io.connect("localhost:8000");
+    var socket = io.connect("115.29.39.169:8000");
     var spantimer = [];
 
 
@@ -41,8 +41,11 @@ $(function() {
     socket.on('get users', function(users) {
 
         addplayer('', name + '(自己)', avatar);
+
         for(var i = 0; i < users.length; i++) {
-            addplayer(users[i].id, users[i].name, users[i].avatar);
+            if(users[i].room == room) {
+                addplayer(users[i].id, users[i].name, users[i].avatar);
+            }
         }
         systemmsg('获取用户列表完成.');
 
@@ -76,15 +79,17 @@ $(function() {
         //alert(chatinput.val());
         if(e.keyCode == 13) {
 
-            if(chatinput.val() != '') {
-
-                var timer = (new Date()).getTime();
-                socket.emit('say to everyone', {
-                    msg   : chatinput.val()
-                });
-                chatcom(name, avatar, chatinput.val(), timer, true);
-                chatinput.val('');
-
+            if(name != '游客') {
+                if(chatinput.val() != '') {
+                    var timer = (new Date()).getTime();
+                    socket.emit('say to everyone', {
+                        msg   : chatinput.val()
+                    });
+                    chatcom(name, avatar, chatinput.val(), timer, true);
+                    chatinput.val('');
+                }
+            }else{
+                chatcom(name, avatar, '对不起，亲爱的游客，您还没有登录哦，请先<a href="http://w.ireoo.com/login.php?url=' + thisURL + '">登录</a>', timer, true);
             }
 
             return false;
@@ -193,22 +198,22 @@ $(function() {
      * 创建视频
      *
      */
-    rtc.connect('ws://localhost:8001', room);
-
-    rtc.createStream({"video":
-    {
-        mandatory: { 'minAspectRatio': 2, 'maxAspectRatio': 2 },
-        optional: []
-    },
-        "audio":true
-    }, function(stream){
-        // get local stream for manipulation
-        rtc.attachStream(stream, 'me');
-    });
-
-    rtc.on('add remote stream', function(stream){
-        // show the remote video
-        rtc.attachStream(stream, 'boss');
-    });
+//    rtc.connect('ws://115.29.39.169:8001', room);
+//
+//    rtc.createStream({"video":
+//    {
+//        mandatory: { 'minAspectRatio': 2, 'maxAspectRatio': 2 },
+//        optional: []
+//    },
+//        "audio":true
+//    }, function(stream){
+//        // get local stream for manipulation
+//        rtc.attachStream(stream, 'me');
+//    });
+//
+//    rtc.on('add remote stream', function(stream){
+//        // show the remote video
+//        rtc.attachStream(stream, 'boss');
+//    });
 
 });
