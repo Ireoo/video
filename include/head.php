@@ -5,7 +5,7 @@
             <?php
             if(is_array($o)) {
                 ?>
-                <a href="http://ireoo.com/i"><img src="http://ireoo.com/<?php echo $o['avatar_large']; ?>" /><span><?php echo $o['username']; ?></span></a><a href="#"><span>联系客服</span></a><a href="<?php echo HOST_URL; ?>?loginout=yes"><span>退出</span></a>
+                <a target="_blank" href="/i"><img src="http://ireoo.com/<?php echo $o['avatar_large']; ?>" /><span><?php echo $o['username']; ?></span></a><a href="/<?php echo $o['id']; ?>"><span>直播</span></a><a href="<?php echo HOST_URL; ?>?loginout=yes"><span>退出</span></a>
             <?php
             }else{
                 ?>
