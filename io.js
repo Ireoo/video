@@ -4,45 +4,56 @@
 $(function() {
 
     /**
+     *
+     * 调试代码
+     *
+     */
+    localStorage.debug='*';
+
+    /**
      * 连接服务器
      */
     var socket = io.connect("115.29.39.169:8000");
     var spantimer = [];
 
 
-    socket.on('chatall', function(msg) {
-        chatcom(msg.id, msg.avatar, msg.msg, msg.timer, false);
-    });
+    socket.on('say to everyone', function(msg) {
 
-    socket.on('change', function(socketid) {
-
-        $('div.list li#' + socketid.id).remove();
-        console.log('div.list li#' + socketid.id);
-        systemmsg('用户 ' + socketid.name + ' 离开聊天室.');
+        chatcom(msg.name, msg.avatar, msg.msg, msg.time, false);
 
     });
 
-    socket.on('loginIn', function(user) {
+    socket.on('user disconnect', function(user) {
+
+        $('div.list li#' + user.id).remove();
+        console.log('div.list li#' + user.id);
+        systemmsg('用户 ' + user.name + ' 离开聊天室.');
+
+    });
+
+    socket.on('new user connect', function(user) {
 
         addplayer(user.id, user.name, user.avatar);
         systemmsg('用户 ' + user.name + ' 进入聊天室.');
 
     });
 
-    socket.on('getplayers', function(users) {
+    socket.on('get users', function(users) {
 
-        systemmsg('获取用户列表...');
-        for(var i = 0; i < users.length; i++) {
-            addplayer(users[i].id, users[i].name, users[i].avatar);
-        }
         addplayer('', name + '(自己)', avatar);
+
+        for(var i = 0; i < users.length; i++) {
+            if(users[i].room == room) {
+                addplayer(users[i].id, users[i].name, users[i].avatar);
+            }
+        }
         systemmsg('获取用户列表完成.');
 
     });
 
-    socket.on('system', function(data) {
+    socket.on('system', function(msg) {
 
-        systemmsg(data.msg);
+        systemmsg(msg);
         //alert(data);
 
     });
@@ -50,9 +61,10 @@ $(function() {
     /**
      * 登录服务器命令
      */
-    socket.emit('login', {
+    socket.emit('user connect', {
         name : name,
-        avatar : avatar
+        avatar : avatar,
+        room : room
     });
 
     /**
@@ -69,15 +81,13 @@ $(function() {
 
             if(chatinput.val() != '') {
 
-                socket.emit('chatall', {
-                    id    : name,
-                    msg   : chatinput.val(),
-                    avatar: avatar,
-                    ip    : myip,
-                    timer : 0
+                var timer = (new Date()).getTime();
+                socket.emit('say to everyone', {
+                    msg   : chatinput.val()
                 });
-                chatcom(name, avatar, chatinput.val(), (new Date()).getTime(), true);
+                chatcom(name, avatar, chatinput.val(), timer, true);
                 chatinput.val('');
+
             }
 
             return false;
@@ -186,23 +196,22 @@ $(function() {
      * 创建视频
      *
      */
-    rtc.connect('ws://115.29.39.169:8001', room);
-
-    rtc.createStream({"video":
-    {
-        mandatory: { 'minAspectRatio': 2, 'maxAspectRatio': 2 },
-        optional: []
-    },
-        "audio":true
-    }, function(stream){
-        // get local stream for manipulation
-        rtc.attachStream(stream, 'me');
-    });
-
-    rtc.on('add remote stream', function(stream){
-        // show the remote video
-        rtc.attachStream(stream, 'boss');
-    });
-
+//    rtc.connect('ws://115.29.39.169:8001', room);
+//
+//    rtc.createStream({"video":
+//    {
+//        mandatory: { 'minAspectRatio': 2, 'maxAspectRatio': 2 },
+//        optional: []
+//    },
+//        "audio":true
+//    }, function(stream){
+//        // get local stream for manipulation
+//        rtc.attachStream(stream, 'me');
+//    });
+//
+//    rtc.on('add remote stream', function(stream){
+//        // show the remote video
+//        rtc.attachStream(stream, 'boss');
+//    });
 
 });

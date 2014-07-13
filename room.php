@@ -44,8 +44,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><?php echo $person['realname']; ?> 的直播间</title>
-    <meta name="keywords" content="<?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
+    <title><?php echo $person['video']; ?> - 琦益直播</title>
+    <meta name="keywords" content="<?php echo $person['video']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
     <meta name="description" content="<?php echo $person['desc']; ?>" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -70,16 +70,16 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
 <div class="videoBackground">
 
-<!--    <div class="avatar">-->
-<!--        <img class="avatar" src="http://ireoo.com/--><?php //echo $person['avatar_large']; ?><!--" />-->
-<!--        <ul>-->
-<!--            <h1>--><?php //echo $person['realname']; ?><!--</h1>-->
-<!---->
-<!--            <div class="desc">--><?php //echo $person['synopsis']; ?><!--</div>-->
-<!--            <div>--><?php //echo 'http://v.ireoo.com/' . $id; ?><!--</div>-->
-<!--        </ul>-->
-<!--        <div class="clear"></div>-->
-<!--    </div>-->
+    <!--    <div class="avatar">-->
+    <!--        <img class="avatar" src="http://ireoo.com/--><?php //echo $person['avatar_large']; ?><!--" />-->
+    <!--        <ul>-->
+    <!--            <h1>--><?php //echo $person['realname']; ?><!--</h1>-->
+    <!---->
+    <!--            <div class="desc">--><?php //echo $person['synopsis']; ?><!--</div>-->
+    <!--            <div>--><?php //echo 'http://v.ireoo.com/' . $id; ?><!--</div>-->
+    <!--        </ul>-->
+    <!--        <div class="clear"></div>-->
+    <!--    </div>-->
 
     <div class="title">
         <h1><?php echo $person['realname']; ?> 的直播间</h1>
@@ -91,15 +91,16 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <div class="chatBox">
             <div class="chat"></div>
             <div class="input">
-                <span><img id="face" src="#123" /></span><input id="say" /><button id="sayBT">发送</button>
+                <span><img src="#123" /></span><input id="say" /><button id="sayBT">发送</button>
             </div>
         </div>
 
         <div class="video">
-            <embed src="http://yy.com/s/98227772/0/yyscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 600px";>
-<!--            <video id="boss" autoplay>-->
-<!--                -->
-<!--            </video>-->
+            <?php if($person['yyVideo'] != '') { ?>
+            <embed src="http://yy.com/s/<?php echo $person['yyVideo']; ?>/0/yyscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 600px";>
+            <?php }else{ ?>
+            <video id="boss" autoplay></video>
+            <?php } ?>
             <video id="me" style="display: none;" autoplay muted></video>
         </div>
 
