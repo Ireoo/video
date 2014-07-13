@@ -26,9 +26,9 @@ $player2 = 50326584;
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><?php echo $person['realname']; ?> 的直播间</title>
-    <meta name="keywords" content="<?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
-    <meta name="description" content="<?php echo $person['desc']; ?>" />
+    <title>琦益直播</title>
+    <meta name="keywords" content="主播，主持人，直播，琦益" />
+    <meta name="description" content="琦益直播，由万达信息科技有限公司倾力打造，是你展示自我的舞台！" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
