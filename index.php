@@ -11,8 +11,8 @@ include_once('include/config.php');
 $mysql = new mysql;
 
 $sql = array(
-    'table' => 'video',
-    'condition' => "play = 1"
+    'table' => 'video'
+//    , 'condition' => "play = 1"
 );
 
 $players = $mysql->select($sql);
@@ -51,10 +51,10 @@ $player2 = 50326584;
 
     <ul>
 
-        <?php foreach($players as $key => $value) { ?>
+        <?php foreach($players as $key => $value) { $v = $value['video']; ?>
         <li>
-            <a target="player" href="/<?php echo $value['uid']; ?>"><img src="<?php echo $value['logo']; ?>" /></a>
-            <h1><a target="player" href="/<?php echo $value['uid']; ?>"><?php echo $value['title']; ?></a></h1>
+            <a target="player" href="/<?php echo $v['uid']; ?>"><img src="<?php echo $v['logo']; ?>" /></a>
+            <h1><a target="player" href="/<?php echo $v['uid']; ?>"><?php echo $v['title']; ?></a></h1>
         </li>
         <?php } ?>
 

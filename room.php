@@ -29,7 +29,7 @@ $sql = array(
     'condition' => "uid = $id"
 );
 
-$video = $mysql->row($sql);
+$player = $mysql->row($sql);
 
 //if(!is_array($person)) {
 //    include('error.php');
@@ -56,8 +56,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><?php echo $person['title']; ?> - 琦益直播</title>
-    <meta name="keywords" content="<?php echo $person['title']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
+    <title><?php echo $player['title']; ?> - 琦益直播</title>
+    <meta name="keywords" content="<?php echo $player['title']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
     <meta name="description" content="<?php echo $person['desc']; ?>" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -94,7 +94,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <!--    </div>-->
 
     <div class="title">
-        <h1><?php echo $person['title']; ?></h1>
+        <h1><?php echo $player['title']; ?></h1>
         <span>ID: <?php echo $id; ?></span>
     </div>
 
@@ -108,8 +108,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         </div>
 
         <div class="video">
-            <?php if($person['yyVideo'] != '') { ?>
-            <embed src="http://yy.com/s/<?php echo $person['yyVideo']; ?>/0/yyscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 600px";>
+            <?php if($player['yyVideo'] != '0') { ?>
+            <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/0/yyscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 600px";>
             <?php }else{ ?>
             <video id="boss" autoplay></video>
             <?php } ?>

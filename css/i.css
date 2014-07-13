@@ -1,0 +1,8 @@
+
+div.mian{margin: auto; width: 1200px;}
+
+div.tiaokuan h1{text-align: center; padding: 100px 0 50px 0;}
+div.tiaokuan div.connect{margin-bottom: 50px;}
+div.tiaokuan div.bt{text-align: center;}
+div.tiaokuan div.bt button{padding: 10px 30px;}
+div.tiaokuan div.bt a{padding: 10px 30px; background: #EBEBEB; color: #FFF; font-size: 14px; text-decoration: none;}
