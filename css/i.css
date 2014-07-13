@@ -11,7 +11,7 @@ div.mian div.edit{position: relative;}
 div.mian div.edit ul.caidan{list-style: none; width: 200px; position: absolute; top: 0; left: 0; background: #EBEBEB;}
 div.mian div.edit ul.caidan img{width: 200px;}
 div.mian div.edit ul.caidan a{font-size: 14px; color: #333; padding: 10px 20px; display: block; text-decoration: none; border-bottom: 1px #FFF solid;}
-div.mian div.edit ul.caidan a:hover{font-weight: bold;}
+div.mian div.edit ul.caidan a.on, div.mian div.edit ul.caidan a:hover{font-weight: bold;}
 
 div.mian div.edit ul.mian{list-style: none; padding: 5px 5px 5px 220px;}
 div.mian div.edit ul.mian li{margin-bottom: 20px;}

@@ -60,25 +60,26 @@ $player = $mysql->row($sql);
 
         <div class="edit">
 
+            <?php
+            if(isset($_GET['i'])) {
+                $page = $_GET['i'];
+            }else{
+                $page = 'basic';
+            }
+            ?>
+
             <ul class="caidan">
                 <img src="http://ireoo.com/<?php echo $o['avatar_large']; ?>" />
-                <li><a href="?i=basic">基本信息</a></li>
-                <li><a href="?i=avatar">头像设置</a></li>
-                <li><a href="?i=logo">海报设置</a></li>
-                <li><a href="?i=yy">YY直播频道绑定</a></li>
-                <li><a href="?i=gift">礼物</a></li>
+                <a<?php if($page == 'basic') {echo ' class="on"';} ?> href="?i=basic">基本信息</a>
+                <a<?php if($page == 'avatar') {echo ' class="on"';} ?> href="?i=avatar">头像设置</a>
+                <a<?php if($page == 'logo') {echo ' class="on"';} ?> href="?i=logo">海报设置</a>
+                <a<?php if($page == 'yy') {echo ' class="on"';} ?> href="?i=yy">YY直播频道绑定</a>
+                <a<?php if($page == 'gift') {echo ' class="on"';} ?> href="?i=gift">礼物统计</a>
             </ul>
 
             <ul class="mian">
 
-                <?php
-                if(isset($_GET['i'])) {
-                    $page = $_GET['i'];
-                }else{
-                    $page = 'basic';
-                }
-                include_once('i/' . $page . '.php');
-                ?>
+                <?php include_once('i/' . $page . '.php'); ?>
 
             </ul>
 
