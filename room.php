@@ -74,7 +74,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         var room = '<?php echo $person['id']; ?>';
         var thisURL = '<?php echo curPageURL(); ?>';
     </script>
-    <script style="text/javascript" src="/io.js"></script>
+    <script style="text/javascript" src="js/io.js"></script>
 
 </head>
 <body>
