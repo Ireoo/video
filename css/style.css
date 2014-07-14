@@ -9,7 +9,7 @@ div.avatar ul h1{padding: 5px 0 0 180px; color: #000; font-family: 'microsoft ya
 div.avatar ul div.desc{font-size: 16px; color: #90bff8;}
 
 div.title{width: 1200px; margin: auto; padding: 10px 0;}
-div.title h1{border-left: 5px #4898F8 solid; padding-left: 10px; font-family: 'microsoft yahei'; font-size: 18px; color: #4898F8; display: inline-block; max-width: 300px;}
+div.title h1{border-left: 5px #4898F8 solid; padding: 0 10px; font-family: 'microsoft yahei'; font-size: 18px; color: #4898F8; display: inline-block; max-width: 300px; overflow: hidden; height: 18px; line-height: 18px; white-space: nowrap; text-overflow: ellipsis;}
 div.title span{font-size: 12px;}
 
 img.QRcode{display: block; margin: auto; width: 100%;}
