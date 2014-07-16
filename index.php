@@ -20,6 +20,7 @@ $players = $mysql->select($sql);
 $player1 = 72587511;
 $player2 = 50326584;
 $player1 = 28446475; //【Ｈome娱乐】萌小美Ｍｏｎｋｅｙ❤直播间 新浪微博“萌小美Monkey”求关注
+$player1 = 99678367; //quan
 
 ?>
 <!DOCTYPE html>
