@@ -51,7 +51,7 @@ div.list{background: #EBEBEB; margin: auto; width: 790px; margin-bottom: 20px; p
 div.mian{width: 1000px; margin: auto;}
 
 ol{float: right; width: 360px; margin: auto; padding-top: 72px;}
-ol ul{margin-bottom: 20px; padding: 10px; background: #EBEBEB;}
+ol ul{margin-bottom: 20px;}
 ol li{padding: 3px 0; font-size: 14px; display: block;}
 ol h1{padding: 10px 0 5px 0; margin: 0 0 5px 0; font-size: 16px; border-bottom: 1px solid #EBEBEB;}
 

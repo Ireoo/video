@@ -119,14 +119,9 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
         <div class="con">
 
-
             <ul>
                 <h1>简介</h1>
                 <li><?php echo $person['desc']; ?></li>
-            </ul>
-
-            <ul class="gift">
-                <h1>礼物</h1>
             </ul>
 
         </div>
@@ -146,15 +141,6 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
             <script> var dsaid=49527; var dwidth=360; var dheight=150; </script> <script type="text/javascript" src="http://unionjs.dianxin.com/showPic.js" name="showpic" charset="utf-8" ></script>
 
         </div>
-        <!--        <h1>联系方式</h1>-->
-        <!--        <li>联系电话：--><?php //echo $person['phone']; ?><!--</li>-->
-        <!--        <li>联系QQ：--><?php //echo $person['qq']; ?><!--</li>-->
-        <!--        <li>微信号：--><?php //echo $person['wechat']; ?><!--</li>-->
-        <!--        <li>MSN：--><?php //echo $person['msn']; ?><!--</li>-->
-        <!--        <li>SKYPE：--><?php //echo $person['skype']; ?><!--</li>-->
-        <!--        <li>邮箱：--><?php //echo $person['email']; ?><!--</li>-->
-        <!--        <li>公司：--><?php //echo $person['company']; ?><!--</li>-->
-        <!--        <li>详细地址：--><?php //echo $person['address']; ?><!--</li>-->
 
         <ul>
             <h1>资料</h1>
@@ -162,13 +148,6 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
             <li><?php echo '生日：' . $person['year'] . '年' . $person['mouth'] . '月' . $person['day'] . '日'; ?></li>
             <li><?php echo '性别：' . $person['sex']; ?></li>
             <li><?php echo '情感：' . $person['love']; ?></li>
-        </ul>
-
-        <ul>
-
-            <h1>二维码</h1>
-            <li><img class="QRcode" src="<?php echo $PNG_WEB_DIR.basename($filename); ?>" /></li>
-
         </ul>
 
     </ol>
