@@ -80,53 +80,72 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 <body>
 <?php include_once('include/head.php'); ?>
 
-<div class="videoBackground">
+<div class="all">
 
-    <!--    <div class="avatar">-->
-    <!--        <img class="avatar" src="http://ireoo.com/--><?php //echo $person['avatar_large']; ?><!--" />-->
-    <!--        <ul>-->
-    <!--            <h1>--><?php //echo $person['realname']; ?><!--</h1>-->
-    <!---->
-    <!--            <div class="desc">--><?php //echo $person['synopsis']; ?><!--</div>-->
-    <!--            <div>--><?php //echo 'http://v.ireoo.com/' . $id; ?><!--</div>-->
-    <!--        </ul>-->
-    <!--        <div class="clear"></div>-->
-    <!--    </div>-->
+    <div class="videoBackground">
 
-    <div class="title">
-        <h1><?php echo $player['title']; ?></h1>
-        <span>ID: <?php echo $id; ?></span>
+        <!--    <div class="avatar">-->
+        <!--        <img class="avatar" src="http://ireoo.com/--><?php //echo $person['avatar_large']; ?><!--" />-->
+        <!--        <ul>-->
+        <!--            <h1>--><?php //echo $person['realname']; ?><!--</h1>-->
+        <!---->
+        <!--            <div class="desc">--><?php //echo $person['synopsis']; ?><!--</div>-->
+        <!--            <div>--><?php //echo 'http://v.ireoo.com/' . $id; ?><!--</div>-->
+        <!--        </ul>-->
+        <!--        <div class="clear"></div>-->
+        <!--    </div>-->
+
+        <div class="title">
+            <h1><?php echo $player['title']; ?></h1>
+            <span>ID: <?php echo $id; ?></span>
+        </div>
+
+        <div class="videoBox">
+
+            <div class="video">
+                <?php if($player['yyVideo'] != '0') { ?>
+                    <embed src="http://v.ireoo.com/app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+            <?php }else{ ?>
+                    <video id="boss" autoplay></video>
+                <?php } ?>
+                <video id="me" style="display: none;" autoplay muted></video>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+
+        <div class="list"></div>
+
+        <div class="con">
+
+
+            <ul>
+                <h1>简介</h1>
+                <li><?php echo $person['desc']; ?></li>
+            </ul>
+
+            <ul class="gift">
+                <h1>礼物</h1>
+            </ul>
+
+        </div>
+
     </div>
 
-    <div class="videoBox">
-
+    <ol>
         <div class="chatBox">
             <div class="chat"></div>
             <div class="input">
-                <span><img src="#123" /></span><input id="say" /><button id="sayBT">发送</button>
+                <span><img src="#123" /></span><input id="say" />
             </div>
         </div>
 
-        <div class="video">
-            <?php if($player['yyVideo'] != '0') { ?>
-            <embed src="http://v.ireoo.com/app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:800px; height: 600px";>
-            <?php }else{ ?>
-            <video id="boss" autoplay></video>
-            <?php } ?>
-            <video id="me" style="display: none;" autoplay muted></video>
+        <div style="margin-bottom: 20px;">
+
+            <script> var dsaid=49527; var dwidth=360; var dheight=150; </script> <script type="text/javascript" src="http://unionjs.dianxin.com/showPic.js" name="showpic" charset="utf-8" ></script>
+
         </div>
-
-        <div class="clear"></div>
-    </div>
-</div>
-
-<div class="list"></div>
-
-<div class="mian">
-
-    <ol>
-
-        <div style="margin-bottom: 20px;"><script> var dsaid=44648; var dwidth=250; var dheight=250; </script> <script type="text/javascript" src="http://unionjs.dianxin.com/showPic.js" name="showpic" charset="utf-8" ></script></div>
         <!--        <h1>联系方式</h1>-->
         <!--        <li>联系电话：--><?php //echo $person['phone']; ?><!--</li>-->
         <!--        <li>联系QQ：--><?php //echo $person['qq']; ?><!--</li>-->
@@ -153,23 +172,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         </ul>
 
     </ol>
-
-    <div class="right">
-
-        <ul>
-            <h1>简介</h1>
-            <li><?php echo $person['desc']; ?></li>
-        </ul>
-
-        <ul class="gift">
-            <h1>礼物</h1>
-        </ul>
-
-    </div>
-
-
     <div class="clear"></div>
-
 </div>
 
 </body>

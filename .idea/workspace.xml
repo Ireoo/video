@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io.js" afterPath="$PROJECT_DIR$/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/io.js" afterPath="$PROJECT_DIR$/js/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/video/play.swf" afterPath="$PROJECT_DIR$/app/video/play.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/video/recover.swf" afterPath="$PROJECT_DIR$/app/video/recover.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room2.php" afterPath="$PROJECT_DIR$/room2.php" />
     </list>
     <ignored path="card.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,8 +67,12 @@
       <file leaf-file-name="room.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/room.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="13" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="3895">
-              <folding />
+            <state line="202" column="0" selection-start="6168" selection-end="6168" vertical-scroll-proportion="-29.964285" vertical-offset="2999" max-vertical-offset="3952">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#video#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +80,7 @@
       <file leaf-file-name="room1.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/room1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="65" selection-start="4196" selection-end="4196" vertical-scroll-proportion="-16.214285" vertical-offset="2187" max-vertical-offset="3971">
+            <state line="132" column="0" selection-start="0" selection-end="6156" vertical-scroll-proportion="-11.464286" vertical-offset="2187" max-vertical-offset="3971">
               <folding>
                 <element signature="n#style#0;n#script#1;n#head#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#script#2;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -88,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="131" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.6067538" vertical-offset="203" max-vertical-offset="1235">
+            <state line="39" column="131" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="1235">
               <folding />
             </state>
           </provider>
@@ -115,11 +120,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="room2.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="room2.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/room2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="8" selection-start="3150" selection-end="3370" vertical-scroll-proportion="-10.178572" vertical-offset="1653" max-vertical-offset="3895">
-              <folding />
+            <state line="100" column="14" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.558427" vertical-offset="1403" max-vertical-offset="3952">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#video#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,16 +168,16 @@
         <option value="$PROJECT_DIR$/conf" />
         <option value="$PROJECT_DIR$/include/head.php" />
         <option value="$PROJECT_DIR$/i/basic.php" />
-        <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/i.php" />
         <option value="$PROJECT_DIR$/reg.php" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/room2.php" />
         <option value="$PROJECT_DIR$/io.js" />
         <option value="$PROJECT_DIR$/js/io.js" />
         <option value="$PROJECT_DIR$/room1.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/room.php" />
+        <option value="$PROJECT_DIR$/room2.php" />
       </list>
     </option>
   </component>
@@ -249,6 +258,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,8 +403,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1056" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1932" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -377,7 +418,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18893528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18893528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -644,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="13" selection-start="2301" selection-end="2301" vertical-scroll-proportion="0.0" vertical-offset="1425" max-vertical-offset="3895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/i.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="0" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="2223">
@@ -679,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/room2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="8" selection-start="3150" selection-end="3370" vertical-scroll-proportion="-10.178572" vertical-offset="1653" max-vertical-offset="3895">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/io.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="6" selection-start="2258" selection-end="2679" vertical-scroll-proportion="0.0" vertical-offset="1318" max-vertical-offset="4541">
@@ -700,9 +727,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="131" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.0" vertical-offset="203" max-vertical-offset="1235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/room1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="65" selection-start="4196" selection-end="4196" vertical-scroll-proportion="-16.214285" vertical-offset="2187" max-vertical-offset="3971">
+        <state line="132" column="0" selection-start="0" selection-end="6156" vertical-scroll-proportion="-11.464286" vertical-offset="2187" max-vertical-offset="3971">
           <folding>
             <element signature="n#style#0;n#script#1;n#head#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#script#2;n#head#0;n#html#0;n#!!top" expanded="true" />
@@ -714,10 +748,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="131" selection-start="1909" selection-end="1909" vertical-scroll-proportion="0.6067538" vertical-offset="203" max-vertical-offset="1235">
-          <folding />
+        <state line="202" column="0" selection-start="6168" selection-end="6168" vertical-scroll-proportion="-29.964285" vertical-offset="2999" max-vertical-offset="3952">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="14" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.558427" vertical-offset="1403" max-vertical-offset="3952">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
