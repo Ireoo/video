@@ -24,7 +24,7 @@ div.foot li a{color: #FFF; text-decoration: none;}
 div.all{margin: auto; width: 1180px;}
 
 div.videoBackground{margin-bottom: 20px; padding-top: 30px; width: 800px; float: left;}
-div.videoBox{width: 800px; height: 500px; margin: auto;}
+div.videoBox{width: 800px; height: 500px; margin: auto; box-shadow: 0 0 10px #000;}
 
 div.video{margin-bottom: 10px; padding-right: 400px;}
 div.video video#boss{width: 800px; height: 500px; background: #000;}
@@ -34,15 +34,12 @@ div.video video#me{position: absolute; right: 10px; bottom: 10px; width: 200px;}
 div.video div.list{padding: 0 5px;}
 
 
-div.chatBox{width: 360px; background: #EBEBEB; margin-bottom: 20px; float: right; position: relative;}
+div.chatBox{width: 360px; background: #f9f9f9; margin-bottom: 20px; float: right; position: relative;}
 
-div.input{height: 49px; line-height: 49px; border-top: 1px #CCC solid; background: #EBEBEB; position: absolute; bottom: 0;}
-input#say{width: 288px; outline: none; background: #FFF; border: 1px #CCC solid; font-size: 18px; padding: 5px; margin-right: 10px;}
-div.input span{display: inline-block; width: 50px; height: 49px; line-height: 49px; text-align: center;}
-div.input span img{vertical-align: middle;}
-div.input button{display: inline-block; width: 70px; height: 48px; color: #333; background: #EBEBEB;}
-div.input button:hover{color: #4898F8;}
-
+div.input{border-top: 1px #FFF solid; background: #EBEBEB; position: absolute; bottom: 0; padding: 5px;}
+input#say{width: 310px; outline: none; background: #FFF; border: 1px #CCC solid; font-size: 16px; padding: 5px; vertical-align: middle;}
+div.input span{display: inline-block; width: 18px; height: 18px; margin: 5px; text-align: center; background: url("http://www.yy.com/assets/css/images/icon.png"); background-position: 0 -287px; vertical-align: middle; cursor: pointer;}
+div.input span:hover{background-position: -28px -287px;}
 div.chat{margin: 10px 10px 60px 10px; height: 280px; overflow-y: auto;}
 div.chat li{list-style: none;}
 

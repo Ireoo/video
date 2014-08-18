@@ -10,7 +10,7 @@
 <script src="http://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
 <script type="text/javascript">
 
-    xiuxiu.embedSWF("avatar", 5, 580, 400);
+    xiuxiu.embedSWF("avatar", 5, 980, 400);
 
     xiuxiu.onInit = function ()
     {
