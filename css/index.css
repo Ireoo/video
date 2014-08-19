@@ -2,13 +2,22 @@ div.background{background: #EBEBEB; border-bottom: 1px #CCC solid; margin-bottom
 
 div.mian{margin: auto; width: 1200px;}
 
-div.background div.mian{height: 300px;}
-div.background div.mian div.chat{height: 300px; width: 790px; float: left;}
-div.background div.mian div.player{position: relative; width: 400px; height: 300px; background: #000; overflow: hidden; float: right; box-shadow: 0 0 30px #4898F8;}
-div.background div.mian div.player embed{position: absolute; left: 0; top: -180px;}
+.player.left{top: 0; left: 0;}
+.player.right{top: 0; right: 0;}
 
-div.mian ul.list{list-style: none; margin-bottom: 100px;}
-div.mian ul.list li{display: inline-block; width: 180px; padding: 0 10px 0 0; vertical-align: top;}
+div.background div.mian{height: 300px; width: 400px; padding: 0 400px; position: relative;}
+div.background div.mian div.chat{height: 300px; width: 790px; float: left;}
+div.background div.mian div.player{position: absolute; width: 400px; height: 300px; background: #000; overflow: hidden; box-shadow: 0 0 5px #000;}
+div.background div.mian div.player embed{}
+
+div.mian ul.list{list-style: none; margin-bottom: 100px; float: left; width: 900px;}
+div.mian ul.list li{display: inline-block; width: 100px; padding: 0 0 0 0; vertical-align: top; float: left;}
 div.mian ul.list li h1{font-size: 12px; padding: 5px 0 10px 0;}
-div.mian ul.list li a{display: inline-block; color: #333; text-decoration: none; font-size: 12px;}
-div.mian ul.list li a img{width: 180px;}
+div.mian ul.list li h1 a{display: inline-block; color: #333; text-decoration: none; font-size: 12px; line-height: 14px; overflow: hidden; height: 14px;}
+div.mian ul.list li a img{width: 100px; height: 75px;}
+
+div.mian ol{float: right; width: 280px; background: #4898F8; padding: 10px; height: 130px;}
+div.mian ol h1{font-size: 14px; color: #333; margin-bottom: 5px;}
+div.mian ol input{font-size: 14px; padding: 5px; width: 268px; margin-bottom: 10px; border: 1px solid #2b6ff8;}
+div.mian ol button{padding: 5px 10px; background: #333; color: #CCC;}
+div.mian ol button:hover{background: #000;}

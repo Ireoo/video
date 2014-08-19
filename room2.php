@@ -104,7 +104,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
             <div class="video">
                 <?php if($player['yyVideo'] != '0') { ?>
-                    <embed src="http://v.ireoo.com/app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/0/entscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
             <?php }else{ ?>
                     <video id="boss" autoplay></video>
                 <?php } ?>
@@ -132,7 +132,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <div class="chatBox">
             <div class="chat"></div>
             <div class="input">
-                <span></span><input id="say" placeholder="说点什么吧，按回车键发送" />
+                <span class="face"></span><input id="say" placeholder="说点什么吧，按回车键发送" />
             </div>
         </div>
 

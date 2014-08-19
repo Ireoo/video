@@ -41,10 +41,15 @@ $player1 = 99678367; //quan
 <div class="background">
 
     <div class="mian">
+
         <div class="chat"></div>
-        <div class="player">
-            <embed src="http://yy.com/s/<?php echo $player1; ?>/0/yyscene.swf" type="application/x-shockwave-flash" style="width:400px; height: 660px";>
+        <div class="player left">
+            <embed src="http://v.ireoo.com/app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:400px; height: 300px";>
         </div>
+        <div class="player right">
+            <embed src="http://v.ireoo.com/app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:400px; height: 300px";>
+        </div>
+
     </div>
 
 </div>
@@ -56,11 +61,25 @@ $player1 = 99678367; //quan
         <?php foreach($players as $key => $value) { $v = $value['video']; ?>
         <li>
             <a target="player" href="/<?php echo $v['uid']; ?>"><img src="uploads/logo/<?php echo $v['uid']; ?>.jpg" /></a>
-            <h1><a target="player" href="/<?php echo $v['uid']; ?>"><?php echo $v['title']; ?></a></h1>
+<!--            <h1><a target="player" href="/--><?php //echo $v['uid']; ?><!--">--><?php //echo $v['title']; ?><!--</a></h1>-->
         </li>
         <?php } ?>
 
+        <div class="clear"></div>
+
     </ul>
+
+    <ol>
+
+        <input name="username" type="text" placeholder="用户名" />
+
+        <input name="password" type="password" placeholder="密码" />
+
+        <button>登陆</button>
+
+    </ol>
+
+    <div class="clear"></div>
 
 </div>
 
