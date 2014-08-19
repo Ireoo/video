@@ -125,7 +125,7 @@ $(function() {
     var chatcom = function(name, avatar, msg, timer, ziji) {
         var image = $('<img />').attr('src', avatar).attr('title', name).width(20).height(20).css({borderRadius: '3px', verticalAlign: 'bottom'});
         var a = $('<a />').attr('src', 'http://v.ireoo.com/').text(name + ':').css({'display' : 'block', 'font-size' : '12px', 'margin-bottom' : '5px'});
-        var com = $('<div />').css({background: '#EBEBEB', fontSize: '12px', borderRadius: '3px', padding: '5px', verticalAlign: 'bottom', display: 'inline-block', wordBreak: 'break-all', wordWrap: 'break-word'}).append(msg);
+        var com = $('<div />').css({background: '#EBEBEB', fontSize: '12px', borderRadius: '3px', padding: '5px', verticalAlign: 'bottom', display: 'inline-block', wordBreak: 'break-all', wordWrap: 'break-word', 'vertical-align' : 'middle'}).append(msg);
         if(!ziji) {
             var li = $('<li />').css({marginBottom: '10px'}).append(a).append(com).appendTo(chatroom); //.append(image)
             //alert('ziji');
