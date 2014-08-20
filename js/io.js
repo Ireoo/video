@@ -40,15 +40,29 @@ $(function() {
 
     socket.on('give gift', function(data) {
 
-
+        var giftwidth = parseInt($('div.vs div.bar h1').width());
         //alert(1);
-
-
+        var color = '#CCC';
+        if(data.member >= 1 && data.member < 11) color = 'green';
+        if(data.member >= 11 && data.member < 520) color = 'blue';
+        if(data.member >= 520 && data.member < 1314) color = 'red';
+        if(data.member >= 1314 && data.member < 5201314) color = '#9B13FF';
+        if(data.member >= 5201314) color = '#4898F8';
         //gift(gift);
         if(data.gift == 1) {
-            systemmsg('用户 ' + data.name + ' 给主播送了 ' + data.member + ' 个 赞 .');
+            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 赞 .', color);
+            $('div.vs div.bar h1 span.left i').text(parseInt($('div.vs div.bar h1 span.left i').text()) + parseInt(data.member));
+            var good = parseInt($('div.vs div.bar h1 span.left i').text());
+            var bad = parseInt($('div.vs div.bar h1 span.right i').text());
+            $('div.vs div.bar h1 span.left').animate({width: good/(good+bad)*giftwidth}, {speed: 1000, queue: false});
+            $('div.vs div.bar h1 span.right').animate({width: bad/(good+bad)*giftwidth}, {speed: 1000, queue: false});
         }else{
-            systemmsg('用户 ' + data.name + ' 给主播送了 ' + data.member + ' 个 差 .');
+            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 差 .', color);
+            $('div.vs div.bar h1 span.right i').text(parseInt($('div.vs div.bar h1 span.right i').text()) + parseInt(data.member));
+            var good = parseInt($('div.vs div.bar h1 span.left i').text());
+            var bad = parseInt($('div.vs div.bar h1 span.right i').text());
+            $('div.vs div.bar h1 span.left').animate({width: good/(good+bad)*giftwidth}, {speed: 1000, queue: false});
+            $('div.vs div.bar h1 span.right').animate({width: bad/(good+bad)*giftwidth}, {speed: 1000, queue: false});
         }
 
     });
@@ -68,9 +82,7 @@ $(function() {
 
     socket.on('system', function(msg) {
 
-
         systemmsg(msg);
-
         //alert(data);
 
     });
@@ -150,12 +162,20 @@ $(function() {
     };
 
     var systemmsg = function(msg) {
+
         var com = $('<div />').css({display: 'inline-block', fontSize: '12px', color: '#CCC', margin: 'auto'}).text('[系统] ' + msg);
-
         var li = $('<li />').css({marginBottom: '10px'}).append(com).appendTo(chatroom);
-
         chatheight += li.height() + 10;
         chatroom.animate({scrollTop: chatheight}, 300);
+    };
+
+    var giftmsg = function(msg, color) {
+
+        var com = $('<div />').css({fontSize: '12px', backgroundColor: color, color: '#FFF', padding: '10px', borderRadius: '5px'}).text(msg);
+        var li = $('<li />').css({margin: '10px 0'}).append(com);
+        $('ul.getgift').prepend(li);
+        li.delay(10000).slideUp(1000, function() {$(this).css({backgroundColor: '#FFF'}).remove();});
+
     };
 
     /**
@@ -238,13 +258,14 @@ $(function() {
 
 
 
-    var giftGood = $('<button />').width(30).height(30).text('赞').css({'vertical-align' : 'middle', 'margin-right' : '1px', 'backgroundColor' : '#999'});
-    var giftBad = $('<button />').width(30).height(30).text('差').css({'vertical-align' : 'middle', 'margin-right' : '100px', 'backgroundColor' : '#999'});
-    var giftMember = $('<input />').width(120).height(28).val(1).css({'vertical-align' : 'middle', 'border' : '1px #4898F8 solid', 'padding' : '0 5px'});
-    var giftSend = $('<button />').width(60).height(30).text('赠送').css({'vertical-align' : 'middle'});
+    var giftGood = $('<button />').width(30).height(30).text('赞').attr('title', '消耗0.1元').css({'vertical-align' : 'middle', 'margin-right' : '1px', 'backgroundColor' : '#999'});
+    var giftBad = $('<button />').width(30).height(30).text('差').attr('title', '消耗0.1元').css({'vertical-align' : 'middle', 'margin-right' : '1px', 'backgroundColor' : '#999'});
+    var giftMember = $('<input />').width(120).height(28).val(1).css({'vertical-align' : 'middle', 'border' : '1px #4898F8 solid', 'padding' : '0 5px', 'float' : 'right'});
+    var giftSend = $('<button />').width(60).height(30).text('赠送').css({'vertical-align' : 'middle', 'float' : 'right', 'margin-right' : '1px'});
+    var giftPay = $('<button />').width(60).height(30).text('充值').css({'vertical-align' : 'middle', 'float' : 'right', 'margin-right' : '1px'});
 
     var giftBox = $('div.gift');
-    giftBox.append(giftGood).append(giftBad).append(giftMember).append(giftSend);
+    giftBox.append(giftGood).append(giftBad).append(giftPay).append(giftSend).append(giftMember);
 
     var gift = 0;
 
@@ -297,13 +318,26 @@ $(function() {
     giftSend.click(
         function() {
 
-            socket.emit('gift', {
+            var d = {
                 name : name,
                 gift : gift,
                 member : giftMember.val(),
                 room : room
+            };
+            $.post("/app/post/gift.php", d, function(result){
+                if(result == 'ok') {
+                    socket.emit('gift', d);
+                }else{
+                    alert(result);
+                }
             });
 
+        }
+    );
+
+    giftPay.click(
+        function() {
+            window.open('http://v.ireoo.com/pay', '_blank');
         }
     );
 

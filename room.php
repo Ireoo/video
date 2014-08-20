@@ -19,10 +19,10 @@ $sql = array(
 
 $person = $mysql->row($sql);
 
-//if(!is_array($person)) {
-//    include('error.php');
-//    exit();
-//}
+if(!is_array($person)) {
+    header('Location: http://'.$_SERVER['HTTP_HOST'].'/');
+    exit();
+}
 
 $sql = array(
     'table' => 'video',
@@ -31,10 +31,10 @@ $sql = array(
 
 $player = $mysql->row($sql);
 
-//if(!is_array($person)) {
-//    include('error.php');
-//    exit();
-//}
+if(!is_array($person)) {
+    header('Location: http://'.$_SERVER['HTTP_HOST'].'/');
+    exit();
+}
 
 //QRcode
 include_once('app/phpqrcode/qrlib.php');
@@ -93,7 +93,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
             <div class="video">
                 <?php if($player['yyVideo'] != '0') { ?>
-                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/<?php echo $player['yyVideo']; ?>/entscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/0/yyscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
             <?php }else{ ?>
                     <video id="boss" autoplay></video>
                 <?php } ?>
@@ -106,7 +106,16 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <div class="vs">
 
             <div class="bar">
-                <h1><span class="left"><i>0</i></span><span class="right"><i>0</i></span></h1>
+                <?php
+                if($player['good'] == 0 and $player['good'] == 0){
+                    $barl = 400;
+                    $barr = 400;
+                }else{
+                    $barl = $player['good']/($player['good']+$player['bad'])*800;
+                    $barr = $player['bad']/($player['good']+$player['bad'])*800;
+                }
+                ?>
+                <h1><span class="left" style="width: <?php echo $barl; ?>px;"><i><?php echo $player['good']; ?></i></span><span class="right" style="width: <?php echo $barr; ?>px;"><i><?php echo $player['bad']; ?></i></span></h1>
             </div>
             <div class="gift">
 
@@ -136,6 +145,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
                 <span class="face"></span><input id="say" placeholder="说点什么吧，按回车键发送" />
             </div>
         </div>
+
+        <ul class="getgift"></ul>
 
         <div style="margin-bottom: 20px;">
 

@@ -34,7 +34,7 @@ div.video video#me{position: absolute; right: 10px; bottom: 10px; width: 200px;}
 div.video div.list{padding: 0 5px;}
 
 
-div.chatBox{width: 360px; background: #f9f9f9; margin-bottom: 20px; float: right; position: relative;}
+div.chatBox{width: 360px; background: #f9f9f9; float: right; position: relative;}
 
 div.input{border-top: 1px #FFF solid; background: #EBEBEB; position: absolute; bottom: 0; padding: 5px;}
 input#say{width: 310px; outline: none; background: #FFF; border: 1px #CCC solid; font-size: 16px; padding: 5px; vertical-align: middle;}
@@ -65,3 +65,5 @@ div.vs div.bar h1 span.left{text-align: right; background: #00dd00;}
 div.vs div.bar h1 span.right{text-align: left; background: #ff5b5f;}
 
 div.vs div.gift{padding: 5px; vertical-align: middle;}
+
+ul.getgift{float: right; width: 100%; margin: 0;}
