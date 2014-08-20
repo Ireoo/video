@@ -103,8 +103,20 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
             <div class="clear"></div>
         </div>
 
+        <div class="vs">
+
+            <div class="bar">
+                <h1><span class="left"><i>0</i></span><span class="right"><i>0</i></span></h1>
+            </div>
+            <div class="gift">
+
+            </div>
+
+        </div>
 
         <div class="list"></div>
+
+
 
         <div class="con">
 

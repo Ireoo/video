@@ -19,25 +19,36 @@ $(function() {
 
     socket.on('say to everyone', function(msg) {
 
-        chatcom(msg.name, msg.avatar, msg.msg, msg.time, false);
+        chatcom(msg.name, msg.avatar, msg.msg, msg.time, msg.self);
 
     });
 
     socket.on('user disconnect', function(user) {
 
-        if(user.room == room) {
-            $('div.list li#' + user.id).remove();
-            console.log('div.list li#' + user.id);
-            systemmsg('用户 ' + user.name + ' 离开聊天室.');
-        }
+        $('div.list li#' + user.id).remove();
+        console.log('div.list li#' + user.id);
+        systemmsg('用户 ' + user.name + ' 离开聊天室.');
 
     });
 
     socket.on('new user connect', function(user) {
 
-        if(user.room == room) {
-            addplayer(user.id, user.name, user.avatar);
-            systemmsg('用户 ' + user.name + ' 进入聊天室.');
+        addplayer(user.id, user.name, user.avatar);
+        systemmsg('用户 ' + user.name + ' 进入聊天室.');
+
+    });
+
+    socket.on('give gift', function(data) {
+
+
+        //alert(1);
+
+
+        //gift(gift);
+        if(data.gift == 1) {
+            systemmsg('用户 ' + data.name + ' 给主播送了 ' + data.member + ' 个 赞 .');
+        }else{
+            systemmsg('用户 ' + data.name + ' 给主播送了 ' + data.member + ' 个 差 .');
         }
 
     });
@@ -58,7 +69,7 @@ $(function() {
     socket.on('system', function(msg) {
 
 
-            systemmsg(msg);
+        systemmsg(msg);
 
         //alert(data);
 
@@ -168,7 +179,7 @@ $(function() {
                 socket.emit('say to everyone', {
                     msg   : msg
                 });
-                chatcom(name, avatar, msg, timer, true);
+                //chatcom(name, avatar, msg, timer, true);
                 chatinput.val('');
             }
 //            }else{
@@ -217,6 +228,85 @@ $(function() {
             }
         }
     );
+
+    /**
+     *
+     * 礼物
+     *
+     *
+     */
+
+
+
+    var giftGood = $('<button />').width(30).height(30).text('赞').css({'vertical-align' : 'middle', 'margin-right' : '1px', 'backgroundColor' : '#999'});
+    var giftBad = $('<button />').width(30).height(30).text('差').css({'vertical-align' : 'middle', 'margin-right' : '100px', 'backgroundColor' : '#999'});
+    var giftMember = $('<input />').width(120).height(28).val(1).css({'vertical-align' : 'middle', 'border' : '1px #4898F8 solid', 'padding' : '0 5px'});
+    var giftSend = $('<button />').width(60).height(30).text('赠送').css({'vertical-align' : 'middle'});
+
+    var giftBox = $('div.gift');
+    giftBox.append(giftGood).append(giftBad).append(giftMember).append(giftSend);
+
+    var gift = 0;
+
+    giftGood.click(
+        function() {
+            gift = 1;
+            giftBad.removeClass('on');
+            $(this).addClass('on');
+        }
+    ).hover(
+        function() {
+            if(!$(this).hasClass('on')) {
+                $(this).css({'backgroundColor' : '#333'});
+            }else{
+                $(this).css({'backgroundColor' : '#4898F8'});
+            }
+        },
+        function() {
+            if(!$(this).hasClass('on')) {
+                $(this).css({'backgroundColor' : '#999'});
+            }else{
+                $(this).css({'backgroundColor' : '#4898F8'});
+            }
+        }
+    );
+
+    giftBad.click(
+        function() {
+            gift = 2;
+            giftGood.removeClass('on');
+            $(this).addClass('on');
+        }
+    ).hover(
+        function() {
+            if(!$(this).hasClass('on')) {
+                $(this).css({'backgroundColor' : '#333'});
+            }else{
+                $(this).css({'backgroundColor' : '#4898F8'});
+            }
+        },
+        function() {
+            if(!$(this).hasClass('on')) {
+                $(this).css({'backgroundColor' : '#999'});
+            }else{
+                $(this).css({'backgroundColor' : '#4898F8'});
+            }
+        }
+    );
+
+    giftSend.click(
+        function() {
+
+            socket.emit('gift', {
+                name : name,
+                gift : gift,
+                member : giftMember.val(),
+                room : room
+            });
+
+        }
+    );
+
 
     /**
      *
