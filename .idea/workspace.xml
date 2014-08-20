@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="">
+    <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="更新程序">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/siderHover.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/io.js" afterPath="$PROJECT_DIR$/js/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room2.php" afterPath="$PROJECT_DIR$/room2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\GitHub\video\images\face_all.gif" afterPath="$PROJECT_DIR$/images/all.gif" />
     </list>
     <ignored path="card.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,20 +29,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="avatar.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/i/avatar.php">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="950">
+            <state line="26" column="93" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/index.css">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="42" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
-              <folding />
+            <state line="44" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.4022472" vertical-offset="478" max-vertical-offset="1539">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +53,7 @@
       <file leaf-file-name="room.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/room.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="33" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-53.5" vertical-offset="1048" max-vertical-offset="3553">
+            <state line="134" column="33" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-57.57143" vertical-offset="934" max-vertical-offset="3553">
               <folding>
                 <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -61,50 +62,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="room1.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/room1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="20" selection-start="3334" selection-end="3472" vertical-scroll-proportion="-10.857142" vertical-offset="1710" max-vertical-offset="3952">
-              <folding>
-                <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="io.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="io.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/io.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="7" selection-start="2833" selection-end="2833" vertical-scroll-proportion="0.11655773" vertical-offset="2059" max-vertical-offset="5263">
+            <state line="123" column="0" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.0" vertical-offset="2059" max-vertical-offset="5263">
               <folding>
                 <marker date="1408487247511" expanded="true" signature="5089:5122" placeholder="..." />
                 <marker date="1408487247511" expanded="true" signature="5089:5105" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/icon.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="io.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/io.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="48" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="4541">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="room2.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/room2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="33" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-25.785715" vertical-offset="1824" max-vertical-offset="3553">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -150,12 +115,12 @@
         <option value="$PROJECT_DIR$/i/logo.php" />
         <option value="$PROJECT_DIR$/i/avatar.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/room2.php" />
         <option value="$PROJECT_DIR$/js/io1.js" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/js/io.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/css/index.css" />
       </list>
     </option>
   </component>
@@ -688,29 +653,7 @@
     <entry file="file://$PROJECT_DIR$/room1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="20" selection-start="3334" selection-end="3472" vertical-scroll-proportion="-10.857142" vertical-offset="1710" max-vertical-offset="3952">
-          <folding>
-            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1631" selection-end="1631" vertical-scroll-proportion="-13.464286" vertical-offset="706" max-vertical-offset="1767">
-          <folding>
-            <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="33" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-53.5" vertical-offset="1048" max-vertical-offset="3553">
-          <folding>
-            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -733,19 +676,39 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="0" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.0" vertical-offset="2059" max-vertical-offset="5263">
+          <folding>
+            <marker date="1408487247511" expanded="true" signature="5089:5122" placeholder="..." />
+            <marker date="1408487247511" expanded="true" signature="5089:5105" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="33" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-57.57143" vertical-offset="934" max-vertical-offset="3553">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="42" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+        <state line="26" column="93" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/io.js">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="7" selection-start="2833" selection-end="2833" vertical-scroll-proportion="0.11655773" vertical-offset="2059" max-vertical-offset="5263">
+        <state line="44" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.4022472" vertical-offset="478" max-vertical-offset="1539">
           <folding>
-            <marker date="1408487247511" expanded="true" signature="5089:5122" placeholder="..." />
-            <marker date="1408487247511" expanded="true" signature="5089:5105" placeholder="..." />
+            <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -11,7 +11,8 @@ include_once('include/config.php');
 $mysql = new mysql;
 
 $sql = array(
-    'table' => 'video'
+    'table' => 'video',
+    'order' => 'uid desc'
 //    , 'condition' => "play = 1"
 );
 
@@ -38,8 +39,8 @@ $player1 = 99678367; //quan
 <body>
 <?php include_once('include/head.php'); ?>
 
-<div class="background">
 
+<div class="pk">
     <div class="mian">
 
         <div class="chat"></div>
@@ -51,36 +52,22 @@ $player1 = 99678367; //quan
         </div>
 
     </div>
-
 </div>
 
-<div class="mian">
+<div class="background">
+    <div class="mian">
 
-    <ul class="list">
+        <ul class="list">
+            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li><a target="player" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
+        </ul>
 
-        <?php foreach($players as $key => $value) { $v = $value['video']; ?>
-        <li>
-            <a target="player" href="/<?php echo $v['uid']; ?>"><img src="uploads/logo/<?php echo $v['uid']; ?>.jpg" /></a>
-<!--            <h1><a target="player" href="/--><?php //echo $v['uid']; ?><!--">--><?php //echo $v['title']; ?><!--</a></h1>-->
-        </li>
-        <?php } ?>
+        <ol>
+            <a class="reload"><i></i></a><a class="login" href="login"><i></i></a><a class="reg" href="reg"><i></i></a>
+        </ol>
 
         <div class="clear"></div>
 
-    </ul>
-
-    <ol>
-
-        <input name="username" type="text" placeholder="用户名" />
-
-        <input name="password" type="password" placeholder="密码" />
-
-        <button>登陆</button>
-
-    </ol>
-
-    <div class="clear"></div>
-
+    </div>
 </div>
 
 </body>

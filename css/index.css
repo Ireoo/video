@@ -1,23 +1,31 @@
-div.background{background: #EBEBEB; border-bottom: 1px #CCC solid; margin-bottom: 20px; padding: 100px 0 50px 0;}
+div.pk{padding: 50px 0;}
+div.background{background: #333; border-top: 1px #000 solid; border-bottom: 1px #000 solid; padding: 0; height: 199px;}
 
 div.mian{margin: auto; width: 1200px;}
 
 .player.left{top: 0; left: 0;}
 .player.right{top: 0; right: 0;}
 
-div.background div.mian{height: 300px; width: 400px; padding: 0 400px; position: relative;}
-div.background div.mian div.chat{height: 300px; width: 790px; float: left;}
-div.background div.mian div.player{position: absolute; width: 400px; height: 300px; background: #000; overflow: hidden; box-shadow: 0 0 5px #000;}
-div.background div.mian div.player embed{}
+div.pk div.mian{height: 300px; width: 400px; padding: 0 400px; position: relative;}
+div.pk div.mian div.chat{height: 300px; width: 790px; float: left;}
+div.pk div.mian div.player{position: absolute; width: 400px; height: 300px; background: #000; overflow: hidden; box-shadow: 0 0 5px #000;}
+div.pk div.mian div.player embed{}
 
-div.mian ul.list{list-style: none; margin-bottom: 100px; float: left; width: 900px;}
-div.mian ul.list li{display: inline-block; width: 100px; padding: 0 0 0 0; vertical-align: top; float: left;}
-div.mian ul.list li h1{font-size: 12px; padding: 5px 0 10px 0;}
-div.mian ul.list li h1 a{display: inline-block; color: #333; text-decoration: none; font-size: 12px; line-height: 14px; overflow: hidden; height: 14px;}
-div.mian ul.list li a img{width: 100px; height: 75px;}
+div.background div.mian ul.list{list-style: none; float: left; width: 1000px;}
+div.background div.mian ul.list li{display: inline-block; width: 100px; height: 100px; padding: 0; background: #000;}
+div.background div.mian ul.list li a img{width: 99px; height: 99px;}
 
-div.mian ol{float: right; width: 280px; background: #4898F8; padding: 10px; height: 130px;}
-div.mian ol h1{font-size: 14px; color: #333; margin-bottom: 5px;}
-div.mian ol input{font-size: 14px; padding: 5px; width: 268px; margin-bottom: 10px; border: 1px solid #2b6ff8;}
-div.mian ol button{padding: 5px 10px; background: #333; color: #CCC;}
-div.mian ol button:hover{background: #000;}
+div.background div.mian ol{float: right; width: 200px;}
+div.background div.mian ol a{background: #333; display: inline-block; vertical-align: top;}
+div.background div.mian ol a i{display: inline-block; background: url("/images/sider.png");}
+div.background div.mian ol a:hover i{background: url("/images/siderHover.png");}
+
+div.background div.mian ol a.reg{width: 200px; height: 100px;}
+div.background div.mian ol a.reg i{width: 200px; height: 100px;background-position: 0 -100px;}
+div.background div.mian ol a.reg:hover i{}
+div.background div.mian ol a.login{width: 100px; height: 100px;}
+div.background div.mian ol a.login i{width: 100px; height: 99px;background-position: -100px 0;}
+div.background div.mian ol a.login:hover i{}
+div.background div.mian ol a.reload{width: 100px; height: 100px;}
+div.background div.mian ol a.reload i{width: 100px; height: 99px;}
+div.background div.mian ol a.reload:hover i{}
