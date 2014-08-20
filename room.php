@@ -56,8 +56,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><?php echo $player['title']; ?> - 琦益直播</title>
-    <meta name="keywords" content="<?php echo $player['title']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播，琦益" />
+    <title><?php echo $player['title']; ?> - 主播·Pro</title>
+    <meta name="keywords" content="<?php echo $player['title']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播" />
     <meta name="description" content="<?php echo $person['desc']; ?>" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">

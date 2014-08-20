@@ -13,6 +13,7 @@ div.pk div.mian div.player embed{}
 
 div.background div.mian ul.list{list-style: none; float: left; width: 1000px;}
 div.background div.mian ul.list li{display: inline-block; width: 100px; height: 100px; padding: 0; background: #000;}
+div.background div.mian ul.list li a{display: inline-block; width: 99px; height: 99px; overflow: hidden;}
 div.background div.mian ul.list li a img{width: 99px; height: 99px;}
 
 div.background div.mian ol{float: right; width: 200px;}
@@ -23,9 +24,9 @@ div.background div.mian ol a:hover i{background: url("/images/siderHover.png");}
 div.background div.mian ol a.reg{width: 200px; height: 100px;}
 div.background div.mian ol a.reg i{width: 200px; height: 100px;background-position: 0 -100px;}
 div.background div.mian ol a.reg:hover i{}
-div.background div.mian ol a.login{width: 100px; height: 100px;}
-div.background div.mian ol a.login i{width: 100px; height: 99px;background-position: -100px 0;}
+div.background div.mian ol a.login{width: 175px; height: 100px;}
+div.background div.mian ol a.login i{width: 175px; height: 99px;background-position: -25px 0;}
 div.background div.mian ol a.login:hover i{}
-div.background div.mian ol a.reload{width: 100px; height: 100px;}
-div.background div.mian ol a.reload i{width: 100px; height: 99px;}
+div.background div.mian ol a.reload{width: 25px; height: 100px;}
+div.background div.mian ol a.reload i{width: 25px; height: 99px;}
 div.background div.mian ol a.reload:hover i{}

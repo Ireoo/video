@@ -29,12 +29,31 @@ $player1 = 99678367; //quan
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>琦益直播</title>
-    <meta name="keywords" content="主播，主持人，直播，琦益" />
-    <meta name="description" content="琦益直播，由万达信息科技有限公司倾力打造，是你展示自我的舞台！" />
+    <title>主播·Pro</title>
+    <meta name="keywords" content="主播，主持人，直播，zhubo.pro" />
+    <meta name="description" content="主播，由万达信息科技有限公司倾力打造，是个人及团队展示自我的舞台！" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            var meng = $('<div />').css({'background' : 'url(/images/meng.png)', 'width' : '100px', 'height' : '100px', 'position' : 'absolute', 'top' : '0', 'left' : '0'}).hide();
+            $('li.sider_player a').append(meng).css({'position' : 'relative'});
+            $('li.sider_player').each(function(e) {
+                $(this).hover(
+                    function() {
+                        $('li.sider_player a div').show();
+                        $(this).find('a div').hide();
+                    },
+                    function() {
+                        $('li.sider_player a div').hide();
+                    }
+                );
+            });
+
+        });
+    </script>
 </head>
 <body>
 <?php include_once('include/head.php'); ?>
@@ -58,7 +77,7 @@ $player1 = 99678367; //quan
     <div class="mian">
 
         <ul class="list">
-            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li><a target="player" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
+            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li class="sider_player"><a target="player" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
         </ul>
 
         <ol>
