@@ -23,12 +23,17 @@ if(!is_array($o)) {
 
 }else{
 
-    if($o['money'] < 1) {
-        //print_r($user);
-        die('当前余额：' . $o['money'] . ' ，不足以支付该费用，请充值!');
-    }else{
+    $s = array(
+        'table' => 'user',
+        'condition' => 'id = ' . $o['id']
+    );
+    $user = $mysql->row($s);
+    $money = $_POST['member']/10;
 
-        $money = $_POST['member']/10;
+    if($o['money'] - $money < 0) {
+        //print_r($user);
+        die('当前余额：' . $o['money'] . ' ，不足以支付该费用，还须充值 ' .($money - $o['money']) . ' 元才可送出!');
+    }else{
 
         if($mysql->execute("UPDATE  `user` SET  `money` =  `money` - {$money} WHERE  `id` ={$o['id']};")){
             if($_POST['gift'] == 1) {

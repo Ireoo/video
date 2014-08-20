@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/post/gift.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/head.php" afterPath="$PROJECT_DIR$/include/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/io.js" afterPath="$PROJECT_DIR$/js/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/post/gift.php" afterPath="$PROJECT_DIR$/app/post/gift.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="card.iws" />
@@ -30,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="room.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="room.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/room.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="-2.599772" vertical-offset="2850" max-vertical-offset="3762">
+            <state line="175" column="34" selection-start="5354" selection-end="5354" vertical-scroll-proportion="-43.42857" vertical-offset="2109" max-vertical-offset="3762">
               <folding>
                 <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#video#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -65,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gift.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="gift.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/post/gift.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="13" selection-start="1393" selection-end="1393" vertical-scroll-proportion="-20.928572" vertical-offset="326" max-vertical-offset="1216">
+            <state line="34" column="88" selection-start="749" selection-end="749" vertical-scroll-proportion="0.50898874" vertical-offset="193" max-vertical-offset="1311">
               <folding />
             </state>
           </provider>
@@ -155,11 +151,11 @@
         <option value="$PROJECT_DIR$/i.php" />
         <option value="$PROJECT_DIR$/i/user.php" />
         <option value="$PROJECT_DIR$/i/money.php" />
-        <option value="$PROJECT_DIR$/app/post/gift.php" />
         <option value="$PROJECT_DIR$/include/head.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/io.js" />
         <option value="$PROJECT_DIR$/room.php" />
+        <option value="$PROJECT_DIR$/app/post/gift.php" />
       </list>
     </option>
   </component>
@@ -457,7 +453,11 @@
       <created>1408560798622</created>
       <updated>1408560798622</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修改礼物功能，并保存到数据库">
+      <created>1408573524000</created>
+      <updated>1408573524000</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -513,7 +513,8 @@
     <MESSAGE value="增加个人中心功能，修改首页显示效果" />
     <MESSAGE value="更新显示效果" />
     <MESSAGE value="添加礼物功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加礼物功能" />
+    <MESSAGE value="修改礼物功能，并保存到数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改礼物功能，并保存到数据库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -791,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/post/gift.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="13" selection-start="1393" selection-end="1393" vertical-scroll-proportion="-20.928572" vertical-offset="326" max-vertical-offset="1216">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="48" selection-start="3378" selection-end="3378" vertical-scroll-proportion="0.0" vertical-offset="463" max-vertical-offset="1406">
@@ -830,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="586" selection-end="586" vertical-scroll-proportion="-2.599772" vertical-offset="2850" max-vertical-offset="3762">
+        <state line="175" column="34" selection-start="5354" selection-end="5354" vertical-scroll-proportion="-43.42857" vertical-offset="2109" max-vertical-offset="3762">
           <folding>
             <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#video#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -838,6 +832,13 @@
             <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/post/gift.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="88" selection-start="749" selection-end="749" vertical-scroll-proportion="0.50898874" vertical-offset="193" max-vertical-offset="1311">
+          <folding />
         </state>
       </provider>
     </entry>
