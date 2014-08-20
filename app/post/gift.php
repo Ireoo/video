@@ -23,11 +23,6 @@ if(!is_array($o)) {
 
 }else{
 
-    $s = array(
-        'table' => 'user',
-        'condition' => 'id = ' . $o['id']
-    );
-    $user = $mysql->row($s);
     $money = $_POST['member']/10;
 
     if($o['money'] - $money < 0) {

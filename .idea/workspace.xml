@@ -64,7 +64,7 @@
       <file leaf-file-name="gift.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/post/gift.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="88" selection-start="749" selection-end="749" vertical-scroll-proportion="0.50898874" vertical-offset="193" max-vertical-offset="1311">
+            <state line="22" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.46966293" vertical-offset="0" max-vertical-offset="1216">
               <folding />
             </state>
           </provider>
@@ -457,7 +457,11 @@
       <created>1408573524000</created>
       <updated>1408573524000</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="修改错误">
+      <created>1408574260544</created>
+      <updated>1408574260544</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -514,7 +518,8 @@
     <MESSAGE value="更新显示效果" />
     <MESSAGE value="添加礼物功能" />
     <MESSAGE value="修改礼物功能，并保存到数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改礼物功能，并保存到数据库" />
+    <MESSAGE value="修改错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改错误" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -837,7 +842,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/post/gift.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="88" selection-start="749" selection-end="749" vertical-scroll-proportion="0.50898874" vertical-offset="193" max-vertical-offset="1311">
+        <state line="22" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.46966293" vertical-offset="0" max-vertical-offset="1216">
           <folding />
         </state>
       </provider>
