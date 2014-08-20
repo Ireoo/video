@@ -12,9 +12,9 @@ div.pk div.mian div.player{position: absolute; width: 400px; height: 300px; back
 div.pk div.mian div.player embed{}
 
 div.background div.mian ul.list{list-style: none; float: left; width: 1000px;}
-div.background div.mian ul.list li{display: inline-block; width: 100px; height: 100px; padding: 0; background: #000;}
+div.background div.mian ul.list li{display: inline-block; width: 100px; height: 100px; padding: 0; background: #000; vertical-align: top;}
 div.background div.mian ul.list li a{display: inline-block; width: 99px; height: 99px; overflow: hidden;}
-div.background div.mian ul.list li a img{width: 99px; height: 99px;}
+div.background div.mian ul.list li a img{width: 100px; height: 100px;}
 
 div.background div.mian ol{float: right; width: 200px;}
 div.background div.mian ol a{background: #333; display: inline-block; vertical-align: top;}

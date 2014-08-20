@@ -15,7 +15,7 @@
             ?>
         </div>
 
-        <li><a href="http://v.ireoo.com"><span>琦益直播</span></a></li>
+        <li><a href="http://v.ireoo.com"><span>主播·Pro</span></a></li>
     </ul>
 
 </div>

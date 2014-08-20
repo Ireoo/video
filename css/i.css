@@ -18,5 +18,7 @@ div.mian div.edit ul.mian li{margin-bottom: 20px;}
 div.mian div.edit ul.mian li label{display: block; font-size: 14px; color: #666; font-weight: bold; margin-bottom: 5px;}
 div.mian div.edit ul.mian li label span{font-size: 12px; font-weight: normal; color: #CCC; display: block; padding: 5px 0 10px 0;}
 div.mian div.edit ul.mian li input{padding: 10px; font-size: 14px; width: 580px;}
+div.mian div.edit ul.mian li input.year{width: 100px;}
+div.mian div.edit ul.mian li select{padding: 10px; font-size: 14px;}
 div.mian div.edit ul.mian li textarea{padding: 10px; width: 580px; height: 300px;}
 div.mian div.edit ul.mian li button{padding: 10px 30px;}

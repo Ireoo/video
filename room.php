@@ -57,8 +57,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><?php echo $player['title']; ?> - 主播·Pro</title>
-    <meta name="keywords" content="<?php echo $player['title']; ?>, <?php echo $person['realname']; ?>，主播，主持人，直播" />
-    <meta name="description" content="<?php echo $person['desc']; ?>" />
+    <meta name="keywords" content="<?php echo $player['title']; ?>， <?php echo $person['realname']; ?>， <?php echo $person['username']; ?>，主播，主持人，直播" />
+    <meta name="description" content="<?php echo $person['realname']; ?>(艺名：<?php echo $person['username']; ?>)是zhubo.pro的特约主播，期待你的支持！" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -84,17 +84,6 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
     <div class="videoBackground">
 
-        <!--    <div class="avatar">-->
-        <!--        <img class="avatar" src="http://ireoo.com/--><?php //echo $person['avatar_large']; ?><!--" />-->
-        <!--        <ul>-->
-        <!--            <h1>--><?php //echo $person['realname']; ?><!--</h1>-->
-        <!---->
-        <!--            <div class="desc">--><?php //echo $person['synopsis']; ?><!--</div>-->
-        <!--            <div>--><?php //echo 'http://v.ireoo.com/' . $id; ?><!--</div>-->
-        <!--        </ul>-->
-        <!--        <div class="clear"></div>-->
-        <!--    </div>-->
-
         <div class="title">
             <h1><?php echo $player['title']; ?></h1>
             <span>ID: <?php echo $id; ?></span>
@@ -104,7 +93,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
             <div class="video">
                 <?php if($player['yyVideo'] != '0') { ?>
-                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/0/entscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/<?php echo $player['yyVideo']; ?>/entscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
             <?php }else{ ?>
                     <video id="boss" autoplay></video>
                 <?php } ?>
@@ -147,7 +136,6 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
             <li><?php echo '年龄：' . (DATE('Y', time() - strtotime($person['year'] . '/' . $person['mouth'] . '/' . $person['day'] . ' 00:00:00')) - 1970); ?></li>
             <li><?php echo '生日：' . $person['year'] . '年' . $person['mouth'] . '月' . $person['day'] . '日'; ?></li>
             <li><?php echo '性别：' . $person['sex']; ?></li>
-            <li><?php echo '情感：' . $person['love']; ?></li>
         </ul>
 
     </ol>
