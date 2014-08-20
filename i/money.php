@@ -27,7 +27,7 @@
     <ul>
 
         <h1>消费记录</h1>
-        <li><?php echo date('Y年m月d日 H:i:s'); ?> - 消费100元.</li>
+<!--        <li>--><?php //echo date('Y年m月d日 H:i:s'); ?><!-- - 消费100元.</li>-->
 
     </ul>
 

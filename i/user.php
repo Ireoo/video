@@ -54,6 +54,11 @@ if(isset($_GET['edit']) and $_GET['edit'] == 'user') {
     </li>
 
     <li>
+        <label>手机号（登陆账号）</label>
+        <input name="phone" value="<?php echo $o['phone']; ?>" />
+    </li>
+
+    <li>
         <label>生日</label>
         <input class="year" name="year" type="text" value="<?php echo $o['year']; ?>" />年
         <select name="mouth">
