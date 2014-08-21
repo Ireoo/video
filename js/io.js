@@ -14,8 +14,8 @@ $(function() {
      * 连接服务器
      */
     var socket = io.connect("115.29.39.169:8000");
-    var spantimer = [];
 
+    var usersbox = $('div.title span#users i');
 
     socket.on('say to everyone', function(msg) {
 
@@ -27,6 +27,7 @@ $(function() {
 
         $('div.list li#' + user.id).remove();
         console.log('div.list li#' + user.id);
+        usersbox.text(parseInt(usersbox.text()) - 1);
         systemmsg('用户 ' + user.name + ' 离开聊天室.');
 
     });
@@ -34,6 +35,7 @@ $(function() {
     socket.on('new user connect', function(user) {
 
         addplayer(user.id, user.name, user.avatar);
+        usersbox.text(parseInt(usersbox.text()) + 1);
         systemmsg('用户 ' + user.name + ' 进入聊天室.');
 
     });
@@ -70,10 +72,12 @@ $(function() {
     socket.on('get users', function(users) {
 
         addplayer('', name + '(自己)', avatar);
+        usersbox.text(parseInt(usersbox.text()) + 1);
 
         for(var i = 0; i < users.length; i++) {
             if(users[i].room == room) {
                 addplayer(users[i].id, users[i].name, users[i].avatar);
+                usersbox.text(parseInt(usersbox.text()) + 1);
             }
         }
         systemmsg('获取用户列表完成.');
