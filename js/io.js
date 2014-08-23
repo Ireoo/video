@@ -170,7 +170,7 @@ $(function() {
         var com = $('<div />').css({display: 'inline-block', fontSize: '12px', color: '#CCC', margin: 'auto'}).text('[系统] ' + msg);
         var li = $('<li />').css({marginBottom: '10px'}).append(com).appendTo(chatroom);
         chatheight += li.height() + 10;
-        chatroom.animate({scrollTop: chatheight}, 300);
+        chatroom.animate({scrollTop: chatheight}, {speed: 300, queue: false});
     };
 
     var giftmsg = function(msg, color) {

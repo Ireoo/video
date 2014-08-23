@@ -11,17 +11,19 @@ session_start();
 
 include_once("../../lib/mysql.class.php");
 include_once("../../lib/user.class.php");
-include_once("../../include/config.php");
 include_once("../oauth/oauth2.php");
 //print_r($_POST);
 
 $mysql = new mysql;
 
-if(!is_array($o)) {
+if(!isset($_SESSION['user'])) {
 
     die('请登陆后再赠送！');
 
 }else{
+
+    $user = new user();
+    $o = $user->getID($mysql, $_SESSION['user']['id']);
 
     $money = $_POST['member']/10;
 

@@ -8,7 +8,7 @@ div.avatar ul div{padding: 3px 0 0 180px; font-size: 12px; color: #CCC;}
 div.avatar ul h1{padding: 5px 0 0 180px; color: #000; font-family: 'microsoft yahei';}
 div.avatar ul div.desc{font-size: 16px; color: #90bff8;}
 
-div.title{width: 800px; margin: auto; padding: 10px 0;}
+div.title{width: 800px; margin: auto; padding: 10px 0; height: 22px; line-height: 22px;}
 div.title h1{border-left: 5px #4898F8 solid; padding: 0 10px; font-family: 'microsoft yahei'; font-size: 18px; color: #4898F8; display: inline-block; max-width: 500px; overflow: hidden; height: 18px; line-height: 18px; white-space: nowrap; text-overflow: ellipsis;}
 div.title span{font-size: 12px; margin-right: 20px;}
 div.title span i{font-size: 16px; color: red; font-style: normal;}
@@ -35,13 +35,13 @@ div.video video#me{position: absolute; right: 10px; bottom: 10px; width: 200px;}
 div.video div.list{padding: 0 5px;}
 
 
-div.chatBox{width: 360px; background: #f9f9f9; float: right; position: relative;}
+div.chatBox{width: 340px; background: #f9f9f9; position: relative; padding: 10px 10px 50px 10px;}
 
-div.input{border-top: 1px #FFF solid; background: #EBEBEB; position: absolute; bottom: 0; padding: 5px;}
+div.input{border-top: 1px #FFF solid; background: #EBEBEB; position: absolute; bottom: 0; left: 0; padding: 5px;}
 input#say{width: 310px; outline: none; background: #FFF; border: 1px #CCC solid; font-size: 16px; padding: 5px; vertical-align: middle;}
 div.input span{display: inline-block; width: 18px; height: 18px; margin: 5px; text-align: center; background: url("http://www.yy.com/assets/css/images/icon.png"); background-position: 0 -287px; vertical-align: middle; cursor: pointer;}
 div.input span:hover{background-position: -28px -287px;}
-div.chat{margin: 10px 10px 60px 10px; height: 280px; overflow-y: auto;}
+div.chat{height: 280px; overflow-y: auto; display: block;}
 div.chat li{list-style: none;}
 
 div.list{background: #EBEBEB; margin: auto; width: 790px; margin-bottom: 20px; padding: 5px; overflow: hidden;}
