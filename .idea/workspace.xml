@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/config.php" afterPath="$PROJECT_DIR$/include/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/bangbangtang.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/hua.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/love.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/luoli.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/qiaokeli.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/shuangren.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/xihuan.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/zhadan.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/gift/zuanjie.gif" />
+      <change type="DELETED" beforePath="D:\GitHub\video\room1.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\GitHub\video\room2.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/post/gift.php" afterPath="$PROJECT_DIR$/app/post/gift.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/io.js" afterPath="$PROJECT_DIR$/js/io.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="card.iws" />
@@ -30,29 +45,54 @@
       <file leaf-file-name="room.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/room.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="0" selection-start="3811" selection-end="3811" vertical-scroll-proportion="-73.96429" vertical-offset="0" max-vertical-offset="3819">
-              <folding />
+            <state line="109" column="14" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-8.678572" vertical-offset="1828" max-vertical-offset="3876">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#embed#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#embed#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="87" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1425">
+            <state line="97" column="40" selection-start="3280" selection-end="3280" vertical-scroll-proportion="-25.0" vertical-offset="1143" max-vertical-offset="2204">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="83" selection-start="2408" selection-end="2408" vertical-scroll-proportion="0.8071895" vertical-offset="0" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="io.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/io.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="9" selection-start="11034" selection-end="11034" vertical-scroll-proportion="0.6067538" vertical-offset="4877" max-vertical-offset="7277">
+            <state line="72" column="210" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="7809">
               <folding>
-                <marker date="1408803732190" expanded="true" signature="1645:1661" placeholder="..." />
-                <marker date="1408803732190" expanded="true" signature="2663:2679" placeholder="..." />
-                <marker date="1408803732190" expanded="false" signature="8286:8302" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="1799:1843" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="2081:2092" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="2133:2149" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="2175:2186" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="2229:2246" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="2229:2253" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="2229:2278" placeholder="..." />
+                <marker date="1408819400899" expanded="true" signature="6628:6644" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -61,43 +101,7 @@
       <file leaf-file-name="gift.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/post/gift.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="37" selection-start="840" selection-end="840" vertical-scroll-proportion="-21.714285" vertical-offset="57" max-vertical-offset="1254">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="187" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="494">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="1349">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mysql.class.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/mysql.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="13" selection-start="1372" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="2375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logo.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/xiuxiu/logo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="18" selection-start="317" selection-end="317" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="665">
+            <state line="18" column="45" selection-start="398" selection-end="398" vertical-scroll-proportion="-2.607143" vertical-offset="269" max-vertical-offset="1653">
               <folding />
             </state>
           </provider>
@@ -141,18 +145,18 @@
         <option value="$PROJECT_DIR$/i/avatar.php" />
         <option value="$PROJECT_DIR$/room2.php" />
         <option value="$PROJECT_DIR$/js/io1.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/i.css" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/i.php" />
         <option value="$PROJECT_DIR$/i/user.php" />
         <option value="$PROJECT_DIR$/i/money.php" />
         <option value="$PROJECT_DIR$/include/head.php" />
-        <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/app/post/gift.php" />
         <option value="$PROJECT_DIR$/include/config.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/room.php" />
+        <option value="$PROJECT_DIR$/app/post/gift.php" />
         <option value="$PROJECT_DIR$/js/io.js" />
+        <option value="$PROJECT_DIR$/css/index.css" />
       </list>
     </option>
   </component>
@@ -233,6 +237,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gift" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,13 +372,20 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\video\images\gift" />
       <recent name="D:\GitHub\video\images" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif">
+    <configuration default="false" name="2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://v.ireoo.com/images/2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -356,7 +399,14 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="376d1e9e-8694-44c9-b5eb-6505cefe0896" server_name="w.ireoo.com">
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -466,11 +516,15 @@
       <created>1408801021395</created>
       <updated>1408801021395</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="优化程序">
+      <created>1408804055829</created>
+      <updated>1408804055829</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -485,7 +539,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -525,7 +579,8 @@
     <MESSAGE value="修改礼物功能，并保存到数据库" />
     <MESSAGE value="修改错误" />
     <MESSAGE value="更新礼物函数，改善礼物赠送速度" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新礼物函数，改善礼物赠送速度" />
+    <MESSAGE value="优化程序" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化程序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,16 +736,6 @@
         <state line="53" column="34" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0" vertical-offset="1007" max-vertical-offset="1178" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/room1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="20" selection-start="3334" selection-end="3472" vertical-scroll-proportion="-10.857142" vertical-offset="1710" max-vertical-offset="3952" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/room2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="33" selection-start="4099" selection-end="4099" vertical-scroll-proportion="-25.785715" vertical-offset="1824" max-vertical-offset="3553" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/io.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="48" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="4541" />
@@ -699,11 +744,6 @@
     <entry file="file://$PROJECT_DIR$/images/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="22" selection-start="1940" selection-end="1940" vertical-scroll-proportion="-10.178572" vertical-offset="893" max-vertical-offset="1881" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/i/tiaokuan.txt">
@@ -726,11 +766,6 @@
         <state line="39" column="0" selection-start="835" selection-end="955" vertical-scroll-proportion="-23.071428" vertical-offset="0" max-vertical-offset="855" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="137" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/i.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="62" selection-start="613" selection-end="613" vertical-scroll-proportion="-6.678571" vertical-offset="136" max-vertical-offset="2375" />
@@ -746,27 +781,6 @@
         <state line="30" column="0" selection-start="821" selection-end="821" vertical-scroll-proportion="-20.357143" vertical-offset="0" max-vertical-offset="741" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/mysql.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="1372" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="2375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="187" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="494">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="0" selection-start="3811" selection-end="3811" vertical-scroll-proportion="-73.96429" vertical-offset="0" max-vertical-offset="3819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="87" selection-start="1784" selection-end="1784" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1425">
@@ -774,35 +788,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/post/gift.php">
+    <entry file="file://$PROJECT_DIR$/include/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="37" selection-start="840" selection-end="840" vertical-scroll-proportion="-21.714285" vertical-offset="57" max-vertical-offset="1254">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/xiuxiu/logo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="317" selection-end="317" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="665">
+        <state line="7" column="187" selection-start="361" selection-end="361" vertical-scroll-proportion="0.15165336" vertical-offset="0" max-vertical-offset="877">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="1349">
+        <state line="28" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="0.5977528" vertical-offset="0" max-vertical-offset="1349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/mysql.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="13" selection-start="1372" selection-end="1379" vertical-scroll-proportion="0.5977528" vertical-offset="342" max-vertical-offset="2375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/xiuxiu/logo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="317" selection-end="317" vertical-scroll-proportion="0.21348314" vertical-offset="0" max-vertical-offset="890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="40" selection-start="3280" selection-end="3280" vertical-scroll-proportion="-25.0" vertical-offset="1143" max-vertical-offset="2204">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="14" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-8.678572" vertical-offset="1828" max-vertical-offset="3876">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#embed#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#embed#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/post/gift.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="45" selection-start="398" selection-end="398" vertical-scroll-proportion="-2.607143" vertical-offset="269" max-vertical-offset="1653">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/io.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="9" selection-start="11034" selection-end="11034" vertical-scroll-proportion="0.6067538" vertical-offset="4877" max-vertical-offset="7277">
+        <state line="72" column="210" selection-start="2260" selection-end="2260" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="7809">
           <folding>
-            <marker date="1408803732190" expanded="true" signature="1645:1661" placeholder="..." />
-            <marker date="1408803732190" expanded="true" signature="2663:2679" placeholder="..." />
-            <marker date="1408803732190" expanded="false" signature="8286:8302" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="1799:1843" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="2081:2092" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="2133:2149" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="2175:2186" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="2229:2246" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="2229:2253" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="2229:2278" placeholder="..." />
+            <marker date="1408819400899" expanded="true" signature="6628:6644" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="83" selection-start="2408" selection-end="2408" vertical-scroll-proportion="0.8071895" vertical-offset="0" max-vertical-offset="918">
+          <folding />
         </state>
       </provider>
     </entry>

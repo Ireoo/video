@@ -89,5 +89,20 @@ $player1 = 99678367; //quan
     </div>
 </div>
 
+<div class="list">
+    <div class="mian">
+
+        <ul class="list">
+            <h1>热门主播</h1>
+            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li><a target="player" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><div>
+                    <?php echo $v['title']; ?>
+            </div></li><?php } ?>
+        </ul>
+
+        <div class="clear"></div>
+
+    </div>
+</div>
+
 </body>
 </html>

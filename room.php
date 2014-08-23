@@ -64,12 +64,15 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <script type="text/javascript" src="js/jquery.js"></script>
     <script style="text/javascript" src="http://115.29.39.169:8000/socket.io/socket.io.js"></script>
     <script style="text/javascript">
+        var toname = '<?php echo $person['username']; ?>';
         <?php if(!is_array($o)) { ?>
         var name = '游客';
         var avatar = 'http://ireoo.com/include/images/i_quanquan_on.png';
+        var from = 0;
         <?php }else{ ?>
         var name = '<?php echo $o['username']; ?>';
         var avatar = 'http://ireoo.com/<?php echo $o['avatar_large']; ?>';
+        var from = <?php echo $o['id']; ?>;
         <?php } ?>
         var room = '<?php echo $person['id']; ?>';
         var thisURL = '<?php echo curPageURL(); ?>';
