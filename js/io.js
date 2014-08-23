@@ -284,7 +284,7 @@ $(function() {
      */
 
     var giftarray = [
-        {title: '鲜花（每分钟获得一朵，最高累计5朵）', money : '0', url : '/images/gift/bangbangtang.gif'}
+        {title: '棒棒糖（每分钟获得一个，最高累计5个）', money : '0', url : '/images/gift/bangbangtang.gif'}
         , {title: '喜欢', money : '0.1', url : '/images/gift/xihuan.gif'}
         , {title: '炸弹', money : '0.1', url : '/images/gift/zhadan.gif'}
         , {title: '萝莉', money : '0.1', url : '/images/gift/luoli.gif'}
