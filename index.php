@@ -12,7 +12,7 @@ $mysql = new mysql;
 
 $sql = array(
     'table' => 'video',
-    'order' => 'uid desc'
+    'order' => 'pingfen desc'
 //    , 'condition' => "play = 1"
 );
 
@@ -34,6 +34,7 @@ $player1 = 99678367; //quan
     <meta name="description" content="主播，由万达信息科技有限公司倾力打造，是个人及团队展示自我的舞台！" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -77,7 +78,7 @@ $player1 = 99678367; //quan
     <div class="mian">
 
         <ul class="list">
-            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li class="sider_player"><a target="player" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
+            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li class="sider_player"><a target="player" href="/<?php echo $v['uid']; ?>"><img class="pulse animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
         </ul>
 
         <ol>
@@ -94,8 +95,24 @@ $player1 = 99678367; //quan
 
         <ul class="list">
             <h1>热门主播</h1>
-            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li><a target="player" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><div>
-                    <?php echo $v['title']; ?>
+            <?php
+            $sql = array(
+                'table' => 'video',
+                'order' => 'hua desc',
+                'limit' => 'LIMIT 0, 10'
+//    , 'condition' => "play = 1"
+            );
+            $list = $mysql->select($sql);
+            foreach($list as $key => $value) {
+                $v = $value['video'];
+                $thissql = array(
+                    'table' => 'user',
+                    'condition' => 'id = ' . $v['uid']
+                );
+                $u = $mysql->row($thissql);
+            ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                    <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                    <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
             </div></li><?php } ?>
         </ul>
 
