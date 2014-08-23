@@ -40,6 +40,11 @@ $(function() {
 
     });
 
+    var gifttimer = 0,
+        cheng = 1,
+        chengtxt = '',
+        giftmember = 0;
+
     socket.on('give gift', function(data) {
 
         var giftwidth = parseInt($('div.vs div.bar h1').width());
@@ -52,17 +57,36 @@ $(function() {
         if(data.member >= 5201314) color = '#4898F8';
         //gift(gift);
         if(data.gift == 1) {
-            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 赞 .', color);
+
+            if(data.timer - gifttimer < 3000 && giftmember == data.member) {
+                cheng++;
+                chengtxt = '    ×     <span style="font-size: 30px;">' + cheng + '</span>';
+            }else{
+                cheng = 1;
+                chengtxt = '';
+            }
+            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 赞' + chengtxt, color);
             $('div.vs div.bar h1 span.left i').text(parseInt($('div.vs div.bar h1 span.left i').text()) + parseInt(data.member));
             var good = parseInt($('div.vs div.bar h1 span.left i').text());
             var bad = parseInt($('div.vs div.bar h1 span.right i').text());
+            gifttimer = data.timer;
+            giftmember = data.member;
             $('div.vs div.bar h1 span.left').animate({width: good/(good+bad)*giftwidth}, {speed: 1000, queue: false});
             $('div.vs div.bar h1 span.right').animate({width: bad/(good+bad)*giftwidth}, {speed: 1000, queue: false});
-        }else{
-            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 差 .', color);
+        }else if(data.gift == 2) {
+            if(data.timer - gifttimer < 3000 && giftmember == data.member) {
+                cheng = parseInt(cheng) + 1;
+                chengtxt = '    ×     <span style="font-size: 30px;">' + cheng + '</span>';
+            }else{
+                cheng = 1;
+                chengtxt = '';
+            }
+            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 差' + chengtxt, color);
             $('div.vs div.bar h1 span.right i').text(parseInt($('div.vs div.bar h1 span.right i').text()) + parseInt(data.member));
             var good = parseInt($('div.vs div.bar h1 span.left i').text());
             var bad = parseInt($('div.vs div.bar h1 span.right i').text());
+            gifttimer = data.timer;
+            giftmember = data.member;
             $('div.vs div.bar h1 span.left').animate({width: good/(good+bad)*giftwidth}, {speed: 1000, queue: false});
             $('div.vs div.bar h1 span.right').animate({width: bad/(good+bad)*giftwidth}, {speed: 1000, queue: false});
         }
@@ -175,7 +199,7 @@ $(function() {
 
     var giftmsg = function(msg, color) {
 
-        var com = $('<div />').css({fontSize: '12px', backgroundColor: color, color: '#FFF', padding: '10px', borderRadius: '5px'}).text(msg);
+        var com = $('<div />').css({fontSize: '12px', backgroundColor: color, color: '#FFF', padding: '10px', borderRadius: '5px'}).html(msg);
         var li = $('<li />').css({margin: '10px 0'}).append(com);
         $('ul.getgift').prepend(li);
         li.delay(10000).slideUp(1000, function() {$(this).css({backgroundColor: '#FFF'}).remove();});
@@ -326,7 +350,8 @@ $(function() {
                 name : name,
                 gift : gift,
                 member : giftMember.val(),
-                room : room
+                room : room,
+                timer : new Date().getTime()
             };
             $.post("/app/post/gift.php", d, function(result){
                 if(result == 'ok') {
@@ -344,52 +369,5 @@ $(function() {
             window.open('http://v.ireoo.com/pay', '_blank');
         }
     );
-
-
-    /**
-     *
-     * 系统尺寸改变
-     *
-     */
-
-//        $(window).resize(function() {
-//            if($(window).width() >= 1000) {
-//                chatroom.width($(window).width() - 280).height($(window).height() - 130);
-//                listbox.width(200).height($(window).height() - 110).show();
-//                chatroom.animate({scrollTop: chatheight}, 300);
-//                chatbox.width($(window).width() - 40).height(50);
-//            }else{
-//                listbox.hide();
-//                chatroom.width($(window).width() - 60).height($(window).height() - 130);
-//
-//                chatroom.animate({scrollTop: chatheight}, 300);
-//                chatbox.width($(window).width() - 40).height(50);
-//            }
-//        });
-
-
-
-    /**
-     *
-     * 创建视频
-     *
-     */
-//    rtc.connect('ws://115.29.39.169:8001', room);
-//
-//    rtc.createStream({"video":
-//    {
-//        mandatory: { 'minAspectRatio': 2, 'maxAspectRatio': 2 },
-//        optional: []
-//    },
-//        "audio":true
-//    }, function(stream){
-//        // get local stream for manipulation
-//        rtc.attachStream(stream, 'me');
-//    });
-//
-//    rtc.on('add remote stream', function(stream){
-//        // show the remote video
-//        rtc.attachStream(stream, 'boss');
-//    });
 
 });

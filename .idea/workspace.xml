@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/post/gift.php" afterPath="$PROJECT_DIR$/app/post/gift.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/config.php" afterPath="$PROJECT_DIR$/include/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/io.js" afterPath="$PROJECT_DIR$/js/io.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="card.iws" />
@@ -47,21 +45,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="io.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/io.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="0" selection-start="6365" selection-end="6365" vertical-scroll-proportion="0.0" vertical-offset="2686" max-vertical-offset="7600">
+            <state line="281" column="9" selection-start="11034" selection-end="11034" vertical-scroll-proportion="0.6067538" vertical-offset="4877" max-vertical-offset="7277">
               <folding>
-                <marker date="1408800516836" expanded="false" signature="7419:7435" placeholder="..." />
+                <marker date="1408803732190" expanded="true" signature="1645:1661" placeholder="..." />
+                <marker date="1408803732190" expanded="true" signature="2663:2679" placeholder="..." />
+                <marker date="1408803732190" expanded="false" signature="8286:8302" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gift.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="gift.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/post/gift.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="0.49101123" vertical-offset="0" max-vertical-offset="1254">
+            <state line="35" column="37" selection-start="840" selection-end="840" vertical-scroll-proportion="-21.714285" vertical-offset="57" max-vertical-offset="1254">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="212" selection-end="314" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="1368">
+            <state line="28" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="1349">
               <folding />
             </state>
           </provider>
@@ -97,7 +97,7 @@
       <file leaf-file-name="logo.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/xiuxiu/logo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="88" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="760">
+            <state line="15" column="18" selection-start="317" selection-end="317" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="665">
               <folding />
             </state>
           </provider>
@@ -124,7 +124,6 @@
         <option value="$PROJECT_DIR$/js.js" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/include/login.php" />
-        <option value="$PROJECT_DIR$/include/config.php" />
         <option value="$PROJECT_DIR$/css/head.css" />
         <option value="$PROJECT_DIR$/i/tiaokuan.txt" />
         <option value="$PROJECT_DIR$/js/jquery.js" />
@@ -151,8 +150,9 @@
         <option value="$PROJECT_DIR$/include/head.php" />
         <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/io.js" />
         <option value="$PROJECT_DIR$/app/post/gift.php" />
+        <option value="$PROJECT_DIR$/include/config.php" />
+        <option value="$PROJECT_DIR$/js/io.js" />
       </list>
     </option>
   </component>
@@ -462,7 +462,11 @@
       <created>1408574585693</created>
       <updated>1408574585693</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="更新礼物函数，改善礼物赠送速度">
+      <created>1408801021395</created>
+      <updated>1408801021395</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -472,21 +476,21 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1234375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18854167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -520,7 +524,8 @@
     <MESSAGE value="添加礼物功能" />
     <MESSAGE value="修改礼物功能，并保存到数据库" />
     <MESSAGE value="修改错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改错误" />
+    <MESSAGE value="更新礼物函数，改善礼物赠送速度" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新礼物函数，改善礼物赠送速度" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -741,13 +746,6 @@
         <state line="30" column="0" selection-start="821" selection-end="821" vertical-scroll-proportion="-20.357143" vertical-offset="0" max-vertical-offset="741" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/xiuxiu/logo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="88" selection-end="167" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="760">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="13" selection-start="1372" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="2375">
@@ -776,26 +774,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/io.js">
+    <entry file="file://$PROJECT_DIR$/app/post/gift.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="0" selection-start="6365" selection-end="6365" vertical-scroll-proportion="0.0" vertical-offset="2686" max-vertical-offset="7600">
-          <folding>
-            <marker date="1408800516836" expanded="false" signature="7419:7435" placeholder="..." />
-          </folding>
+        <state line="35" column="37" selection-start="840" selection-end="840" vertical-scroll-proportion="-21.714285" vertical-offset="57" max-vertical-offset="1254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/xiuxiu/logo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="317" selection-end="317" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="665">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="212" selection-end="314" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="1368">
+        <state line="28" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="-19.0" vertical-offset="0" max-vertical-offset="1349">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/post/gift.php">
+    <entry file="file://$PROJECT_DIR$/js/io.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="413" selection-end="413" vertical-scroll-proportion="0.49101123" vertical-offset="0" max-vertical-offset="1254">
-          <folding />
+        <state line="281" column="9" selection-start="11034" selection-end="11034" vertical-scroll-proportion="0.6067538" vertical-offset="4877" max-vertical-offset="7277">
+          <folding>
+            <marker date="1408803732190" expanded="true" signature="1645:1661" placeholder="..." />
+            <marker date="1408803732190" expanded="true" signature="2663:2679" placeholder="..." />
+            <marker date="1408803732190" expanded="false" signature="8286:8302" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
