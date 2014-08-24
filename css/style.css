@@ -53,6 +53,11 @@ ol ul{margin-bottom: 20px;}
 ol li{padding: 3px 0; font-size: 14px; display: block;}
 ol h1{padding: 10px 0 5px 0; margin: 0 0 5px 0; font-size: 16px; border-bottom: 1px solid #EBEBEB;}
 
+ol ul{background: #EBEBEB; padding-bottom: 10px;}
+ol ul h1{background: #4898F8; line-height: 60px; height: 60px; font-size: 14px; padding: 0; margin: 0 0 10px 0;}
+ol ul h1 img{width: 60px; height: 60px; margin-right: 20px;}
+ol ul li{padding: 5px 10px; width: auto;}
+
 div.con{}
 div.con ul h1{padding: 10px 0 5px 0; margin: 0 0 5px 0; font-size: 16px; border-bottom: 1px solid #EBEBEB;}
 

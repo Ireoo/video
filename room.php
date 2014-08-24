@@ -160,8 +160,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
         </div>
 
-        <ul>
-            <h1>资料</h1>
+        <ul class="username">
+            <h1><img src="http://ireoo.com/uploads/u/a<?php echo $person['id']; ?>.jpg" /><?php echo $person['username']; ?></h1>
             <li><?php echo '年龄：' . (DATE('Y', time() - strtotime($person['year'] . '/' . $person['mouth'] . '/' . $person['day'] . ' 00:00:00')) - 1970); ?></li>
             <li><?php echo '生日：' . $person['year'] . '年' . $person['mouth'] . '月' . $person['day'] . '日'; ?></li>
             <li><?php echo '性别：' . $person['sex']; ?></li>
