@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/b.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/video/recover.swf" afterPath="$PROJECT_DIR$/app/video/recover.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -48,10 +44,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="31" selection-start="3676" selection-end="3676" vertical-scroll-proportion="-20.928572" vertical-offset="1542" max-vertical-offset="2527">
+            <state line="149" column="50" selection-start="5713" selection-end="5713" vertical-scroll-proportion="0.74382025" vertical-offset="2245" max-vertical-offset="3971">
               <folding>
                 <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="3801" selection-end="3801" vertical-scroll-proportion="-0.2211329" vertical-offset="1324" max-vertical-offset="2242">
+            <state line="59" column="49" selection-start="4338" selection-end="4338" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="2451">
               <folding />
             </state>
           </provider>
@@ -153,8 +149,8 @@
         <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/app/post/gift.php" />
         <option value="$PROJECT_DIR$/js/io.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -207,6 +203,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -504,7 +518,11 @@
       <created>1408804055829</created>
       <updated>1408804055829</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="修改首页显示效果">
+      <created>1408836222721</created>
+      <updated>1408836222721</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -564,7 +582,8 @@
     <MESSAGE value="修改错误" />
     <MESSAGE value="更新礼物函数，改善礼物赠送速度" />
     <MESSAGE value="优化程序" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化程序" />
+    <MESSAGE value="修改首页显示效果" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改首页显示效果" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -845,20 +864,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="49" selection-start="4338" selection-end="4338" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="2451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="31" selection-start="3676" selection-end="3676" vertical-scroll-proportion="-20.928572" vertical-offset="1542" max-vertical-offset="2527">
+        <state line="149" column="50" selection-start="5713" selection-end="5713" vertical-scroll-proportion="0.74382025" vertical-offset="2245" max-vertical-offset="3971">
           <folding>
             <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="3801" selection-end="3801" vertical-scroll-proportion="-0.2211329" vertical-offset="1324" max-vertical-offset="2242">
-          <folding />
         </state>
       </provider>
     </entry>
