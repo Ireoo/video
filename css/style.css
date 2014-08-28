@@ -64,12 +64,13 @@ div.con ul h1{padding: 10px 0 5px 0; margin: 0 0 5px 0; font-size: 16px; border-
 div.vs{padding: 0; background: #EBEBEB; border-bottom: 1px #CCC solid;}
 
 div.vs div.bar{display: block;}
-div.vs div.bar h1{font-size: 14px; color: #FFF;}
-div.vs div.bar h1 span{width: 50%; display: inline-block; overflow: hidden;}
-div.vs div.bar h1 span i{padding: 5px; font-style: normal; display: inline-block;}
+div.vs div.bar h1{font-size: 14px; color: #FFF; height: 27px; line-height: 27px; background: #ff5b5f;}
+div.vs div.bar h1 span{width: 50%; display: inline-block; overflow: hidden; height: 27px; line-height: 27px; vertical-align: top;}
+div.vs div.bar h1 span i{padding: 0 5px; font-style: normal; display: inline-block;}
 div.vs div.bar h1 span.left{text-align: right; background: #00dd00;}
 div.vs div.bar h1 span.right{text-align: left; background: #ff5b5f;}
 
-div.vs div.gift{padding: 5px; vertical-align: middle;}
+div.vs div.gift{padding: 10px 5px 5px 5px; vertical-align: middle;}
 
-ul.getgift{float: right; width: 100%; margin: 0;}
+ul.getgift{float: right; width: 100%; margin: 0; padding: 0; background: none;}
+ul.getgift li{padding: 0;}

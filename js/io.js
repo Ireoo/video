@@ -307,11 +307,11 @@ $(function() {
     giftButton.append(giftresult).append(giftSend).append(giftMember).append(giftPay);
     giftBox.append(giftChoose).append(giftButton);
 
-    var jishu = $('<span />').css({borderRadius: '10px', width: '20px', height: '20px', display: 'inline-block', background: 'red', color: '#FFF', position: 'absolute', top : '0', right : '0', fontSize: '12px', textAlign: 'center', lineHeight: '20px'}).text(0);
+    var jishu = $('<span />').css({borderRadius: '10px', width: '20px', height: '20px', display: 'inline-block', background: 'red', color: '#FFF', position: 'absolute', top : '-10px', right : '-10px', fontSize: '12px', textAlign: 'center', lineHeight: '20px'}).text(0);
 
     for(var i = 0; i < giftarray.length; i++) {
 
-        var bang = $('<div />').css({'width' : '67px', 'display' : 'inline-block', 'border' : '1px #EBEBEB solid', 'cursor' : 'pointer', 'padding' : '5px 0', 'margin-right' : '10px', 'text-align' : 'center'}).attr('id', i).attr('title', giftarray[i].title + "   价值:" + giftarray[i].money + '元').append($('<img />').attr('src', giftarray[i].url).height(40)).appendTo(giftChoose).hover(
+        var bang = $('<div />').css({'width' : '67px', 'display' : 'inline-block', 'border' : '1px #EBEBEB solid', 'cursor' : 'pointer', 'padding' : '10px 0', 'margin-right' : '10px', 'text-align' : 'center'}).attr('id', i).attr('title', giftarray[i].title + "   价值:" + giftarray[i].money + '元').append($('<img />').attr('src', giftarray[i].url).height(40)).appendTo(giftChoose).hover(
             function() {
                 if(!$(this).hasClass('on')) {
                     $(this).css({'borderColor' : '#333'});

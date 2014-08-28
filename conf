@@ -1,3 +1,6 @@
+if ( $host != "zhubo.pro") {
+    rewrite ^/(.*)$ http://zhubo.pro/$1 permanent;
+}
 rewrite "/([0-9]+)$" /room.php?id=$1 last;
 rewrite "/i$" /i.php last;
 rewrite "/login$" /login.php last;

@@ -11,7 +11,7 @@ class mysql {
 	function __construct($db=array()) {
 		$default = array(
 			'host' => 'localhost',
-			'user' => 'ireoo',
+			'user' => 'root',
 			'pass' => 'cc880108',
 			'db' => 'ireoo'
 		);

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="v.ireoo.com" showNewOnSourceInSync="false">
+  <component name="PublishConfigData" serverName="zhubo.pro" showNewOnTargetInSync="false">
     <serverData>
-      <paths name="v.ireoo.com">
+      <paths name="ireoo.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="zhubo.pro">
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />

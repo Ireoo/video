@@ -121,7 +121,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
                     $barr = $player['bad']/($player['good']+$player['bad'])*800;
                 }
                 ?>
-                <h1><span class="left" style="width: <?php echo $barl; ?>px;"><i><?php echo $player['good']; ?></i></span><span class="right" style="width: <?php echo $barr; ?>px;"><i><?php echo $player['bad']; ?></i></span></h1>
+                <h1><span class="left" style="width: <?php echo $barl; ?>px;">(喜欢)<i><?php echo $player['good']; ?></i></span><span class="right" style="width: <?php echo $barr; ?>px;"><i><?php echo $player['bad']; ?></i>(炸弹)</span></h1>
             </div>
             <div class="gift">
 
