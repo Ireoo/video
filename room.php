@@ -64,12 +64,15 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <script type="text/javascript" src="js/jquery.js"></script>
     <script style="text/javascript" src="http://115.29.39.169:8000/socket.io/socket.io.js"></script>
     <script style="text/javascript">
+        var toname = '<?php echo $person['username']; ?>';
         <?php if(!is_array($o)) { ?>
         var name = '游客';
         var avatar = 'http://ireoo.com/include/images/i_quanquan_on.png';
+        var from = 0;
         <?php }else{ ?>
         var name = '<?php echo $o['username']; ?>';
         var avatar = 'http://ireoo.com/<?php echo $o['avatar_large']; ?>';
+        var from = <?php echo $o['id']; ?>;
         <?php } ?>
         var room = '<?php echo $person['id']; ?>';
         var thisURL = '<?php echo curPageURL(); ?>';
@@ -94,7 +97,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
             <div class="video">
                 <?php if($player['yyVideo'] != '0') { ?>
-                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/0/yyscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/<?php echo $player['yyVideo']; ?>/entscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
             <?php }else{ if($player['uid'] == $o['id']) { ?>
                     <embed src="http://v.ireoo.com/app/video/recover.swf?uid=<?php echo $player['uid']; ?>" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
                     <?php }else{ ?>
@@ -157,8 +160,8 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
         </div>
 
-        <ul>
-            <h1>资料</h1>
+        <ul class="username">
+            <h1><img src="http://ireoo.com/uploads/u/a<?php echo $person['id']; ?>.jpg" /><?php echo $person['username']; ?></h1>
             <li><?php echo '年龄：' . (DATE('Y', time() - strtotime($person['year'] . '/' . $person['mouth'] . '/' . $person['day'] . ' 00:00:00')) - 1970); ?></li>
             <li><?php echo '生日：' . $person['year'] . '年' . $person['mouth'] . '月' . $person['day'] . '日'; ?></li>
             <li><?php echo '性别：' . $person['sex']; ?></li>

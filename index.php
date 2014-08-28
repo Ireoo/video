@@ -12,7 +12,7 @@ $mysql = new mysql;
 
 $sql = array(
     'table' => 'video',
-    'order' => 'uid desc'
+    'order' => 'pingfen desc'
 //    , 'condition' => "play = 1"
 );
 
@@ -34,6 +34,7 @@ $player1 = 99678367; //quan
     <meta name="description" content="主播，由万达信息科技有限公司倾力打造，是个人及团队展示自我的舞台！" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -77,7 +78,7 @@ $player1 = 99678367; //quan
     <div class="mian">
 
         <ul class="list">
-            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li class="sider_player"><a target="player" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
+            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li class="sider_player"><a target="player" href="/<?php echo $v['uid']; ?>"><img class="pulse animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
         </ul>
 
         <ol>
@@ -87,6 +88,107 @@ $player1 = 99678367; //quan
         <div class="clear"></div>
 
     </div>
+</div>
+
+<div class="list">
+    <div class="mian">
+
+        <ul class="list">
+            <h1 class="title">热门主播</h1>
+            <?php
+            $sql = array(
+                'table' => 'video',
+                'order' => 'hua desc',
+                'limit' => 'LIMIT 0, 12'
+//    , 'condition' => "play = 1"
+            );
+            $list = $mysql->select($sql);
+            foreach($list as $key => $value) {
+                $v = $value['video'];
+                $thissql = array(
+                    'table' => 'user',
+                    'condition' => 'id = ' . $v['uid']
+                );
+                $u = $mysql->row($thissql);
+            ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                    <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                    <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
+            </div></li><?php } ?>
+        </ul>
+
+        <?php for($i=floor(Date('H')); $i<24; $i++) { ?>
+
+            <ul class="list">
+                <h1 class="title">今天<?php echo $i; ?>点开播的主播</h1>
+                <?php
+                $sql = array(
+                    'table' => 'video',
+                    'order' => 'hua desc',
+                    'limit' => 'LIMIT 0, 12'
+//    , 'condition' => "play = 1"
+                );
+                $list = $mysql->select($sql);
+                foreach($list as $key => $value) {
+                    $v = $value['video'];
+                    $thissql = array(
+                        'table' => 'user',
+                        'condition' => 'id = ' . $v['uid']
+                    );
+                    $u = $mysql->row($thissql);
+                    ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                        <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                        <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
+                    </div></li><?php } ?>
+            </ul>
+
+
+        <?php } ?>
+
+        <?php for($i=0; $i<floor(Date('H')); $i++) { ?>
+
+            <ul class="list">
+                <h1 class="title">明天<?php echo $i; ?>点开播的主播</h1>
+                <?php
+                $sql = array(
+                    'table' => 'video',
+                    'order' => 'hua desc',
+                    'limit' => 'LIMIT 0, 12'
+//    , 'condition' => "play = 1"
+                );
+                $list = $mysql->select($sql);
+                foreach($list as $key => $value) {
+                    $v = $value['video'];
+                    $thissql = array(
+                        'table' => 'user',
+                        'condition' => 'id = ' . $v['uid']
+                    );
+                    $u = $mysql->row($thissql);
+                    ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                        <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                        <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
+                    </div></li><?php } ?>
+            </ul>
+
+
+        <?php } ?>
+
+    </div>
+
+    <div class="right">
+
+        <div class="g"><script> var dsaid=49904; var dwidth=120; var dheight=240; </script> <script type="text/javascript" src="http://unionjs.dianxin.com/showPic.js" name="showpic" charset="utf-8" ></script></div>
+
+        <ul class="timer">
+
+            <h1>开播时间</h1>
+
+            <?php for($i=floor(Date('H')); $i<24; $i++) { ?><li><a><?php if($i<10){echo '0' . $i;}else{echo $i;} ?> - <?php if($i<9){echo '0' . ($i + 1);}else{echo $i + 1;} ?></a></li><?php } for($i=0; $i<floor(Date('H')); $i++) { ?><li><a><?php if($i<10){echo '0' . $i;}else{echo $i;} ?> - <?php if($i<9){echo '0' . ($i + 1);}else{echo $i + 1;} ?></a></li><?php } ?>
+
+        </ul>
+    </div>
+
+    <div class="clear"></div>
+
 </div>
 
 </body>

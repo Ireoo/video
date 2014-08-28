@@ -21,7 +21,6 @@ if(isset($_SESSION['user'])) {
 }else{
 	$o = '';
 }
-defined('ROOT') or define('ROOT', dirname(__FILE__) . '/../../');
 
 defined('HOST_NAME') or define('HOST_NAME','琦益网 - 企业产品直销平台');
 defined('SNAME') or define('SNAME','琦益');

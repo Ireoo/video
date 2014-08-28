@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8ae2019-df10-4450-9dee-8cf6e7dab4d2" name="Default" comment="">
+<<<<<<< HEAD
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+>>>>>>> FETCH_HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="card.iws" />
@@ -28,32 +33,109 @@
       <file leaf-file-name="room.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/room.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="91" column="0" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3015">
               <folding />
+=======
+            <state line="162" column="27" selection-start="5425" selection-end="5425" vertical-scroll-proportion="-22.25" vertical-offset="2455" max-vertical-offset="3876">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#embed#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#embed#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+>>>>>>> FETCH_HEAD
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="13" column="30" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="1125">
+=======
+            <state line="58" column="22" selection-start="3080" selection-end="3080" vertical-scroll-proportion="0.64309394" vertical-offset="520" max-vertical-offset="1520">
+>>>>>>> FETCH_HEAD
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="io.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/io.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="133" column="10" selection-start="4353" selection-end="4353" vertical-scroll-proportion="3.2980456" vertical-offset="0" max-vertical-offset="6405">
               <folding>
                 <marker date="1408586407000" expanded="false" signature="7396:7412" placeholder="..." />
+=======
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="149" column="50" selection-start="5713" selection-end="5713" vertical-scroll-proportion="-20.928572" vertical-offset="2245" max-vertical-offset="3971">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> FETCH_HEAD
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="49" selection-start="4338" selection-end="4338" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="2451">
+              <folding>
+                <marker date="1408841123522" expanded="true" signature="5082:5293" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animate.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/animate.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="19" selection-start="3051" selection-end="3056" vertical-scroll-proportion="-14.44" vertical-offset="1938" max-vertical-offset="59470">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="io.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/io.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="258" column="28" selection-start="10310" selection-end="10310" vertical-scroll-proportion="0.0" vertical-offset="4976" max-vertical-offset="7809">
+              <folding>
+                <marker date="1408819580926" expanded="true" signature="1799:1843" placeholder="..." />
+                <marker date="1408819580926" expanded="true" signature="2081:2092" placeholder="..." />
+                <marker date="1408819580926" expanded="true" signature="2133:2149" placeholder="..." />
+                <marker date="1408819580926" expanded="true" signature="2175:2186" placeholder="..." />
+                <marker date="1408819580926" expanded="true" signature="2229:2246" placeholder="..." />
+                <marker date="1408819580926" expanded="true" signature="2229:2253" placeholder="..." />
+                <marker date="1408819580926" expanded="true" signature="2229:2278" placeholder="..." />
+                <marker date="1408819580926" expanded="true" signature="6628:6644" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gift.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/post/gift.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="45" selection-start="398" selection-end="398" vertical-scroll-proportion="-2.607143" vertical-offset="269" max-vertical-offset="1653">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> FETCH_HEAD
     </leaf>
   </component>
   <component name="FindManager">
@@ -75,7 +157,6 @@
         <option value="$PROJECT_DIR$/js.js" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/include/login.php" />
-        <option value="$PROJECT_DIR$/include/config.php" />
         <option value="$PROJECT_DIR$/css/head.css" />
         <option value="$PROJECT_DIR$/i/tiaokuan.txt" />
         <option value="$PROJECT_DIR$/js/jquery.js" />
@@ -93,17 +174,25 @@
         <option value="$PROJECT_DIR$/i/avatar.php" />
         <option value="$PROJECT_DIR$/room2.php" />
         <option value="$PROJECT_DIR$/js/io1.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/i.css" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/i.php" />
         <option value="$PROJECT_DIR$/i/user.php" />
         <option value="$PROJECT_DIR$/i/money.php" />
         <option value="$PROJECT_DIR$/include/head.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/post/gift.php" />
         <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/io.js" />
+=======
+        <option value="$PROJECT_DIR$/include/config.php" />
+        <option value="$PROJECT_DIR$/app/post/gift.php" />
+        <option value="$PROJECT_DIR$/js/io.js" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/room.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+>>>>>>> FETCH_HEAD
       </list>
     </option>
   </component>
@@ -139,6 +228,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -167,13 +257,143 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="uploads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xiuxiu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> FETCH_HEAD
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,13 +410,24 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\video\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\video\app\video" />
       <recent name="D:\GitHub\video\images" />
+      <recent name="D:\GitHub\video\images\gift" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif">
+    <configuration default="false" name="2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" temporary="true" uri="http://v.ireoo.com/images/2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -210,7 +441,14 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="376d1e9e-8694-44c9-b5eb-6505cefe0896" server_name="w.ireoo.com">
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.2hDjuk_HmO0AAAAAAAAI_XBFMs4929.gif" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -313,10 +551,33 @@
       <updated>1408574260544</updated>
     </task>
     <task id="LOCAL-00020" summary="修改错误">
+<<<<<<< HEAD
       <created>1408608253605</created>
       <updated>1408608253605</updated>
     </task>
     <option name="localTasksCounter" value="21" />
+=======
+      <created>1408574585693</created>
+      <updated>1408574585693</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更新礼物函数，改善礼物赠送速度">
+      <created>1408801021395</created>
+      <updated>1408801021395</updated>
+    </task>
+    <task id="LOCAL-00022" summary="优化程序">
+      <created>1408804055829</created>
+      <updated>1408804055829</updated>
+    </task>
+    <task id="LOCAL-00023" summary="修改首页显示效果">
+      <created>1408836222721</created>
+      <updated>1408836222721</updated>
+    </task>
+    <task id="LOCAL-00024" summary="修改首页显示效果">
+      <created>1408841694857</created>
+      <updated>1408841694857</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+>>>>>>> FETCH_HEAD
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -332,7 +593,15 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18828125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34087238" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910052" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32910052" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> FETCH_HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -340,7 +609,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32982087" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> FETCH_HEAD
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -374,7 +646,10 @@
     <MESSAGE value="添加礼物功能" />
     <MESSAGE value="修改礼物功能，并保存到数据库" />
     <MESSAGE value="修改错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改错误" />
+    <MESSAGE value="更新礼物函数，改善礼物赠送速度" />
+    <MESSAGE value="优化程序" />
+    <MESSAGE value="修改首页显示效果" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改首页显示效果" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -567,6 +842,19 @@
         <state line="5" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209" />
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="2166" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i/logo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="34" selection-start="1436" selection-end="1436" vertical-scroll-proportion="0.0" vertical-offset="1007" max-vertical-offset="1178" />
+      </provider>
+    </entry>
+>>>>>>> FETCH_HEAD
     <entry file="file://$PROJECT_DIR$/io.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="48" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="4541" />
@@ -577,6 +865,7 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="22" selection-start="1940" selection-end="1940" vertical-scroll-proportion="-10.178572" vertical-offset="893" max-vertical-offset="1881" />
@@ -585,61 +874,188 @@
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="137" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="703" />
+=======
+    <entry file="file://$PROJECT_DIR$/i/tiaokuan.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="150" selection-start="7675" selection-end="7675" vertical-scroll-proportion="0.0" vertical-offset="159" max-vertical-offset="1064" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i/basic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="91" selection-end="292" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="342" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/i.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="53" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i/avatar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="835" selection-end="955" vertical-scroll-proportion="-23.071428" vertical-offset="0" max-vertical-offset="855" />
+>>>>>>> FETCH_HEAD
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/i.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="62" selection-start="613" selection-end="613" vertical-scroll-proportion="-6.678571" vertical-offset="136" max-vertical-offset="2375" />
+<<<<<<< HEAD
+=======
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/i/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="55" selection-start="1408" selection-end="1408" vertical-scroll-proportion="-22.392857" vertical-offset="456" max-vertical-offset="1824" />
+>>>>>>> FETCH_HEAD
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="46" column="13" selection-start="1372" selection-end="1379" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="187" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="390" />
+=======
+        <state line="30" column="0" selection-start="821" selection-end="821" vertical-scroll-proportion="-20.357143" vertical-offset="0" max-vertical-offset="741" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="187" selection-start="361" selection-end="361" vertical-scroll-proportion="0.15165336" vertical-offset="0" max-vertical-offset="877">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/config.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="706" selection-end="706" vertical-scroll-proportion="0.5977528" vertical-offset="0" max-vertical-offset="1349">
+          <folding />
+        </state>
+>>>>>>> FETCH_HEAD
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="7" column="8" selection-start="134" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/post/gift.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.33333334" vertical-offset="338" max-vertical-offset="960" />
+=======
+        <state line="46" column="13" selection-start="1372" selection-end="1379" vertical-scroll-proportion="0.5977528" vertical-offset="342" max-vertical-offset="2375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/xiuxiu/logo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="317" selection-end="317" vertical-scroll-proportion="0.21348314" vertical-offset="0" max-vertical-offset="890">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/post/gift.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="45" selection-start="398" selection-end="398" vertical-scroll-proportion="-2.607143" vertical-offset="269" max-vertical-offset="1653">
+          <folding />
+        </state>
+>>>>>>> FETCH_HEAD
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/room1.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="106" column="20" selection-start="3334" selection-end="3472" vertical-scroll-proportion="-6.75" vertical-offset="1428" max-vertical-offset="3195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/room.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="91" column="0" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="3015">
+=======
+        <state line="258" column="28" selection-start="10310" selection-end="10310" vertical-scroll-proportion="0.0" vertical-offset="4976" max-vertical-offset="7809">
+          <folding>
+            <marker date="1408819580926" expanded="true" signature="1799:1843" placeholder="..." />
+            <marker date="1408819580926" expanded="true" signature="2081:2092" placeholder="..." />
+            <marker date="1408819580926" expanded="true" signature="2133:2149" placeholder="..." />
+            <marker date="1408819580926" expanded="true" signature="2175:2186" placeholder="..." />
+            <marker date="1408819580926" expanded="true" signature="2229:2246" placeholder="..." />
+            <marker date="1408819580926" expanded="true" signature="2229:2253" placeholder="..." />
+            <marker date="1408819580926" expanded="true" signature="2229:2278" placeholder="..." />
+            <marker date="1408819580926" expanded="true" signature="6628:6644" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="19" selection-start="3051" selection-end="3056" vertical-scroll-proportion="-14.44" vertical-offset="1938" max-vertical-offset="59470">
+>>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="30" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1200">
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="49" selection-start="4338" selection-end="4338" vertical-scroll-proportion="0.0" vertical-offset="1533" max-vertical-offset="2451">
+          <folding>
+            <marker date="1408841123522" expanded="true" signature="5082:5293" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="50" selection-start="5713" selection-end="5713" vertical-scroll-proportion="-20.928572" vertical-offset="2245" max-vertical-offset="3971">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#embed#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+>>>>>>> FETCH_HEAD
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/io.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="133" column="10" selection-start="4353" selection-end="4353" vertical-scroll-proportion="3.2980456" vertical-offset="0" max-vertical-offset="6405">
           <folding>
             <marker date="1408586407000" expanded="false" signature="7396:7412" placeholder="..." />
+=======
+        <state line="162" column="27" selection-start="5425" selection-end="5425" vertical-scroll-proportion="-22.25" vertical-offset="2455" max-vertical-offset="3876">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#embed#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#embed#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> FETCH_HEAD
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="22" selection-start="3080" selection-end="3080" vertical-scroll-proportion="0.64309394" vertical-offset="520" max-vertical-offset="1520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> FETCH_HEAD
   </component>
 </project>
 

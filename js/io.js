@@ -40,26 +40,45 @@ $(function() {
 
     });
 
+    var gifttimer = 0,
+        cheng = 1,
+        chengtxt = '',
+        giftmember = 0,
+        giftid = 0;
+
     socket.on('give gift', function(data) {
 
         var giftwidth = parseInt($('div.vs div.bar h1').width());
         //alert(1);
-        var color = '#CCC';
-        if(data.member >= 1 && data.member < 11) color = 'green';
-        if(data.member >= 11 && data.member < 520) color = 'blue';
-        if(data.member >= 520 && data.member < 1314) color = 'red';
-        if(data.member >= 1314 && data.member < 5201314) color = '#9B13FF';
-        if(data.member >= 5201314) color = '#4898F8';
-        //gift(gift);
+        var color = '##1cd14f';
+
+        if(data.timer - gifttimer < 5000 && giftmember == data.member && giftid == data.gift) {
+            cheng = parseInt(cheng) + 1;
+            if(cheng > 1 && cheng < 11) color = '#3ec896';
+            if(cheng >= 11 && cheng < 21) color = '#34d2d4';
+            if(cheng >= 21 && cheng < 60) color = '#3290db';
+            if(cheng >= 60 && cheng < 120) color = '#433acb';
+            if(cheng >= 120 && cheng < 520) color = '#753cd3';
+            if(cheng >= 520 && cheng < 1314) color = '#b245d8';
+            if(cheng >= 1314 && cheng < 5201314) color = '#d861b7';
+            if(cheng >= 5201314) color = '#da3636';
+            chengtxt = '×<span style="font-size: 30px; padding-left: 10px; color: ' + color + '">' + cheng + '</span>';
+        }else{
+            cheng = 1;
+            chengtxt = '';
+        }
+        gifttimer = data.timer;
+        giftmember = data.member;
+        giftid = data.gift;
+        giftmsg('<spasn style="color: red;">' + data.name + '</spasn><spasn style="padding: 0 10px;">送给</spasn><spasn style="color: red;">' + data.toname + '</spasn><spasn style="padding: 0 10px; color: #D861B7; font-size: 24px;">' + data.member + '</spasn><spasn>个</spasn>' + ' <img src="' + giftarray[data.gift].url + '" />' + chengtxt);
         if(data.gift == 1) {
-            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 赞 .', color);
             $('div.vs div.bar h1 span.left i').text(parseInt($('div.vs div.bar h1 span.left i').text()) + parseInt(data.member));
             var good = parseInt($('div.vs div.bar h1 span.left i').text());
             var bad = parseInt($('div.vs div.bar h1 span.right i').text());
             $('div.vs div.bar h1 span.left').animate({width: good/(good+bad)*giftwidth}, {speed: 1000, queue: false});
             $('div.vs div.bar h1 span.right').animate({width: bad/(good+bad)*giftwidth}, {speed: 1000, queue: false});
-        }else{
-            giftmsg(data.name + ' 送给主播 ' + data.member + ' 个 差 .', color);
+        }
+        if(data.gift == 2) {
             $('div.vs div.bar h1 span.right i').text(parseInt($('div.vs div.bar h1 span.right i').text()) + parseInt(data.member));
             var good = parseInt($('div.vs div.bar h1 span.left i').text());
             var bad = parseInt($('div.vs div.bar h1 span.right i').text());
@@ -67,7 +86,18 @@ $(function() {
             $('div.vs div.bar h1 span.right').animate({width: bad/(good+bad)*giftwidth}, {speed: 1000, queue: false});
         }
 
+
+
     });
+
+    var giftmsg = function(msg) {
+
+        var com = $('<div />').css({fontSize: '12px', backgroundColor: '#EBEBEB', color: '#333', padding: '10px', borderRadius: '5px'}).html(msg);
+        var li = $('<li />').css({margin: '10px 0'}).append(com);
+        $('ul.getgift').prepend(li);
+        li.delay(10000).slideUp(1000, function() {$(this).css({backgroundColor: '#FFF'}).remove();});
+
+    };
 
     socket.on('get users', function(users) {
 
@@ -152,6 +182,8 @@ $(function() {
     var chatcom = function(name, avatar, msg, timer, ziji) {
         var image = $('<img />').attr('src', avatar).attr('title', name).width(20).height(20).css({borderRadius: '3px', verticalAlign: 'bottom'});
         var a = $('<a />').attr('src', 'http://v.ireoo.com/').text(name + ':').css({'display' : 'block', 'font-size' : '12px', 'margin-bottom' : '5px'});
+        msg = msg.replace(/(<.*?>)/g, function() {return '';});
+        msg = msg.replace(/\{([0-9]+)\}/g, function() {return '<i style="background: url(' + faceurl + ') ' + facearray[RegExp.$1] + '; width: 30px; height: 30px; display: inline-block; vertical-align : middle;"></i>';});
         var com = $('<div />').css({background: '#EBEBEB', fontSize: '12px', borderRadius: '3px', padding: '5px', verticalAlign: 'bottom', display: 'inline-block', wordBreak: 'break-all', wordWrap: 'break-word', 'vertical-align' : 'middle'}).append(msg);
         if(!ziji) {
             var li = $('<li />').css({marginBottom: '10px'}).append(a).append(com).appendTo(chatroom); //.append(image)
@@ -170,16 +202,7 @@ $(function() {
         var com = $('<div />').css({display: 'inline-block', fontSize: '12px', color: '#CCC', margin: 'auto'}).text('[系统] ' + msg);
         var li = $('<li />').css({marginBottom: '10px'}).append(com).appendTo(chatroom);
         chatheight += li.height() + 10;
-        chatroom.animate({scrollTop: chatheight}, 300);
-    };
-
-    var giftmsg = function(msg, color) {
-
-        var com = $('<div />').css({fontSize: '12px', backgroundColor: color, color: '#FFF', padding: '10px', borderRadius: '5px'}).text(msg);
-        var li = $('<li />').css({margin: '10px 0'}).append(com);
-        $('ul.getgift').prepend(li);
-        li.delay(10000).slideUp(1000, function() {$(this).css({backgroundColor: '#FFF'}).remove();});
-
+        chatroom.animate({scrollTop: chatheight}, {speed: 300, queue: false});
     };
 
     /**
@@ -199,7 +222,7 @@ $(function() {
 //            if(name != '游客') {
             if(chatinput.val() != '') {
                 var timer = (new Date()).getTime();
-                var msg = chatinput.val().replace(/\{([0-9]+)\}/g, function() {return '<i style="background: url(' + faceurl + ') ' + facearray[RegExp.$1] + '; width: 30px; height: 30px; display: inline-block; vertical-align : middle;"></i>';});
+                var msg = chatinput.val();
                 socket.emit('say to everyone', {
                     msg   : msg
                 });
@@ -260,81 +283,108 @@ $(function() {
      *
      */
 
+    var giftarray = [
+        {title: '棒棒糖（每分钟获得一个，最高累计5个）', money : '0', url : '/images/gift/bangbangtang.gif'}
+        , {title: '喜欢', money : '0.1', url : '/images/gift/xihuan.gif'}
+        , {title: '炸弹', money : '0.1', url : '/images/gift/zhadan.gif'}
+        , {title: '萝莉', money : '0.1', url : '/images/gift/luoli.gif'}
+        , {title: '巧克力', money : '1', url : '/images/gift/qiaokeli.gif'}
+        , {title: '拥抱', money : '1', url : '/images/gift/shuangren.gif'}
+        , {title: 'i love you', money : '1', url : '/images/gift/love.gif'}
+        , {title: '蓝色妖姬', money : '1', url : '/images/gift/hua.gif'}
+        , {title: '钻戒', money : '5', url : '/images/gift/zuanjie.gif'}
+    ];
 
-
-    var giftGood = $('<button />').width(30).height(30).text('赞').attr('title', '消耗0.1元').css({'vertical-align' : 'middle', 'margin-right' : '1px', 'backgroundColor' : '#999'});
-    var giftBad = $('<button />').width(30).height(30).text('差').attr('title', '消耗0.1元').css({'vertical-align' : 'middle', 'margin-right' : '1px', 'backgroundColor' : '#999'});
-    var giftMember = $('<input />').width(120).height(28).val(1).css({'vertical-align' : 'middle', 'border' : '1px #4898F8 solid', 'padding' : '0 5px', 'float' : 'right'});
-    var giftSend = $('<button />').width(60).height(30).text('赠送').css({'vertical-align' : 'middle', 'float' : 'right', 'margin-right' : '1px'});
-    var giftPay = $('<button />').width(60).height(30).text('充值').css({'vertical-align' : 'middle', 'float' : 'right', 'margin-right' : '1px'});
+    var giftChoose = $('<div />').css({marginBottom: '10px'});
+    var giftButton = $('<div />').css({textAlign: 'right'});
+    var giftMember = $('<input />').width(120).height(28).val(1).css({'vertical-align' : 'middle', 'border' : '1px #4898F8 solid', 'padding' : '0 5px', 'margin-right' : '1px'});
+    var giftSend = $('<button />').width(60).height(30).text('赠送').css({'vertical-align' : 'middle'});
+    var giftPay = $('<button />').width(60).height(30).text('充值').css({'vertical-align' : 'middle'});
+    var giftresult = $('<div />').css({fontSize: '12px', color: 'red', display: 'inline-block'});
 
     var giftBox = $('div.gift');
-    giftBox.append(giftGood).append(giftBad).append(giftPay).append(giftSend).append(giftMember);
+
+    giftButton.append(giftresult).append(giftSend).append(giftMember).append(giftPay);
+    giftBox.append(giftChoose).append(giftButton);
+
+    var jishu = $('<span />').css({borderRadius: '10px', width: '20px', height: '20px', display: 'inline-block', background: 'red', color: '#FFF', position: 'absolute', top : '0', right : '0', fontSize: '12px', textAlign: 'center', lineHeight: '20px'}).text(0);
+
+    for(var i = 0; i < giftarray.length; i++) {
+
+        var bang = $('<div />').css({'width' : '67px', 'display' : 'inline-block', 'border' : '1px #EBEBEB solid', 'cursor' : 'pointer', 'padding' : '5px 0', 'margin-right' : '10px', 'text-align' : 'center'}).attr('id', i).attr('title', giftarray[i].title + "   价值:" + giftarray[i].money + '元').append($('<img />').attr('src', giftarray[i].url).height(40)).appendTo(giftChoose).hover(
+            function() {
+                if(!$(this).hasClass('on')) {
+                    $(this).css({'borderColor' : '#333'});
+                }else{
+                    $(this).css({'borderColor' : '#4898F8'});
+                }
+            },
+            function() {
+                if(!$(this).hasClass('on')) {
+                    $(this).css({'borderColor' : '#EBEBEB'});
+                }else{
+                    $(this).css({'borderColor' : '#4898F8'});
+                }
+            }
+        ).click(
+            function() {
+                giftChoose.find('div').removeClass('on').css({borderColor: '#EBEBEB'});
+                $(this).addClass('on').css({borderColor: '#4898F8'});
+                gift = $(this).attr('id');
+            }
+        );
+
+        if(i == 0) {
+            bang.css({'borderColor' : '#4898F8', position: 'relative'}).addClass('on').append(jishu);
+            setInterval(
+                function() {
+                    if(parseInt(jishu.text()) < 5) {
+                        jishu.text(parseInt(jishu.text()) + 1);
+                    }
+                }, 60000
+            );
+        }
+
+    }
 
     var gift = 0;
 
-    giftGood.click(
-        function() {
-            gift = 1;
-            giftBad.removeClass('on');
-            $(this).addClass('on');
-        }
-    ).hover(
-        function() {
-            if(!$(this).hasClass('on')) {
-                $(this).css({'backgroundColor' : '#333'});
-            }else{
-                $(this).css({'backgroundColor' : '#4898F8'});
-            }
-        },
-        function() {
-            if(!$(this).hasClass('on')) {
-                $(this).css({'backgroundColor' : '#999'});
-            }else{
-                $(this).css({'backgroundColor' : '#4898F8'});
-            }
-        }
-    );
-
-    giftBad.click(
-        function() {
-            gift = 2;
-            giftGood.removeClass('on');
-            $(this).addClass('on');
-        }
-    ).hover(
-        function() {
-            if(!$(this).hasClass('on')) {
-                $(this).css({'backgroundColor' : '#333'});
-            }else{
-                $(this).css({'backgroundColor' : '#4898F8'});
-            }
-        },
-        function() {
-            if(!$(this).hasClass('on')) {
-                $(this).css({'backgroundColor' : '#999'});
-            }else{
-                $(this).css({'backgroundColor' : '#4898F8'});
-            }
-        }
-    );
-
     giftSend.click(
         function() {
-
             var d = {
+                from : from,
                 name : name,
                 gift : gift,
                 member : giftMember.val(),
-                room : room
+                room : room,
+                timer : new Date().getTime(),
+                toname : toname
             };
-            $.post("/app/post/gift.php", d, function(result){
-                if(result == 'ok') {
-                    socket.emit('gift', d);
+
+            if(gift != 0) {
+                $.post("/app/post/gift.php", d, function(result) {
+                    if(result == 'ok') {
+                        giftresult.text('');
+                        socket.emit('gift', d);
+                    }else{
+                        giftresult.text(result);
+                    }
+                });
+            }else{
+                if(parseInt(jishu.text()) >= d.member) {
+                    $.post("/app/post/gift.php", d, function(result) {
+                        if(result == 'ok') {
+                            giftresult.text('');
+                            socket.emit('gift', d);
+                        }else{
+                            giftresult.text(result);
+                        }
+                    });
+                    jishu.text(parseInt(jishu.text()) - d.member);
                 }else{
-                    alert(result);
+                    giftresult.text('鲜花数量不够！');
                 }
-            });
+            }
 
         }
     );
@@ -344,52 +394,5 @@ $(function() {
             window.open('http://v.ireoo.com/pay', '_blank');
         }
     );
-
-
-    /**
-     *
-     * 系统尺寸改变
-     *
-     */
-
-//        $(window).resize(function() {
-//            if($(window).width() >= 1000) {
-//                chatroom.width($(window).width() - 280).height($(window).height() - 130);
-//                listbox.width(200).height($(window).height() - 110).show();
-//                chatroom.animate({scrollTop: chatheight}, 300);
-//                chatbox.width($(window).width() - 40).height(50);
-//            }else{
-//                listbox.hide();
-//                chatroom.width($(window).width() - 60).height($(window).height() - 130);
-//
-//                chatroom.animate({scrollTop: chatheight}, 300);
-//                chatbox.width($(window).width() - 40).height(50);
-//            }
-//        });
-
-
-
-    /**
-     *
-     * 创建视频
-     *
-     */
-//    rtc.connect('ws://115.29.39.169:8001', room);
-//
-//    rtc.createStream({"video":
-//    {
-//        mandatory: { 'minAspectRatio': 2, 'maxAspectRatio': 2 },
-//        optional: []
-//    },
-//        "audio":true
-//    }, function(stream){
-//        // get local stream for manipulation
-//        rtc.attachStream(stream, 'me');
-//    });
-//
-//    rtc.on('add remote stream', function(stream){
-//        // show the remote video
-//        rtc.attachStream(stream, 'boss');
-//    });
 
 });
