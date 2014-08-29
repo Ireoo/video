@@ -17,7 +17,7 @@
 
 require_once("alipay.config.php");
 require_once("lib/alipay_notify.class.php");
-require_once("lib/mysql.class.php");
+require_once("../../lib/mysql.class.php");
 
 //计算得出通知验证结果
 $alipayNotify = new AlipayNotify($alipay_config);
@@ -42,6 +42,10 @@ if($verify_result) {//验证成功
 
 	//交易状态
 	$trade_status = $_POST['trade_status'];
+
+    $mysql = new mysql;
+
+    $mysql->insert('note', array('value' => json_encode($_POST)));
 
 
     if($_POST['trade_status'] == 'TRADE_FINISHED') {
@@ -71,19 +75,17 @@ if($verify_result) {//验证成功
         //调试用，写文本函数记录程序运行情况是否正常
         //logResult("这里写入想要调试的代码变量值，或其他运行的结果记录");
 
-        $mysql = new mysql;
-
         $s = array(
             'table' => 'cart',
             'condition' => 'id = ' . $out_trade_no
         );
-        $cart = $Mysql->row($s);
+        $cart = $mysql->row($s);
 
         if(is_array($cart) and $cart['pay'] != 1) {
 
             $m = $cart['money'];
             $id = $cart['uid'];
-            $mysql->update('cart', array('pay' => 1, 'trade_no' => $trade_no, 'trade_status' => $trade_status), "id = '{$out_trade_no}'");
+            $mysql->update('cart', array('pay' => 1, 'trade_no' => $trade_no, 'trade_status' => $trade_status), "id = {$out_trade_no}");
             $mysql->execute("UPDATE  `user` SET  `money` =  `money` + {$m} WHERE  `id` ={$id};");
 
         }else{

@@ -4,17 +4,28 @@ header("Content-type: text/html; charset=utf-8");
 date_default_timezone_set("PRC");
 session_start();
 $get_start_time = time();
-require_once("lib/mysql.class.php");
+require_once("../../lib/mysql.class.php");
 $mysql = new mysql;
 
 $token = '';
 if(isset($_GET['token'])) $token = $_GET['token'];
 
-$no = Date('YmdHis') . rand(10000, 99999);
+if($token != '') {
+    if($token != $_SESSION['token']) {
+        if(isset($_POST)) {
 
-//die($no);
+            $no = Date('YmdHis') . rand(10000, 99999);
+            $mysql->insert('cart', array('id' => $no, 'uid' => $_POST['uid'], 'money' => $_POST['money'], 'timer' => time()));
 
-$mysql->insert('cart', array('id' => $no, 'uid' => $_POST['uid'], 'money' => $_POST['money']));
+        }else{
+            header("Location: http://zhubo.pro/i?i=money");
+        }
+        $_SESSION['token'] = $_GET['token'];
+    }else{
+        header("Location: http://zhubo.pro/i?i=money");
+    }
+
+}
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

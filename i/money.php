@@ -23,7 +23,7 @@
 <li class="money">余额：<i><?php echo $o['money']; ?></i></li>
 
 <li>
-    <form action="http://m.ireoo.com/alipayapi.php?token=<?php echo md5(rand(0, 10000000000)); ?>" method="post">
+    <form action="app/alipay/alipayapi.php?token=<?php echo md5(rand(0, 10000000000)); ?>" method="post">
         <label>充值金额：</label>
         <input type="text" style="width: 100px;" name="money" />
         <input type="hidden" name="uid" value="<?php echo $o['id']; ?>" />
