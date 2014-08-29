@@ -11,7 +11,7 @@
 <style type="text/css">
 
     li.money{font-size: 12px; color: #CCC;}
-    li.money *{vertical-align: middle;}
+    li.money *{}
     li.money i{font-style: normal; color: red; font-weight: bold; font-size: 40px;}
     li.money a{padding: 5px 10px; margin-left: 10px; color: #FFF; background: #4898F8; font-size: 12px; border-radius: 5px; font-weight: bold; text-decoration: none; display: inline-block;}
 
@@ -20,7 +20,7 @@
 
 </style>
 
-<li class="money">余额：<i><?php echo $o['money']; ?></i><a href="pay" target="_blank">充值</a></li>
+<li class="money">余额：<i><?php echo $o['money']; ?></i></li>
 
 <li>
     <form action="http://m.ireoo.com/alipayapi.php?token=<?php echo md5(rand(0, 10000000000)); ?>" method="post">
@@ -36,7 +36,7 @@
 
     <ul>
 
-        <h1>消费记录</h1>
+        <h1>充值记录</h1>
 <!--        <li>--><?php //echo date('Y年m月d日 H:i:s'); ?><!-- - 消费100元.</li>-->
 
     </ul>
