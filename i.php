@@ -67,12 +67,10 @@ $player = $mysql->row($sql);
     }
     ?>
 
-
-
         <div class="edit">
 
             <ul class="caidan">
-                <img src="http://ireoo.com/<?php echo $o['avatar_large']; ?>" />
+                <img src="<?php echo $o['avatar']; ?>" />
 
                 <a<?php if($page == 'user') {echo ' class="on"';} ?> href="?i=user">个人资料</a>
                 <a<?php if($page == 'avatar') {echo ' class="on"';} ?> href="?i=avatar">头像设置</a>
@@ -112,11 +110,6 @@ $player = $mysql->row($sql);
             </ul>
 
         </div>
-
-
-
-
-
 
 </div>
 

@@ -99,9 +99,9 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
                 <?php if($player['yyVideo'] != '0') { ?>
                     <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/<?php echo $player['yyVideo']; ?>/entscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
             <?php }else{ if($player['uid'] == $o['id']) { ?>
-                    <embed src="http://v.ireoo.com/app/video/recover.swf?uid=<?php echo $player['uid']; ?>" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+                    <embed src="app/video/recover.swf?uid=<?php echo $player['uid']; ?>" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
                     <?php }else{ ?>
-                    <embed src="http://v.ireoo.com/app/video/play.swf?uid=<?php echo $player['uid']; ?>" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+                    <embed src="app/video/play.swf?uid=<?php echo $player['uid']; ?>" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
                 <?php }} ?>
                 <video id="me" style="display: none;" autoplay muted></video>
             </div>
@@ -161,7 +161,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         </div>
 
         <ul class="username">
-            <h1><img src="http://ireoo.com/uploads/u/a<?php echo $person['id']; ?>.jpg" /><?php echo $person['username']; ?></h1>
+            <h1><img src="uploads/u/a<?php echo $person['id']; ?>.jpg" /><?php echo $person['username']; ?></h1>
             <li><?php echo '年龄：' . (DATE('Y', time() - strtotime($person['year'] . '/' . $person['mouth'] . '/' . $person['day'] . ' 00:00:00')) - 1970); ?></li>
             <li><?php echo '生日：' . $person['year'] . '年' . $person['mouth'] . '月' . $person['day'] . '日'; ?></li>
             <li><?php echo '性别：' . $person['sex']; ?></li>

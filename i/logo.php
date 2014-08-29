@@ -29,7 +29,7 @@
             $('#xiuxiuEditor').after('<div id="avatar"></div>').remove();
             $('div.windows').hide();
         };
-        xiuxiu.setUploadURL("http://v.ireoo.com/app/xiuxiu/logo.php?id=<?php echo $o['id']; ?>");
+        xiuxiu.setUploadURL("http://zhubo.pro/app/xiuxiu/logo.php?id=<?php echo $o['id']; ?>");
         //xiuxiu.setUploadArgs({'sid' : '<?php echo $id; ?>'});
         xiuxiu.setUploadType (1);
         xiuxiu.onBeforeUpload = function(data, id) {
@@ -41,7 +41,7 @@
         };
         xiuxiu.onDebug = function (data)
         {
-            alert(data);
+            //alert(data);
         };
     }
 </script>

@@ -65,10 +65,10 @@ $player1 = 99678367; //quan
 
         <div class="chat"></div>
         <div class="player left">
-            <embed src="http://v.ireoo.com/app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:400px; height: 300px";>
+            <embed src="app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:400px; height: 300px";>
         </div>
         <div class="player right">
-            <embed src="http://v.ireoo.com/app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:400px; height: 300px";>
+            <embed src="app/video/play.swf?uid=xyz123" type="application/x-shockwave-flash" style="width:400px; height: 300px";>
         </div>
 
     </div>
@@ -78,7 +78,7 @@ $player1 = 99678367; //quan
     <div class="mian">
 
         <ul class="list">
-            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li class="sider_player"><a target="player" href="/<?php echo $v['uid']; ?>"><img class="pulse animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
+            <?php foreach($players as $key => $value) { $v = $value['video']; ?><li class="sider_player"><a target="player" href="/<?php echo $v['uid']; ?>"><img class="pulse animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a></li><?php } ?>
         </ul>
 
         <ol>
@@ -110,8 +110,8 @@ $player1 = 99678367; //quan
                     'condition' => 'id = ' . $v['uid']
                 );
                 $u = $mysql->row($thissql);
-            ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
-                    <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+            ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                    <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
                     <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
             </div></li><?php } ?>
         </ul>
@@ -135,8 +135,8 @@ $player1 = 99678367; //quan
                         'condition' => 'id = ' . $v['uid']
                     );
                     $u = $mysql->row($thissql);
-                    ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
-                        <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                    ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                        <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
                         <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
                     </div></li><?php } ?>
             </ul>
@@ -163,12 +163,11 @@ $player1 = 99678367; //quan
                         'condition' => 'id = ' . $v['uid']
                     );
                     $u = $mysql->row($thissql);
-                    ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
-                        <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="http://ireoo.com/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                    ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                        <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
                         <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
                     </div></li><?php } ?>
             </ul>
-
 
         <?php } ?>
 

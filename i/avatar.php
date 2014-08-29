@@ -15,24 +15,25 @@
     xiuxiu.onInit = function ()
     {
         // your code here
-        xiuxiu.loadPhoto("http://ireoo.com/<?php echo $o['avatar']; ?>?<?php echo rand(0, 9999999999999999999); ?>");
+        xiuxiu.loadPhoto("http://zhubo.pro/uploads/u/a<?php echo $o['id']; ?>.jpg?<?php echo rand(0, 9999999999999999999); ?>");
     };
 
-    xiuxiu.setUploadURL("http://ireoo.com/app/xiuxiu/avatar.php?uid=<?php echo $o['id']; ?>");
+    xiuxiu.setUploadURL("http://zhubo.pro/app/xiuxiu/avatar.php?uid=<?php echo $o['id']; ?>");
     //xiuxiu.setUploadArgs({'uid' : '<?php echo $o['id']; ?>'});
-xiuxiu.setUploadType (1);
+xiuxiu.setUploadType(1);
 
 xiuxiu.onBeforeUpload = function(data, id) {
 //alert("上传响应" + data);
 };
 
 xiuxiu.onUploadResponse= function(data, id) {
-alert(data);
+//alert(data);
+    location.reload();
 };
 
 xiuxiu.onDebug = function (data)
 {
-alert(data);
+//alert(data);
 }
 </script>
 
