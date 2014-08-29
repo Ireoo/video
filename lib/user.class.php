@@ -11,8 +11,6 @@ class user
             'phone'         => 0,
             'password'      => 'unknow',
             'password_once' => 'unkonw',
-            'avatar'        => 'uploads/u/avatar.jpg',
-            'avatar_large'  => 'uploads/u/avatar.jpg',
             'timer'         => time(),
             'ip'            => $this->getIP()
         );

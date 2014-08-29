@@ -137,7 +137,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
             <ul>
                 <h1>简介</h1>
-                <li><?php echo $person['desc']; ?></li>
+                <li><?php echo $person['summary']; ?></li>
             </ul>
 
         </div>

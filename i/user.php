@@ -49,6 +49,11 @@ if(isset($_GET['edit']) and $_GET['edit'] == 'user') {
     </li>
 
     <li>
+        <label>签名</label>
+        <input name="synopsis" value="<?php echo $o['synopsis']; ?>" />
+    </li>
+
+    <li>
         <label>真实姓名</label>
         <input name="realname" value="<?php echo $o['realname']; ?>" />
     </li>
@@ -84,7 +89,7 @@ if(isset($_GET['edit']) and $_GET['edit'] == 'user') {
 
     <li>
         <label>自我简介</label>
-        <textarea id="editor" name="desc"><?php echo $o['desc']; ?></textarea>
+        <textarea id="editor" name="summary"><?php echo $o['summary']; ?></textarea>
     </li>
 
     <li><button>保存</button></li>
