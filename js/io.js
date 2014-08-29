@@ -13,7 +13,7 @@ $(function() {
     /**
      * 连接服务器
      */
-    var socket = io.connect("115.29.39.169:8000");
+    var socket = io.connect("114.215.150.186:8000");
 
     var usersbox = $('div.title span#users i');
 
