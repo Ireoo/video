@@ -71,7 +71,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         var from = 0;
         <?php }else{ ?>
         var name = '<?php echo $o['username']; ?>';
-        var avatar = 'http://ireoo.com/<?php echo $o['avatar_large']; ?>';
+        var avatar = 'uploads/u/a<?php echo $o['id']; ?>.jpg';
         var from = <?php echo $o['id']; ?>;
         <?php } ?>
         var room = '<?php echo $person['id']; ?>';

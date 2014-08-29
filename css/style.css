@@ -72,5 +72,5 @@ div.vs div.bar h1 span.right{text-align: left; background: #ff5b5f;}
 
 div.vs div.gift{padding: 10px 5px 5px 5px; vertical-align: middle;}
 
-ul.getgift{float: right; width: 100%; margin: 0; padding: 0; background: none;}
+ul.getgift{width: 100%; margin: 0; padding: 0; background: none;}
 ul.getgift li{padding: 0;}

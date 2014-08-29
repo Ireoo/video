@@ -127,7 +127,8 @@ $(function() {
     socket.emit('user connect', {
         name : name,
         avatar : avatar,
-        room : room
+        room : room,
+        toname : toname
     });
 
     /**
