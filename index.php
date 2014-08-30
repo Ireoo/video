@@ -116,13 +116,16 @@ $player1 = 99678367; //quan
             </div></li><?php } ?>
         </ul>
 
-        <?php for($i=floor(Date('H')); $i<24; $i++) { ?>
+        <?php for($i=floor(Date('H')); $i<floor(Date('H')) + 3; $i++) {
+            if($i >= 24) $i = $i - 24;
+            ?>
 
             <ul class="list">
-                <h1 class="title">今天<?php echo $i; ?>点开播的主播</h1>
+                <h1 class="title"><?php echo $i; ?>点开播</h1>
                 <?php
                 $sql = array(
                     'table' => 'video',
+                    'condition' => 'start = ' . $i,
                     'order' => 'hua desc',
                     'limit' => 'LIMIT 0, 12'
 //    , 'condition' => "play = 1"
@@ -144,32 +147,28 @@ $player1 = 99678367; //quan
 
         <?php } ?>
 
-        <?php for($i=0; $i<floor(Date('H')); $i++) { ?>
-
-            <ul class="list">
-                <h1 class="title">明天<?php echo $i; ?>点开播的主播</h1>
-                <?php
-                $sql = array(
-                    'table' => 'video',
-                    'order' => 'hua desc',
-                    'limit' => 'LIMIT 0, 12'
+        <ul class="list">
+            <h1 class="title">新加入主播</h1>
+            <?php
+            $sql = array(
+                'table' => 'video',
+                'order' => 'uid desc',
+                'limit' => 'LIMIT 0, 12'
 //    , 'condition' => "play = 1"
+            );
+            $list = $mysql->select($sql);
+            foreach($list as $key => $value) {
+                $v = $value['video'];
+                $thissql = array(
+                    'table' => 'user',
+                    'condition' => 'id = ' . $v['uid']
                 );
-                $list = $mysql->select($sql);
-                foreach($list as $key => $value) {
-                    $v = $value['video'];
-                    $thissql = array(
-                        'table' => 'user',
-                        'condition' => 'id = ' . $v['uid']
-                    );
-                    $u = $mysql->row($thissql);
-                    ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
-                        <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
-                        <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
-                    </div></li><?php } ?>
-            </ul>
-
-        <?php } ?>
+                $u = $mysql->row($thissql);
+                ?><li><a class="img" target="_blank" href="/<?php echo $v['uid']; ?>"><img class="animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                    <h1><a target="_blank" href="/<?php echo $v['uid']; ?>"><img src="/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a target="_blank" href="/<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                    <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
+                </div></li><?php } ?>
+        </ul>
 
     </div>
 
