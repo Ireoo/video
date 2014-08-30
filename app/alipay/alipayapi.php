@@ -14,6 +14,11 @@ if($token != '') {
     if($token != $_SESSION['token']) {
         if(isset($_POST)) {
 
+            if($_POST['money'] < 1) {
+                header("Location: http://zhubo.pro/i?i=money");
+                die();
+            }
+
             $no = Date('YmdHis') . rand(10000, 99999);
             $mysql->insert('cart', array('id' => $no, 'uid' => $_POST['uid'], 'money' => $_POST['money'], 'timer' => time()));
 

@@ -28,7 +28,7 @@ $(function() {
         $('div.list li#' + user.id).remove();
         console.log('div.list li#' + user.id);
         usersbox.text(parseInt(usersbox.text()) - 1);
-        systemmsg('用户 ' + user.name + ' 离开聊天室.');
+        systemmsg('[系统] ' + '用户 ' + user.name + ' 离开聊天室.');
 
     });
 
@@ -36,7 +36,7 @@ $(function() {
 
         addplayer(user.id, user.name, user.avatar);
         usersbox.text(parseInt(usersbox.text()) + 1);
-        systemmsg('用户 ' + user.name + ' 进入聊天室.');
+        systemmsg('[系统] ' + '用户 ' + user.name + ' 进入聊天室.');
 
     });
 
@@ -44,7 +44,9 @@ $(function() {
         cheng = 1,
         chengtxt = '',
         giftmember = 0,
-        giftid = 0;
+        giftid = 0,
+        giftuser = '',
+        giftto = '';
 
     socket.on('give gift', function(data) {
 
@@ -52,7 +54,8 @@ $(function() {
         //alert(1);
         var color = '##1cd14f';
 
-        if(data.timer - gifttimer < 5000 && giftmember == data.member && giftid == data.gift) {
+
+        if(data.timer - gifttimer < 5000 && giftmember == data.member && giftid == data.gift && giftuser == data.from && giftto == data.room) {
             cheng = parseInt(cheng) + 1;
             if(cheng > 1 && cheng < 11) color = '#3ec896';
             if(cheng >= 11 && cheng < 21) color = '#34d2d4';
@@ -62,15 +65,18 @@ $(function() {
             if(cheng >= 520 && cheng < 1314) color = '#b245d8';
             if(cheng >= 1314 && cheng < 5201314) color = '#d861b7';
             if(cheng >= 5201314) color = '#da3636';
-            chengtxt = '×<span style="font-size: 30px; padding-left: 10px; color: ' + color + '">' + cheng + '</span>';
+            chengtxt = '<sup style="padding-left: 10px; color: #76bcff;">连送</sup><span style="font-weight: bold; color: #ffa34f;">×</span><span style="font-size: 20px; padding-left: 10px; color: ' + color + '">' + cheng + '</span>';
         }else{
             cheng = 1;
             chengtxt = '';
         }
         gifttimer = data.timer;
-        giftmember = data.member;
         giftid = data.gift;
-        giftmsg('<spasn style="color: red;">' + data.name + '</spasn><spasn style="padding: 0 10px;">送给</spasn><spasn style="color: red;">' + data.toname + '</spasn><spasn style="padding: 0 10px; color: #D861B7; font-size: 24px;">' + data.member + '</spasn><spasn>个</spasn>' + ' <img src="' + giftarray[data.gift].url + '" />' + chengtxt);
+        giftmember = data.member;
+        giftuser = data.from;
+        giftto = data.room;
+        giftmsg('<spasn style="color: red;">' + data.name + '</spasn><spasn style="padding: 0 10px;">送给</spasn><spasn style="color: red;">' + data.toname + '</spasn><spasn style="padding: 0 10px; color: #D861B7;">' + data.member + '</spasn><spasn>个</spasn>' + ' <img style="height: 40px;" src="' + giftarray[data.gift].url + '" />' + chengtxt);
+
         if(data.gift == 1) {
             $('div.vs div.bar h1 span.left i').text(parseInt($('div.vs div.bar h1 span.left i').text()) + parseInt(data.member));
             var good = parseInt($('div.vs div.bar h1 span.left i').text());
@@ -86,16 +92,14 @@ $(function() {
             $('div.vs div.bar h1 span.right').animate({width: bad/(good+bad)*giftwidth}, {speed: 1000, queue: false});
         }
 
-
-
     });
 
     var giftmsg = function(msg) {
 
-        var com = $('<div />').css({fontSize: '12px', backgroundColor: '#EBEBEB', color: '#333', padding: '10px', borderRadius: '5px'}).html(msg);
-        var li = $('<li />').css({margin: '10px 0'}).append(com);
+        var com = $('<div />').css({fontSize: '12px', color: '#333', padding: '10px 0'}).html(msg);
+        var li = $('<li />').append(com);
         $('ul.getgift').prepend(li);
-        li.delay(10000).slideUp(1000, function() {$(this).css({backgroundColor: '#FFF'}).remove();});
+        //li.delay(10000).slideUp(1000, function() {$(this).css({backgroundColor: '#FFF'}).remove();});
 
     };
 
@@ -200,7 +204,7 @@ $(function() {
 
     var systemmsg = function(msg) {
 
-        var com = $('<div />').css({display: 'inline-block', fontSize: '12px', color: '#CCC', margin: 'auto'}).text('[系统] ' + msg);
+        var com = $('<div />').css({display: 'inline-block', fontSize: '12px', color: '#CCC', margin: 'auto'}).html(msg);
         var li = $('<li />').css({marginBottom: '10px'}).append(com).appendTo(chatroom);
         chatheight += li.height() + 10;
         chatroom.animate({scrollTop: chatheight}, {speed: 300, queue: false});
@@ -286,8 +290,8 @@ $(function() {
 
     var giftarray = [
         {title: '棒棒糖（每分钟获得一个，最高累计5个）', money : '0', url : '/images/gift/bangbangtang.gif'}
-        , {title: '喜欢', money : '0.1', url : '/images/gift/xihuan.gif'}
-        , {title: '炸弹', money : '0.1', url : '/images/gift/zhadan.gif'}
+        , {title: '喜欢(增加评分)', money : '0.1', url : '/images/gift/xihuan.gif'}
+        , {title: '炸弹(减少评分)', money : '0.1', url : '/images/gift/zhadan.gif'}
         , {title: '萝莉', money : '0.1', url : '/images/gift/luoli.gif'}
         , {title: '巧克力', money : '1', url : '/images/gift/qiaokeli.gif'}
         , {title: '拥抱', money : '1', url : '/images/gift/shuangren.gif'}

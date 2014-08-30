@@ -14,24 +14,16 @@
         xiuxiu.setCropPresets("800x600");
         xiuxiu.setLaunchVars ("uploadBtnLabel", "上传");
 
-        $('#edit').click(function() {
-            $('img#show').hide();
-            xiuxiu.embedSWF("avatar", 1, 580, 300);
-            xiuxiu.onInit = function ()
-            {
-                xiuxiu.loadPhoto("");
-            };
-            $('div.windows').show();
-        });
+        xiuxiu.embedSWF("avatar", 5, 980, 400);
 
-        xiuxiu.onClose = function()
+        xiuxiu.onInit = function ()
         {
-            $('#xiuxiuEditor').after('<div id="avatar"></div>').remove();
-            $('div.windows').hide();
+            xiuxiu.loadPhoto("http://zhubo.pro/uploads/logo/<?php echo $o['id']; ?>.jpg?<?php echo rand(0, 9999999999999999999); ?>");
         };
+
         xiuxiu.setUploadURL("http://zhubo.pro/app/xiuxiu/logo.php?id=<?php echo $o['id']; ?>");
         //xiuxiu.setUploadArgs({'sid' : '<?php echo $id; ?>'});
-        xiuxiu.setUploadType (1);
+        xiuxiu.setUploadType(1);
         xiuxiu.onBeforeUpload = function(data, id) {
             //alert("上传响应" + data);
         };
@@ -51,7 +43,5 @@
     <label>上传海报
         <span>可以上传自己喜欢的图片,然后用鼠标在图片上选择合适的大小.</span>
     </label>
-    <div id="avatar"><img width="400" src="/uploads/logo/<?php echo $o['id']; ?>.jpg" </div>
+    <div id="avatar"></div>
 </li>
-
-<li><button id="edit">上传新好报</button></li>

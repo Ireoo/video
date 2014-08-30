@@ -28,7 +28,7 @@ if(isset($_GET['edit']) and $_GET['edit'] == 'yes') {
         $_POST[$k] = htmlspecialchars($v);
     }
     $mysql->update('video', $_POST, "uid = {$o['id']}");
-    header("Location: http://{$_SERVER['HTTP_HOST']}/i");
+    header("Location: http://{$_SERVER['HTTP_HOST']}/i?i=basic");
 }
 
 
@@ -70,15 +70,16 @@ $player = $mysql->row($sql);
         <div class="edit">
 
             <ul class="caidan">
-                <img src="<?php echo $o['avatar']; ?>" />
+                <img src="uploads/u/a<?php echo $o['id']; ?>.jpg" />
 
                 <a<?php if($page == 'user') {echo ' class="on"';} ?> href="?i=user">个人资料</a>
                 <a<?php if($page == 'avatar') {echo ' class="on"';} ?> href="?i=avatar">头像设置</a>
                 <a<?php if($page == 'money') {echo ' class="on"';} ?> href="?i=money">个人账户</a>
                 <?php if(is_array($player)) { ?>
-                <a<?php if($page == 'basic') {echo ' class="on"';} ?> href="?i=basic">基本信息</a>
-                <a<?php if($page == 'logo') {echo ' class="on"';} ?> href="?i=logo">海报设置</a>
-                <a<?php if($page == 'yy') {echo ' class="on"';} ?> href="?i=yy">YY直播频道绑定</a>
+                    <a<?php if($page == 'basic') {echo ' class="on"';} ?> href="?i=basic">基本信息</a>
+                    <a<?php if($page == 'pay') {echo ' class="on"';} ?> href="?i=pay">收入支出</a>
+                    <a<?php if($page == 'logo') {echo ' class="on"';} ?> href="?i=logo">海报设置</a>
+                    <a<?php if($page == 'yy') {echo ' class="on"';} ?> href="?i=yy">YY直播频道绑定</a>
                 <?php }else{ ?>
                     <a<?php if($page == 'open') {echo ' class="on"';} ?> href="?i=open">开通直播房间</a>
                 <?php } ?>
