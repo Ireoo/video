@@ -56,11 +56,12 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><?php echo $player['title']; ?> - 主播·Pro</title>
-    <meta name="keywords" content="<?php echo $player['title']; ?>， <?php echo $person['realname']; ?>， <?php echo $person['username']; ?>，主播，主持人，直播" />
+    <title><?php echo $player['title']; ?> - 星主播|zhubo.pro</title>
+    <meta name="keywords" content="<?php echo $player['title']; ?>， <?php echo $person['realname']; ?>， <?php echo $person['username']; ?>，星主播，主播，主持人，直播" />
     <meta name="description" content="<?php echo $person['realname']; ?>(艺名：<?php echo $person['username']; ?>)是zhubo.pro的特约主播，期待你的支持！" />
     <link href="css/head.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/foot.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script style="text/javascript" src="http://114.215.150.186:8000/socket.io/socket.io.js"></script>
     <script style="text/javascript">
@@ -171,6 +172,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <div class="clear"></div>
 </div>
 
+<?php include_once('include/foot.php'); ?>
 </body>
 </html>
 
