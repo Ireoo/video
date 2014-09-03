@@ -84,7 +84,7 @@ class user
         if($this->user['phone'] == 'unknow' or $this->user['phone'] == '') return 1007;
         if($this->user['password'] != $this->user['password_once']) return 1003;
 
-        if(!preg_match('/^([0-9a-zA-Z\x{4e00}-\x{9fa5}]{1,12})$/u', $this->user['username'])) return '对不起，昵称格式不正确';
+        if(!preg_match('/^([^\'\"]{1,12})$/u', $this->user['username'])) return '对不起，昵称格式不正确';
         //if(!preg_match('/^([0-9a-zA-Z]{32})$/', $this->user['password'])) return '程序错误';
         if(!preg_match('/^([0-9\+]{11,15})$/', $this->user['phone'])) return '对不起，手机号格式不正确';
         //if(!preg_match('/^([\w\.\_]{2,})@(\w{1,}).([a-z]{2,10})$/', $this->user['email'])) return '邮箱格式不正确';
@@ -96,9 +96,6 @@ class user
             'username' => $this->user['username'],
             'password' => $this->user['password'],
             'phone'    => $this->user['phone'],
-            '`show`'   => 1,
-            'avatar'        => 'user/avatar.jpg',
-            'avatar_large'  => 'user/avatar.jpg',
             'ip'       => $this->getIP(),
             'timer'    => time()
         );

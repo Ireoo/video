@@ -12,7 +12,8 @@ $mysql = new mysql;
 
 $sql = array(
     'table' => 'video',
-    'order' => 'pingfen desc'
+    'order' => 'pingfen desc',
+    'limit' => 'LIMIT 0, 20'
 //    , 'condition' => "play = 1"
 );
 
@@ -118,15 +119,19 @@ $player1 = 99678367; //quan
         </ul>
 
         <?php for($i=floor(Date('H')); $i<floor(Date('H')) + 3; $i++) {
-            if($i >= 24) $i = $i - 24;
+            if($i >= 24) {
+                $m = $i - 24;
+            }else{
+                $m = $i;
+            }
             ?>
 
             <ul class="list">
-                <h1 class="title"><?php echo $i; ?>点开播</h1>
+                <h1 class="title"><?php echo $m; ?>点开播</h1>
                 <?php
                 $sql = array(
                     'table' => 'video',
-                    'condition' => 'start = ' . $i,
+                    'condition' => 'start = ' . $m,
                     'order' => 'hua desc',
                     'limit' => 'LIMIT 0, 12'
 //    , 'condition' => "play = 1"
