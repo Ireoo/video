@@ -15,7 +15,7 @@
             ?>
         </div>
 
-        <li><a href="http://zhubo.pro" title="星主播"><span style="font-family: 'microsoft yahei', 'Helvetica Neue'; font-weight: normal;">星主播，您展示自我的平台<em style="font-size: 12px; font-style: normal;">http://zhubo.pro</em></span></a></li>
+        <li><a href="http://zhubo.pro" title="星主播"><span style="font-family: 'microsoft yahei', 'Helvetica Neue'; font-weight: normal;">星主播，展示自我的平台<em style="font-size: 12px; font-style: normal;">http://zhubo.pro</em></span></a></li>
     </ul>
 
 </div>

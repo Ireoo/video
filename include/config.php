@@ -22,8 +22,8 @@ if(isset($_SESSION['user'])) {
 	$o = '';
 }
 
-defined('HOST_NAME') or define('HOST_NAME','琦益网 - 企业产品直销平台');
-defined('SNAME') or define('SNAME','琦益');
+defined('HOST_NAME') or define('HOST_NAME','星主播，展示自我的平台');
+defined('SNAME') or define('SNAME','星主播');
 defined('HOST_URL') or define('HOST_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 
 function thisIP() {
