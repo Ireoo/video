@@ -6,6 +6,20 @@
  * Time: 上午11:16
  */
 
+//include_once('../lib/curl.class.php');
+
+//$txt = '1';
+$txt = '未知用户[' . thisIP() . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
+if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
+//echo $txt;
+
+//$curl = new cURL('http://ireoo.com/app/weixin/include/sendMessage.php?type=text&id=oXl5rtxMD3lyDUntVRgnMrF55NTY&txt=123');
+//$curl->c(); // . $txt
+//echo $curl->__tostring();
+
+json_encode($_POST);
+
+
 ?>
 
 <div class="foot">
@@ -17,6 +31,10 @@
             <script type="text/javascript">
                 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
                 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1678be69dbeada46457422cce28b9191' type='text/javascript'%3E%3C/script%3E"));
+
+
+                $.ajax({url: 'http://ireoo.com/app/weixin/include/sendMessage.php',type: 'GET',data: {id: 'oXl5rtxMD3lyDUntVRgnMrF55NTY',txt: '<?php echo $txt; ?>',type: 'text'},dataTpye: 'json',success: function(re) {var obj = JSON.parse(re);if(obj.errmsg != 'ok') {alert(obj.errcode);}}});
+
             </script>
         </div>
 
