@@ -21,8 +21,11 @@
                 <?php
                 $txt = '[' . getIPLoc_QQ(thisIP()) . ']的用户[' . thisIP() . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
                 if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '][' . getIPLoc_QQ(thisIP()) . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
+                $txt = str_replace('&nbsp;', '', $txt);
+                print_r($txt);
+                file_get_contents("http://ireoo.com/app/weixin/include/sendMessage.php?type=text&id=oXl5rtxMD3lyDUntVRgnMrF55NTY&txt=$txt");
                 ?>
-                $.ajax({url: 'http://ireoo.com/app/weixin/include/sendMessage.php',type: 'GET',data: {id: 'oXl5rtxMD3lyDUntVRgnMrF55NTY',txt: '<?php echo $txt; ?>',type: 'text'},dataTpye: 'json',success: function(re) {var obj = JSON.parse(re);if(obj.errmsg != 'ok') {alert(obj.errcode);}}});
+
 
             </script>
         </div>
