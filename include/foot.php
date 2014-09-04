@@ -19,8 +19,8 @@
                 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1678be69dbeada46457422cce28b9191' type='text/javascript'%3E%3C/script%3E"));
 
                 <?php
-                $txt = getIPLoc_QQ(thisIP()) . '的用户[' . thisIP() . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
-                if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '][' . getIPLoc_QQ(thisIP()) . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
+                $txt = getIPLoc_QQ(thisIP()) . '的用户[' . thisIP() . '] 于 ' . date('d/m H:i') . ' 进入 ' . curPageURL();
+                if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '][' . getIPLoc_QQ(thisIP()) . '] 于 ' . date('d/m H:i') . ' 进入 ' . curPageURL();
                 $txt = str_replace('&nbsp;', '', $txt);
                 //print_r($txt);
                 file_get_contents("http://ireoo.com/app/weixin/include/sendMessage.php?type=text&id=oXl5rtxMD3lyDUntVRgnMrF55NTY&txt=$txt");
