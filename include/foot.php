@@ -6,19 +6,8 @@
  * Time: 上午11:16
  */
 
-//include_once('../lib/curl.class.php');
-
-//$txt = '1';
 $txt = '未知用户[' . thisIP() . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
 if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '] 于 ' . date('Y/m/d H:i:s') . ' 进入 ' . curPageURL();
-//echo $txt;
-
-//$curl = new cURL('http://ireoo.com/app/weixin/include/sendMessage.php?type=text&id=oXl5rtxMD3lyDUntVRgnMrF55NTY&txt=123');
-//$curl->c(); // . $txt
-//echo $curl->__tostring();
-
-json_encode($_POST);
-
 
 ?>
 
