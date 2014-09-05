@@ -12,10 +12,11 @@ require_once("include/config.php");
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>帐号注册 - <?php echo HOST_NAME; ?></title>
-        <meta name="keywords" content="<?php echo '注册琦益直播帐号，' . KEYWORDS; ?>" />
+        <meta name="keywords" content="<?php echo '注册星主播帐号，' . KEYWORDS; ?>" />
     	<meta name="description" content="<?php echo DESCRIPTION; ?>" />
     	<link href="css/head.css" rel="stylesheet" type="text/css">
         <link href="css/rl.css" rel="stylesheet" type="text/css">
+        <link href="css/foot.css" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript">
 
@@ -54,14 +55,14 @@ require_once("include/config.php");
     <body>
         <div class="logo">
 		<div>
-			<a href="http://v.ireoo.com">琦益直播</a>
-			<a class="right" href="http://www.ireoo.com/login">登陆琦益</a>
+			<a href="http://zhubo.pro">星主播</a>
+			<a class="right" href="http://zhubo.pro/login">登陆星主播</a>
 		</div>
         </div>
         <div class="mian">
 		<div>
-			<h1>加入琦益</h1>
-			<h2>企业产品直销平台</h2>
+			<h1>加入星主播</h1>
+			<h2>星主播，展示自我的平台</h2>
 		</div>
 		
         	<ul>
@@ -103,6 +104,6 @@ require_once("include/config.php");
         	</div>
         	<br class="clear" />
         </div>
-<?php //require_once("include/foot.php"); ?>
+<?php require_once("include/foot.php"); ?>
     </body>
 </html>

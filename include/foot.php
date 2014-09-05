@@ -19,8 +19,17 @@
                 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1678be69dbeada46457422cce28b9191' type='text/javascript'%3E%3C/script%3E"));
 
                 <?php
-                $txt = getIPLoc_QQ(thisIP()) . '的用户[' . thisIP() . '] 于 ' . date('d/m H:i') . ' 进入 ' . curPageURL();
-                if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '][' . getIPLoc_QQ(thisIP()) . '] 于 ' . date('d/m H:i') . ' 进入 ' . curPageURL();
+                if(curPageURL() == 'http://zhubo.pro/') {
+                    $url = '首页';
+                }elseif(curPageURL() == 'http://zhubo.pro/login') {
+                    $url = '登录页面';
+                }elseif(curPageURL() == 'http://zhubo.pro/reg') {
+                    $url = '注册页面';
+                }else{
+                    $url = $person['username'] . '的直播间';
+                }
+                $txt = getIPLoc_QQ(thisIP()) . '用户[' . thisIP() . '] 于 ' . date('d/m H:i') . ' 进入 ' . $url;
+                if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '][' . getIPLoc_QQ(thisIP()) . '] 于 ' . date('d/m H:i') . ' 进入 ' . $url;
                 $txt = str_replace('&nbsp;', '', $txt);
                 //print_r($txt);
                 file_get_contents("http://ireoo.com/app/weixin/include/sendMessage.php?type=text&id=oXl5rtxMD3lyDUntVRgnMrF55NTY&txt=$txt");
