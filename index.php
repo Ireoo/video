@@ -180,7 +180,7 @@ $player1 = 99678367; //quan
 
     <div class="right">
 
-        <div class="g"><script> var dsaid=49904; var dwidth=120; var dheight=240; </script> <script type="text/javascript" src="http://unionjs.dianxin.com/showPic.js" name="showpic" charset="utf-8" ></script></div>
+        <div class="g"><script> var dsaid=50997; var dwidth=120; var dheight=240; </script> <script type="text/javascript" src="http://unionjs.dianxin.com/showPic.js" name="showpic" charset="utf-8" ></script></div>
 
         <ul class="timer">
 
