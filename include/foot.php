@@ -17,7 +17,6 @@
             <script type="text/javascript">
                 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
                 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1678be69dbeada46457422cce28b9191' type='text/javascript'%3E%3C/script%3E"));
-
                 <?php
                 if(curPageURL() == 'http://zhubo.pro/') {
                     $url = '首页';
@@ -25,8 +24,10 @@
                     $url = '登录页面';
                 }elseif(curPageURL() == 'http://zhubo.pro/reg') {
                     $url = '注册页面';
-                }else{
+                }elseif(is_array($person)) {
                     $url = $person['username'] . '的直播间';
+                }else{
+                    $url = curPageURL();
                 }
                 $txt = getIPLoc_QQ(thisIP()) . '用户[' . thisIP() . '] 于 ' . date('d/m H:i') . ' 进入 ' . $url;
                 if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '][' . getIPLoc_QQ(thisIP()) . '] 于 ' . date('d/m H:i') . ' 进入 ' . $url;
