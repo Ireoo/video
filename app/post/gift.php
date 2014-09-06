@@ -16,7 +16,7 @@ include_once("../oauth/oauth2.php");
 
 $mysql = new mysql();
 
-$gift = array(0, 0.1, 0.1, 0.1, 1, 1, 1, 1, 5);
+$gift = array(0, 0.1, 0.1, 1, 5, 8, 10, 60, 100);
 
 if(!isset($_SESSION['user'])) {
 

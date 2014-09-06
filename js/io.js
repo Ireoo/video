@@ -292,12 +292,12 @@ $(function() {
         {title: '棒棒糖（每分钟获得一个，最高累计5个）', money : '0', url : '/images/gift/bangbangtang.gif'}
         , {title: '喜欢(增加评分)', money : '0.1', url : '/images/gift/xihuan.gif'}
         , {title: '炸弹(减少评分)', money : '0.1', url : '/images/gift/zhadan.gif'}
-        , {title: '萝莉', money : '0.1', url : '/images/gift/luoli.gif'}
-        , {title: '巧克力', money : '1', url : '/images/gift/qiaokeli.gif'}
-        , {title: '拥抱', money : '1', url : '/images/gift/shuangren.gif'}
-        , {title: 'i love you', money : '1', url : '/images/gift/love.gif'}
-        , {title: '蓝色妖姬', money : '1', url : '/images/gift/hua.gif'}
-        , {title: '钻戒', money : '5', url : '/images/gift/zuanjie.gif'}
+        , {title: '萝莉', money : '1', url : '/images/gift/luoli.gif'}
+        , {title: '巧克力', money : '5', url : '/images/gift/qiaokeli.gif'}
+        , {title: '拥抱', money : '8', url : '/images/gift/shuangren.gif'}
+        , {title: 'i love you', money : '10', url : '/images/gift/love.gif'}
+        , {title: '蓝色妖姬', money : '60', url : '/images/gift/hua.gif'}
+        , {title: '钻戒', money : '100', url : '/images/gift/zuanjie.gif'}
     ];
 
     var giftChoose = $('<div />').css({marginBottom: '10px'});
