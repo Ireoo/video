@@ -117,3 +117,10 @@ div.list div.mian ul.list li div h1 a img{width: 28px; height: 28px; border-radi
 div.list div.mian ul.list li div h1 a:hover img{border-color: #ff4ebf;}
 div.list div.mian ul.list li div span{display: block; font-size: 12px; padding: 0 10px 10px 10px; color: #AAA;}
 div.list div.mian ul.list li div span img{width: 16px; height: 16px; margin-right: 5px;}
+
+
+div.foot{background: #000;}
+
+div.foot div.zhong{margin: auto; padding: 10px; font-size: 12px; color: #333;}
+div.foot div.zhong a{text-decoration: none; font-weight: bold; color: #999;}
+div.foot div.zhong a:hover{color: #CCC;}

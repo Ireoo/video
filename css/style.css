@@ -18,7 +18,7 @@ img.QRcode{display: block; margin: auto; width: 100%;}
 
 .clear{clear: both; font-size: 0; height: 0; display: block;}
 
-div.all{margin: auto; width: 1180px;}
+div.all{margin: auto; width: 1180px; padding-top: 20px;}
 
 div.videoBackground{margin-bottom: 20px; padding-top: 30px; width: 800px; float: left;}
 div.videoBox{width: 800px; height: 500px; margin: auto; box-shadow: 0 0 10px #000;}

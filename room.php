@@ -86,6 +86,10 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
 
 <div class="all">
 
+    <div style="padding: 10px; font-size: 30px; text-align: center; border: 1px #4092f8 solid; background: #80bcf8; margin-bottom: 20px; font-weight: bolder; font-family: 'microsoft yahei';">
+        从今天开始注册就送10元礼物券，本活动到9月30日！
+    </div>
+
     <div class="videoBackground">
 
         <div class="title">
@@ -131,8 +135,6 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         </div>
 
         <div class="list"></div>
-
-
 
         <div class="con">
 

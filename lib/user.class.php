@@ -96,6 +96,7 @@ class user
             'username' => $this->user['username'],
             'password' => $this->user['password'],
             'phone'    => $this->user['phone'],
+            'money'    => 10,
             'ip'       => $this->getIP(),
             'timer'    => time()
         );

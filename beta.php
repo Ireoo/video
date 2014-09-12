@@ -82,7 +82,9 @@ $player1 = 99678367; //quan
 <body>
 <?php include_once('include/head.php'); ?>
 
-
+<div style="padding: 10px; font-size: 30px; text-align: center; border: 1px #4092f8 solid; background: #80bcf8; margin-bottom: 20px; font-weight: bolder; font-family: 'microsoft yahei';">
+    从今天开始注册就送10元礼物券，本活动到9月30日！
+</div>
 
 <div class="player">
     <div class="users">现场用户：<i><?php echo rand(1000, 3000); ?></i></div>
@@ -129,8 +131,8 @@ $player1 = 99678367; //quan
                     'condition' => 'id = ' . $v['uid']
                 );
                 $u = $mysql->row($thissql);
-                ?><li><a class="img" href="?id=<?php echo $v['uid']; ?>"><img class="animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
-                    <h1><a href="?id=<?php echo $v['uid']; ?>"><img src="/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a href="?id=<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
+                ?><li><a class="img" href="beta!<?php echo $v['uid']; ?>"><img class="animated" src="uploads/u/a<?php echo $v['uid']; ?>.jpg" /><span></span></a><div>
+                    <h1><a href="beta!<?php echo $v['uid']; ?>"><img src="/uploads/u/a<?php echo $v['uid']; ?>.jpg" /></a><a href="beta!<?php echo $v['uid']; ?>"><?php echo $u['username']; ?></a></h1>
                     <span><img src="images/b.gif" /><?php echo $v['hua']; ?></span>
                 </div></li><?php } ?>
         </ul>
@@ -143,6 +145,7 @@ $player1 = 99678367; //quan
 
 </div>
 
-<?php //include_once('include/foot.php'); ?>
+<?php include_once('include/foot.php'); ?>
+
 </body>
 </html>
