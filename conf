@@ -6,3 +6,5 @@ rewrite "/i$" /i.php last;
 rewrite "/login$" /login.php last;
 rewrite "/reg$" /reg.php last;
 
+rewrite "/beta$" /beta.php last;
+rewrite "/beta#([0-9]+)$" /beta.php?id=$1 last;

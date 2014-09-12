@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a488be4-2670-43bd-bf15-d8ddea1af988" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/beta.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/beta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/beta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf" afterPath="$PROJECT_DIR$/conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="video.iws" />
@@ -93,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="beta.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="beta.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/beta.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="329" column="21" selection-start="13412" selection-end="13412" vertical-scroll-proportion="0.31843576" vertical-offset="6080" max-vertical-offset="7733">
+            <state line="329" column="21" selection-start="13412" selection-end="13412" vertical-scroll-proportion="0.0" vertical-offset="6838" max-vertical-offset="7733">
               <folding>
                 <marker date="1410485069696" expanded="false" signature="1821:1856" placeholder="..." />
                 <marker date="1410485069696" expanded="false" signature="1879:1913" placeholder="..." />
@@ -111,21 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/io.js">
+      <file leaf-file-name="conf" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="296" column="34" selection-start="0" selection-end="16159" vertical-scroll-proportion="0.0" vertical-offset="5244" max-vertical-offset="7752">
-              <folding>
-                <marker date="1409971563216" expanded="false" signature="1912:1947" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="1970:2004" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="2027:2071" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="2367:2378" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="2419:2435" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="2461:2472" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="2515:2547" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="2610:2623" placeholder="..." />
-                <marker date="1409971563216" expanded="false" signature="6874:6890" placeholder="..." />
-              </folding>
+            <state line="9" column="41" selection-start="293" selection-end="293" vertical-scroll-proportion="0.19106145" vertical-offset="0" max-vertical-offset="895">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +150,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/oauth/oauth2.php" />
-        <option value="$PROJECT_DIR$/conf" />
         <option value="$PROJECT_DIR$/lib/mysql.class.php" />
         <option value="$PROJECT_DIR$/app/alipay/notify_url.php" />
         <option value="$PROJECT_DIR$/app/xiuxiu/avatar.php" />
@@ -191,6 +178,7 @@
         <option value="$PROJECT_DIR$/beta.php" />
         <option value="$PROJECT_DIR$/css/beta.css" />
         <option value="$PROJECT_DIR$/js/beta.js" />
+        <option value="$PROJECT_DIR$/conf" />
       </list>
     </option>
   </component>
@@ -436,7 +424,11 @@
       <created>1409971675768</created>
       <updated>1409971675768</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="添加迷你界面">
+      <created>1410485088717</created>
+      <updated>1410485088717</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -446,21 +438,21 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.324295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14781906" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2561366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2561366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -485,7 +477,8 @@
     <MESSAGE value="添加页头文件" />
     <MESSAGE value="更新页脚显示效果" />
     <MESSAGE value="更新程序" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新程序" />
+    <MESSAGE value="添加迷你界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加迷你界面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -579,11 +572,6 @@
     <entry file="file://$PROJECT_DIR$/app/oauth/oauth2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="208" selection-start="495" selection-end="495" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/mysql.class.php">
@@ -723,15 +711,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="296" column="34" selection-start="0" selection-end="16159" vertical-scroll-proportion="0.0" vertical-offset="5244" max-vertical-offset="7752">
           <folding>
-            <marker date="1409971563216" expanded="false" signature="1912:1947" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="1970:2004" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="2027:2071" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="2367:2378" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="2419:2435" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="2461:2472" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="2515:2547" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="2610:2623" placeholder="..." />
-            <marker date="1409971563216" expanded="false" signature="6874:6890" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1409971563216" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -784,7 +772,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/beta.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="329" column="21" selection-start="13412" selection-end="13412" vertical-scroll-proportion="0.31843576" vertical-offset="6080" max-vertical-offset="7733">
+        <state line="329" column="21" selection-start="13412" selection-end="13412" vertical-scroll-proportion="0.0" vertical-offset="6838" max-vertical-offset="7733">
           <folding>
             <marker date="1410485069696" expanded="false" signature="1821:1856" placeholder="..." />
             <marker date="1410485069696" expanded="false" signature="1879:1913" placeholder="..." />
@@ -795,6 +783,13 @@
             <marker date="1410485069696" expanded="true" signature="2397:2410" placeholder="..." />
             <marker date="1410485069696" expanded="false" signature="5568:5584" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="41" selection-start="293" selection-end="293" vertical-scroll-proportion="0.19106145" vertical-offset="0" max-vertical-offset="895">
+          <folding />
         </state>
       </provider>
     </entry>
