@@ -62,7 +62,7 @@ $player1 = 99678367; //quan
     <link href="css/beta.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script style="text/javascript" src="http://114.215.150.186:8000/socket.io/socket.io.js"></script>
+    <script style="text/javascript" src="http://ireoo.com:8000/socket.io/socket.io.js"></script>
     <script style="text/javascript">
         var toname = '<?php echo $person['username']; ?>';
         <?php if(!is_array($o)) { ?>
@@ -82,7 +82,7 @@ $player1 = 99678367; //quan
 <body>
 <?php include_once('include/head.php'); ?>
 
-<div style="padding: 10px; font-size: 30px; text-align: center; border: 1px #4092f8 solid; background: #80bcf8; margin-bottom: 20px; font-weight: bolder; font-family: 'microsoft yahei';">
+<div style="padding: 10px; font-size: 30px; text-align: center; background: #80bcf8; font-weight: bolder; font-family: 'microsoft yahei';">
     从今天开始注册就送10元礼物券，本活动到9月30日！
 </div>
 

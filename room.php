@@ -63,7 +63,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/foot.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script style="text/javascript" src="http://114.215.150.186:8000/socket.io/socket.io.js"></script>
+    <script style="text/javascript" src="http://ireoo.com:8000/socket.io/socket.io.js"></script>
     <script style="text/javascript">
         var toname = '<?php echo $person['username']; ?>';
         <?php if(!is_array($o)) { ?>

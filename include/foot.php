@@ -38,7 +38,7 @@
                 if(is_array($o)) $txt = $o['username'] . '[' . thisIP() . '][' . getIPLoc_QQ(thisIP()) . '] 于 ' . date('d/m H:i') . ' 进入 ' . $url;
                 $txt = str_replace('&nbsp;', '', $txt);
                 //print_r($txt);
-                file_get_contents("http://ireoo.com/app/weixin/include/sendMessage.php?type=text&id=oXl5rtxMD3lyDUntVRgnMrF55NTY&txt=[{$_SESSION['wxt']}]$txt");
+                file_get_contents("http://ireoo.com/app/weixin/include/sendMessage.php?type=text&id=oXl5rtx8PIcOFEQJpZb6SFVPj1Ek&txt=[{$_SESSION['wxt']}]$txt");
                 ?>
 
 
