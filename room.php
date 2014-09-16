@@ -101,13 +101,9 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <div class="videoBox">
 
             <div class="video">
-                <?php if($player['yyVideo'] != '0') { ?>
-                    <embed src="http://yy.com/s/<?php echo $player['yyVideo']; ?>/<?php echo $player['yyVideo']; ?>/entscene.swf" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
-            <?php }else{ if($player['uid'] == $o['id']) { ?>
-                    <embed src="app/video/recover.swf?uid=<?php echo $player['uid']; ?>" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
-                    <?php }else{ ?>
-                    <embed src="app/video/play.swf?uid=<?php echo $player['uid']; ?>" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
-                <?php }} ?>
+
+                    <embed src="/<?php echo $player['uid']; ?>/play" type="application/x-shockwave-flash" style="width:800px; height: 500px";>
+
                 <video id="me" style="display: none;" autoplay muted></video>
             </div>
 

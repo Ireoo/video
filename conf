@@ -8,3 +8,5 @@ rewrite "/reg$" /reg.php last;
 
 rewrite "/beta$" /beta.php last;
 rewrite "/beta!([0-9]+)$" /beta.php?id=$1 last;
+
+rewrite "/([0-9]+)/play$" /app/video/play.php?id=$1 last;
