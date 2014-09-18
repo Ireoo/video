@@ -57,8 +57,9 @@
       <file leaf-file-name="room.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/room.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="41" selection-start="3284" selection-end="3284" vertical-scroll-proportion="-29.178572" vertical-offset="1026" max-vertical-offset="3439">
+            <state line="83" column="39" selection-start="2779" selection-end="2779" vertical-scroll-proportion="42.107143" vertical-offset="2756" max-vertical-offset="3610">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -72,17 +73,17 @@
       <file leaf-file-name="io.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/io.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="12" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0861678" vertical-offset="171" max-vertical-offset="7752">
+            <state line="194" column="11" selection-start="7398" selection-end="7398" vertical-scroll-proportion="0.46258503" vertical-offset="3278" max-vertical-offset="7790">
               <folding>
-                <marker date="1411032120443" expanded="false" signature="1907:1942" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="1965:1999" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="2022:2066" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="2362:2373" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="2414:2430" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="2456:2467" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="2510:2542" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="2605:2618" placeholder="..." />
-                <marker date="1411032120443" expanded="false" signature="6869:6885" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="1907:1942" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="1965:1999" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="2022:2066" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="2362:2373" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="2414:2430" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="2456:2467" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="2510:2542" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="2605:2618" placeholder="..." />
+                <marker date="1411033036348" expanded="false" signature="6983:6999" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -341,6 +342,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -504,7 +506,11 @@
       <created>1411028574101</created>
       <updated>1411028574101</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="更新程序">
+      <created>1411032220823</created>
+      <updated>1411032220823</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -736,7 +742,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/beta.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="186" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7619" />
+        <state line="15" column="45" selection-start="186" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7619">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf">
@@ -823,8 +831,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="41" selection-start="3284" selection-end="3284" vertical-scroll-proportion="-29.178572" vertical-offset="1026" max-vertical-offset="3439">
+        <state line="83" column="39" selection-start="2779" selection-end="2779" vertical-scroll-proportion="42.107143" vertical-offset="2756" max-vertical-offset="3610">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -836,17 +845,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/io.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0861678" vertical-offset="171" max-vertical-offset="7752">
+        <state line="194" column="11" selection-start="7398" selection-end="7398" vertical-scroll-proportion="0.46258503" vertical-offset="3278" max-vertical-offset="7790">
           <folding>
-            <marker date="1411032120443" expanded="false" signature="1907:1942" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="1965:1999" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="2022:2066" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="2362:2373" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="2414:2430" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="2456:2467" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="2510:2542" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="2605:2618" placeholder="..." />
-            <marker date="1411032120443" expanded="false" signature="6869:6885" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="1907:1942" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="1965:1999" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="2022:2066" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="2362:2373" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="2414:2430" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="2456:2467" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="2510:2542" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="2605:2618" placeholder="..." />
+            <marker date="1411033036348" expanded="false" signature="6983:6999" placeholder="..." />
           </folding>
         </state>
       </provider>

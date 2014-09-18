@@ -116,6 +116,8 @@ $(function() {
         }
         systemmsg('获取用户列表完成.');
 
+        chatcom(chushihuaMsg.name, chushihuaMsg.avatar, chushihuaMsg.msg, chushihuaMsg.time, chushihuaMsg.self);
+
     });
 
     socket.on('system', function(msg) {
@@ -190,7 +192,7 @@ $(function() {
         msg = msg.replace(/(<.*?>)/g, function() {return '';});
         msg = msg.replace(/\{([0-9]+)\}/g, function() {return '<i style="background: url(' + faceurl + ') ' + facearray[RegExp.$1] + '; width: 30px; height: 30px; display: inline-block; vertical-align : middle;"></i>';});
         var com = $('<div />').css({background: '#EBEBEB', fontSize: '12px', borderRadius: '3px', padding: '5px', verticalAlign: 'bottom', display: 'inline-block', wordBreak: 'break-all', wordWrap: 'break-word', 'vertical-align' : 'middle'}).append(msg);
-        if(!ziji) {
+        if(ziji) {
             var li = $('<li />').css({marginBottom: '10px'}).append(a).append(com).appendTo(chatroom); //.append(image)
             //alert('ziji');
         }else{

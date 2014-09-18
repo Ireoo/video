@@ -77,6 +77,15 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <?php } ?>
         var room = '<?php echo $person['id']; ?>';
         var thisURL = '<?php echo curPageURL(); ?>';
+
+
+        chushihuaMsg = {
+            name : toname,
+            avatar : 'http://zhubo.pro/uploads/u/a<?php echo $person['id']; ?>.jpg',
+            msg : '欢迎进入我的直播间，赶快把你手中的免费礼物刷起来！{36}{36}{36}{36}{36}{36}',
+            time : <?php echo time(); ?>,
+            selft : false
+        };
     </script>
     <script style="text/javascript" src="js/io.js"></script>
 
