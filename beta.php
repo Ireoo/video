@@ -66,7 +66,7 @@ $player1 = 99678367; //quan
     <script style="text/javascript">
         var toname = '<?php echo $person['username']; ?>';
         <?php if(!is_array($o)) { ?>
-        var name = '<?php echo str_replace('&nbsp;', '', getIPLoc_QQ(thisIP())); ?>用户';
+        var name = '<?php echo str_replace('&nbsp;', '', getIPLoc_sina(thisIP())); ?>用户';
         var avatar = 'http://ireoo.com/include/images/i_quanquan_on.png';
         var from = 0;
         <?php }else{ ?>
