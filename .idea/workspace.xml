@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a488be4-2670-43bd-bf15-d8ddea1af988" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/foot.php" afterPath="$PROJECT_DIR$/include/foot.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/io.js" afterPath="$PROJECT_DIR$/js/io.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/room.php" afterPath="$PROJECT_DIR$/room.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="video.iws" />
@@ -35,11 +36,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foot.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="foot.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/foot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="34" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.48673588" vertical-offset="53" max-vertical-offset="950">
+            <state line="39" column="32" selection-start="1716" selection-end="1716" vertical-scroll-proportion="-23.071428" vertical-offset="0" max-vertical-offset="950">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beta.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/beta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="0" selection-start="1785" selection-end="1874" vertical-scroll-proportion="-9.928572" vertical-offset="919" max-vertical-offset="2869">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="room.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/room.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="41" selection-start="3284" selection-end="3284" vertical-scroll-proportion="-29.178572" vertical-offset="1026" max-vertical-offset="3439">
+              <folding>
+                <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="io.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/io.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="12" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0861678" vertical-offset="171" max-vertical-offset="7752">
+              <folding>
+                <marker date="1411032120443" expanded="false" signature="1907:1942" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="1965:1999" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="2022:2066" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="2362:2373" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="2414:2430" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="2456:2467" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="2510:2542" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="2605:2618" placeholder="..." />
+                <marker date="1411032120443" expanded="false" signature="6869:6885" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,12 +153,12 @@
         <option value="$PROJECT_DIR$/lib/user.class.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/beta.js" />
-        <option value="$PROJECT_DIR$/js/io.js" />
-        <option value="$PROJECT_DIR$/beta.php" />
-        <option value="$PROJECT_DIR$/room.php" />
         <option value="$PROJECT_DIR$/conf" />
         <option value="$PROJECT_DIR$/app/video/play.php" />
         <option value="$PROJECT_DIR$/include/foot.php" />
+        <option value="$PROJECT_DIR$/beta.php" />
+        <option value="$PROJECT_DIR$/room.php" />
+        <option value="$PROJECT_DIR$/js/io.js" />
       </list>
     </option>
   </component>
@@ -167,6 +211,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,7 +334,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Ireoo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ireoo" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -438,7 +496,15 @@
       <created>1410835646286</created>
       <updated>1410835646287</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="更新程序">
+      <created>1411028344588</created>
+      <updated>1411028344588</updated>
+    </task>
+    <task id="LOCAL-00029" summary="更新程序">
+      <created>1411028574101</created>
+      <updated>1411028574101</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -448,21 +514,21 @@
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3225108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14781906" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26680896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26680896" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -487,10 +553,10 @@
     <MESSAGE value="更新页脚显示效果" />
     <MESSAGE value="添加迷你界面" />
     <MESSAGE value="更新伪静态" />
-    <MESSAGE value="更新程序" />
     <MESSAGE value="更新聊天服务器地址" />
     <MESSAGE value="隐藏真实的视频地址" />
-    <option name="LAST_COMMIT_MESSAGE" value="隐藏真实的视频地址" />
+    <MESSAGE value="更新程序" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新程序" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -673,19 +739,9 @@
         <state line="15" column="45" selection-start="186" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7619" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/io.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7752" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="57" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/room.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="27" selection-start="3076" selection-end="3076" vertical-scroll-proportion="-21.035715" vertical-offset="1197" max-vertical-offset="3439" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/alipay/alipayapi.php">
@@ -723,11 +779,6 @@
         <state line="4" column="40" selection-start="269" selection-end="269" vertical-scroll-proportion="0.084916204" vertical-offset="0" max-vertical-offset="895" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="57" selection-start="1612" selection-end="1612" vertical-scroll-proportion="1.2929642" vertical-offset="0" max-vertical-offset="2869" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/oauth/oauth2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="208" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="437">
@@ -758,8 +809,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/foot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="34" selection-start="1184" selection-end="1184" vertical-scroll-proportion="0.48673588" vertical-offset="53" max-vertical-offset="950">
+        <state line="39" column="32" selection-start="1716" selection-end="1716" vertical-scroll-proportion="-23.071428" vertical-offset="0" max-vertical-offset="950">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="1785" selection-end="1874" vertical-scroll-proportion="-9.928572" vertical-offset="919" max-vertical-offset="2869">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="41" selection-start="3284" selection-end="3284" vertical-scroll-proportion="-29.178572" vertical-offset="1026" max-vertical-offset="3439">
+          <folding>
+            <element signature="n#style#0;n#embed#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#video#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h1#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#h1#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0861678" vertical-offset="171" max-vertical-offset="7752">
+          <folding>
+            <marker date="1411032120443" expanded="false" signature="1907:1942" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="1965:1999" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="2022:2066" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="2362:2373" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="2414:2430" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="2456:2467" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="2510:2542" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="2605:2618" placeholder="..." />
+            <marker date="1411032120443" expanded="false" signature="6869:6885" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

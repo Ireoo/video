@@ -28,7 +28,7 @@ $(function() {
         $('div.list li#' + user.id).remove();
         console.log('div.list li#' + user.id);
         usersbox.text(parseInt(usersbox.text()) - 1);
-        systemmsg('[系统] ' + '用户 ' + user.name + ' 离开聊天室.');
+        systemmsg('[系统] ' + '' + user.name + ' 离开聊天室.');
 
     });
 
@@ -36,7 +36,7 @@ $(function() {
 
         addplayer(user.id, user.name, user.avatar);
         usersbox.text(parseInt(usersbox.text()) + 1);
-        systemmsg('[系统] ' + '用户 ' + user.name + ' 进入聊天室.');
+        systemmsg('[系统] ' + '' + user.name + ' 进入聊天室.');
 
     });
 

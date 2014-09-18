@@ -67,7 +67,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
     <script style="text/javascript">
         var toname = '<?php echo $person['username']; ?>';
         <?php if(!is_array($o)) { ?>
-        var name = '游客';
+        var name = '<?php echo str_replace('&nbsp;', '', getIPLoc_sina(thisIP())); ?>用户';
         var avatar = 'http://ireoo.com/include/images/i_quanquan_on.png';
         var from = 0;
         <?php }else{ ?>
@@ -95,7 +95,7 @@ QRcode::png('http://v.ireoo.com/' . $id, $filename, 'H', 10, 0);
         <div class="title">
             <h1><?php echo $player['title']; ?></h1>
             <span>ID: <?php echo $id; ?></span>
-            <span id="users">现场人数：<i>0</i></span>
+            <span id="users">现场人数：<i>1597</i></span>
         </div>
 
         <div class="videoBox">
