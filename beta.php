@@ -82,10 +82,6 @@ $player1 = 99678367; //quan
 <body>
 <?php include_once('include/head.php'); ?>
 
-<div style="padding: 10px; font-size: 30px; text-align: center; background: #80bcf8; font-weight: bolder; font-family: 'microsoft yahei';">
-    从今天开始注册就送10元礼物券，本活动到9月30日！
-</div>
-
 <div class="player">
     <div class="users">现场用户：<i><?php echo rand(1000, 3000); ?></i></div>
     <div class="video">
